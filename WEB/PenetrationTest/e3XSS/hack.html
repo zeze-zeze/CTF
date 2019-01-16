@@ -1,0 +1,227 @@
+
+<script type="text/javascript" >
+  function loadTab(obj,n){
+
+  var layer;
+  eval('layer=\'news_page_'+n+'\'');
+
+  //將 Tab 標籤樣式設成 Blur 型態
+  var tabsF=document.getElementById('news_page_btns').getElementsByTagName('li');
+  for (var i=0;i<tabsF.length;i++){         
+      tabsF[i].setAttribute('id',null);
+      eval('document.getElementById(\'news_page_'+(i+1)+'\').style.display=\'none\'');
+
+      if(i==(n-1)) {
+      tabsF[i].setAttribute('class', 'page-item active');
+      } else {
+      tabsF[i].setAttribute('class', 'page-item');
+      }
+  }
+
+  //變更分頁標題樣式
+  obj.parentNode.setAttribute('id','current');
+  document.getElementById(layer).style.display='inline';
+
+  }
+
+</script>
+
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="zh-tw" xml:lang="zh-tw">
+<head>
+  <title>New e3 數位教學平台: 登入本網站</title>
+  <link rel="shortcut icon" href="https://e3new.nctu.edu.tw/theme/image.php/dcpc/theme/1547163692/favicon" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, New e3 數位教學平台: 登入本網站" />
+<link rel="stylesheet" type="text/css" href="https://e3new.nctu.edu.tw/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://e3new.nctu.edu.tw/theme/styles.php/dcpc/1547163692/all" />
+<link rel="stylesheet" type="text/css" href="https://e3new.nctu.edu.tw/auth/googleoauth2/style.css" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/e3new.nctu.edu.tw","sesskey":"tEh9GpVAjp","themerev":"1547163692","slasharguments":1,"theme":"dcpc","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1547163692","admin":"admin","svgicons":true,"usertimezone":"Asia\/Taipei","contextid":1};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/e3new.nctu.edu.tw\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/e3new.nctu.edu.tw\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/e3new.nctu.edu.tw\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/e3new.nctu.edu.tw\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/e3new.nctu.edu.tw\/theme\/yui_combo.php?m\/1547163692\/","combine":true,"comboBase":"https:\/\/e3new.nctu.edu.tw\/theme\/yui_combo.php?","ext":false,"root":"m\/1547163692\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-rooms":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-recordings":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-imports":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-modform":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-broker":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_multilang2-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]},"moodle-atto_wordimport-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/e3new.nctu.edu.tw\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/e3new.nctu.edu.tw\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1547163692\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/e3new.nctu.edu.tw\/lib\/javascript.php\/1547163692\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/e3new.nctu.edu.tw\/lib\/javascript.php\/1547163692\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.1\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-login-index" class="format-site  path-login safari dir-ltr lang-zh_tw yui-skin-sam yui3-skin-sam e3new-nctu-edu-tw pagelayout-login course-1 context-1 notloggedin LoginBody">
+
+
+<div class="bkOval-1000">　</div>
+<div class="bkOval-900">　</div>
+<div class="bkOval-85">　</div>
+<div class="bkOval-100">　</div>
+
+<div class="show-desktop">
+  <div class="LoginCard">
+      <div class="LoginForm">　
+              <img src="https://e3new.nctu.edu.tw/pluginfile.php/1/core_admin/logo/0x75/1547163692/NewE3Cloud_orange_w.png" alt="New e3 數位教學平台" style="margin-bottom:20px">
+          <form id="login" action="https://e3new.nctu.edu.tw/login/index.php" method="post">
+              <input class="LoginText" id="username" name="username" value="" placeholder="帳號" type="text"> <br> 
+              <input class="LoginText" id="password" name="password" value="" placeholder="密碼" type="password">
+              <button class="LoginBtn" id="loginbtn" type="submit">登入</button>
+          </form>
+              <div class="colR-18">
+                  <span class="LoginLang">TW</span>
+              </div>
+              <div class="colL-18">
+                  <a class="LoginLang-vain" href="https://e3new.nctu.edu.tw/login/index.php?lang=en">EN</a>
+                  <a class="btn btn-link p-a-0" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content=\''.get_string('help', 'theme_dcpc').'\' data-html="true" tabindex="0" data-trigger="focus">
+                  <i class="icon fa fa-question-circle" style="color:#ffffff;" aria-hidden="true" title="本校教職員及註冊學生可透過本校單一入口網站登入者，請透過  [校內使用者忘記密碼] 進行密碼變更！校外人士、學分班、非註冊本校之校際選課生請依 [校外使用者忘記密碼] 步驟指示重設密碼。若您是交通大學之兼任教師，請先至單一入口啟用帳號。" aria-label="本校教職員及註冊學生可透過本校單一入口網站登入者，請透過  [校內使用者忘記密碼] 進行密碼變更！校外人士、學分班、非註冊本校之校際選課生請依 [校外使用者忘記密碼] 步驟指示重設密碼。若您是交通大學之兼任教師，請先至單一入口啟用帳號。" onclick="alert('本校教職員及註冊學生可透過本校單一入口網站登入者，請透過  [校內使用者忘記密碼] 進行密碼變更！校外人士、學分班、非註冊本校之校際選課生請依 [校外使用者忘記密碼] 步驟指示重設密碼。若您是交通大學之兼任教師，請先至單一入口啟用帳號。');"></i>                
+              </div>
+      </div>
+      <div class="LoginRow">
+          <div class="colR-18"><a class="LoginLink" href="https://portal.nctu.edu.tw/portal/forget.php">校內使用者忘記密碼</a>
+          </div>
+          <div class="colL-18"><a class="LoginLink" href="https://e3new.nctu.edu.tw/login/forgot_password.php">校外使用者忘記密碼</a>
+          </div>
+      </div>
+  </div>
+  
+</div>
+
+<div class="show-tablet">
+  <div class="LoginCard-tablet">
+      <div class="LoginForm">　
+              <img src="https://e3new.nctu.edu.tw/pluginfile.php/1/core_admin/logo/0x75/1547163692/NewE3Cloud_orange_w.png" alt="New e3 數位教學平台" style="margin-bottom:20px">
+          <form id="login" action="https://e3new.nctu.edu.tw/login/index.php" method="post">
+              <input class="LoginText" id="username" name="username" value="" placeholder="帳號" type="text"> <br> 
+              <input class="LoginText" id="password" name="password" value="" placeholder="密碼" type="password">
+              <button class="LoginBtn" id="loginbtn" type="submit">登入</button>
+          </form>
+              <div class="colR-18">
+                  <span class="LoginLang">TW</span>
+              </div>
+              <div class="colL-18">
+                  <a class="LoginLang-vain" href="https://e3new.nctu.edu.tw/login/index.php?lang=en">EN</a>
+                  <i class="icon fa fa-question-circle" style="color:#ffffff;" onclick="alert('本校教職員及註冊學生可透過本校單一入口網站登入者，請透過  [校內使用者忘記密碼] 進行密碼變更！校外人士、學分班、非註冊本校之校際選課生請依 [校外使用者忘記密碼] 步驟指示重設密碼。若您是交通大學之兼任教師，請先至單一入口啟用帳號。');"></i>                
+              </div>
+      </div>
+      <div class="LoginRow">
+          <div class="colR-18"><a class="LoginLink" href="https://portal.nctu.edu.tw/portal/forget.php">校內使用者忘記密碼</a></div>
+          <div class="colL-18"><a class="LoginLink" href="https://e3new.nctu.edu.tw/login/forgot_password.php">校外使用者忘記密碼</a></div>
+      </div>
+  </div>
+  
+</div>
+
+<div class="show-phone">
+  <div class="LoginCard-phone">
+      <div class="LoginForm-phone">　
+              <img src="https://e3new.nctu.edu.tw/pluginfile.php/1/core_admin/logo/0x50/1547163692/NewE3Cloud_orange_w.png" alt="New e3 數位教學平台" style="margin-bottom:20px">
+          <form id="login" action="https://e3new.nctu.edu.tw/login/index.php" method="post">
+              <input class="LoginText-phone" id="username" name="username" value="" placeholder="帳號" type="text"> <br> 
+              <input class="LoginText-phone" id="password" name="password" value="" placeholder="密碼" type="password">
+              <button class="LoginBtn-phone" id="loginbtn" type="submit">登入</button>
+          </form>
+              <div class="colR-18">
+                  <span class="LoginLang">TW</span>
+              </div>
+              <div class="colL-18">
+                  <a class="LoginLang-vain" href="https://e3new.nctu.edu.tw/login/index.php?lang=en">EN</a>
+                  <i class="icon fa fa-question-circle" style="color:#ffffff;" onclick="alert('本校教職員及註冊學生可透過本校單一入口網站登入者，請透過  [校內使用者忘記密碼] 進行密碼變更！校外人士、學分班、非註冊本校之校際選課生請依 [校外使用者忘記密碼] 步驟指示重設密碼。若您是交通大學之兼任教師，請先至單一入口啟用帳號。');"></i>                
+              </div>
+      </div>
+      <div class="LoginRow"><a class="LoginLink" href="https://portal.nctu.edu.tw/portal/forget.php">校內使用者忘記密碼</a></div>
+      <div class="LoginRow"><a class="LoginLink" href="https://e3new.nctu.edu.tw/login/forgot_password.php">校外使用者忘記密碼</a></div>
+  </div>
+  
+</div>
+
+<div style="width: 100%; position: absolute; top: 1050px;">
+  <div class="hidden-xs-down visible-phone">
+      <div class="LoginFoot">Copyright ©2018 國立交通大學 數位內容製作中心 版權所有</div>
+  </div>
+  
+  <div class="hidden-sm-up hidden-phone">
+      <div class="LoginFoot-phone"></div>
+  </div>    
+  
+</div>
+
+<div class="bkOval-200">　</div>
+
+<div  style="visibility: hidden;">
+      <div role="main"><span id="maincontent"></span><div class="m-y-3 hidden-sm-down"></div>
+<div class="row">
+<div>
+<div class="card">
+  <div class="card-block">
+      <div class="card-title text-xs-center">
+              <h2><img src="https://e3new.nctu.edu.tw/pluginfile.php/1/core_admin/logo/0x200/1547163692/NewE3Cloud_orange_w.png" title="New e3 數位教學平台" alt="New e3 數位教學平台"/></h2>
+          <hr>
+      </div>
+
+
+
+      <div class="row">
+          <div class="col-md-4 push-md-1">
+              <form class="m-t-1" action="https://e3new.nctu.edu.tw/login/index.php" method="post" id="login">
+                  <input id="anchor" type="hidden" name="anchor" value="">
+                  <script>document.getElementById('anchor').value = location.hash;</script>
+
+                  <label for="username" class="sr-only">
+                          帳號
+                  </label>
+                  <input type="text" name="username" id="username"
+                      class="form-control"
+                      value=""
+                      placeholder="帳號">
+                  <label for="password" class="sr-only">密碼</label>
+                  <input type="password" name="password" id="password" value=""
+                      class="form-control"
+                      placeholder="密碼">
+
+                      <div class="rememberpass m-t-1">
+                          <input type="checkbox" name="rememberusername" id="rememberusername" value="1"  />
+                          <label for="rememberusername">記住帳號<br>(提醒：本校人員請使用單一入口帳號密碼)</label>
+                      </div>
+
+                  <button type="submit" class="btn btn-primary btn-block m-t-1" id="loginbtn">登入</button>
+              </form>
+          </div>
+
+          <div class="col-md-4 push-md-3">
+              <div class="forgetpass m-t-1">
+                  <p><a href="https://e3new.nctu.edu.tw/login/forgot_password.php">忘記帳號或密碼嗎？</a></p>
+              </div>
+
+              <div class="m-t-1">
+                  您的瀏覽器必須啟動 Cookies 功能
+                  <a class="btn btn-link p-a-0" role="button"
+  data-container="body" data-toggle="popover"
+  data-placement="right" data-content="&lt;div class=&quot;no-overflow&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;b&gt;Cookies&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;本站使用了兩個cookie。&lt;/p&gt;
+
+&lt;p&gt;最重要的是連線cookie，通常叫做&lt;b&gt;MoodleSession&lt;/b&gt;。您必須在瀏覽器裡允許這個cookie，以便使您的登入在頁與頁之間連續有效。當您登離或關閉瀏覽器，這個cookie在瀏覽器和伺服器裡都會被刪除。&lt;/p&gt;
+
+&lt;p&gt;另一個cookie純粹是為了方便，通常被叫做類似&lt;b&gt;MOODLEID&lt;/b&gt;之類的名字。它只用來在瀏覽器裡記住您的使用者名。這意味著當您再次回到本站，登入頁面裡的使用者名已經替您填好了。拒絕此cookie是安全的，只不過每次登入都要重新輸入使用者名而已。&lt;/p&gt;
+&lt;/div&gt; "
+  data-html="true" tabindex="0" data-trigger="focus">
+<i class="icon fa fa-question-circle text-info fa-fw " aria-hidden="true" title="您的瀏覽器必須啟動 Cookies 功能的輔助" aria-label="您的瀏覽器必須啟動 Cookies 功能的輔助"></i>
+</a>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div></div>
+</div>
+
+</body>
+</html>
+<script>
+  location.href='https://e3.nctu.edu.tw/NCTU_Easy_E3P/lms31/enter_course_index.aspx';
+</script>

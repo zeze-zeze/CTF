@@ -1,0 +1,2 @@
+target:https://dcpc.nctu.edu.tw/index.aspx
+cookie:.ASPXAUTH_NCTU_EASY_E3P_140.113.8.80

