@@ -17,6 +17,7 @@ from pwn import *
 [7]+[12]+[13] mod 36=23
 '''
 
+# 用手算的，辛苦我了
 p=[7,7,13,11,25,22,11,11,10,7,10,0,6,6,35,7]
 answer=''
 for i in range(len(p)):
@@ -28,6 +29,7 @@ for i in range(len(p)):
 
 print answer
 
+# 這個pwn會很常用，先學著點~
 s=ssh(host='18.224.26.75', user='Zeze', password='casper1014')
 s.set_working_directory('/problems/keygen-me-2_0_ac2a45bc27456d666f2bbb6921829203')
 p=s.process('./activate '+answer, shell=True)
