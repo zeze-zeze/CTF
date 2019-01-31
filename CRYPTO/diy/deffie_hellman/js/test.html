@@ -1,0 +1,34 @@
+<!doctype html>
+<script src="http://unpkg.com/crypto-js/crypto-js.js"></script>
+<script src="./bignum.js"></script>
+<script>
+  var ciphertext = CryptoJS.AES.encrypt('my message', 'sdfsdfsdf').toString();
+  console.log(ciphertext)
+
+
+  var bytes  = CryptoJS.AES.decrypt(ciphertext, 'sdfsdfsdf');
+  var originalText = bytes.toString(CryptoJS.enc.Utf8);
+  console.log(originalText);
+
+  
+  var rawStr = "hello wor我ld!";
+  var wordArray = CryptoJS.enc.Utf8.parse(rawStr);
+  var base64 = CryptoJS.enc.Base64.stringify(wordArray);
+  console.log('encrypted:', base64);
+
+  //decrypt
+  var parsedWordArray = CryptoJS.enc.Base64.parse(base64);
+  console.log(parsedWordArray);
+  var parsedStr = parsedWordArray.toString(CryptoJS.enc.Utf8);
+  console.log("parsed:",parsedStr);
+
+
+
+  var hashed = CryptoJS.SHA512('asasdasdssdfsdfd').toString();
+  console.log(hashed);
+
+
+  console.log(accDiv(accMul(9999999999999999,99999999999999999),100000000000000000000));
+  
+</script>
+&lt;&gt;&quot;&amp;©®∆

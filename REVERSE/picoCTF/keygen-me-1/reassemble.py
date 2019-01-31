@@ -1,5 +1,6 @@
 #! /usr/bin/python
 # coding=utf-8
+from pwn import *
 
 input_=''
 var_4=0
@@ -70,3 +71,9 @@ if a==True:
     print("INVALID Product Key.")
 else:
   print("Please Provide a VALID 16 byte Product")
+
+s=ssh(host='18.224.26.75', user='Zeze', password='casper1014')
+s.set_working_directory('/problems/keygen-me-1_1_8eb35cc7858ff1d2f55d30e5428f30a7')
+p=s.process('./activate '+input_, shell=True)
+
+print(p.recvall())
