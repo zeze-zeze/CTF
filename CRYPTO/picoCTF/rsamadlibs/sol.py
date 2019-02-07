@@ -1,6 +1,6 @@
 #! usr/bin/python
 # coding=utf-8
-import itertools
+from pwn import *
 
 # n=p*q
 def problem1(p, q):
@@ -61,15 +61,7 @@ def problem8(p, e, n, ciphertext):
 
 # 最後告訴妳flag就是最後一題plaintext的hex，所以把他轉回來就是了
 def convert_plaintext_to_flag(plaintext):
-  hex_plaintext=hex(plaintext)[2::]
-  print hex_plaintext
-  i=0
-  flag=''
-  while i<len(hex_plaintext)-1:
-    hex_char=hex_plaintext[i]+hex_plaintext[i+1]
-    flag+=chr(int(hex_char, 16))
-    i+=2
-  return flag
+  return unhex(hex(plaintext)[2::])
 
 print('problem1:\n'+str(problem1(93187, 94603)))
 print('problem2:\n'+str(problem2(6315400919, 81203)))
