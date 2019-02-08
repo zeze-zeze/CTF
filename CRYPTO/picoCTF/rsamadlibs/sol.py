@@ -1,6 +1,7 @@
 #! usr/bin/python
 # coding=utf-8
 from pwn import *
+from Crypto.Util.number import *
 
 # n=p*q
 def problem1(p, q):
@@ -25,39 +26,15 @@ def problem5(plaintext, e, n):
 # problem6 只給e, n就要解出原文，這一樣須要用到d，讓ciphertext的d次方mod n=plaintext。
 # 所以跟problem3一樣是discrete logarithm
 
-# 用e, p, q求反元素e對phi的反元素d，最原始的方法是從1到phi一個一個試，只要除以phi餘數為1就對了，但是這太慢了，所以用下面這方法
-# 原理還在研究當中XD (網路上找的)
+# 用e, p, q求反元素e對phi的反元素d，最原始的方法是從1到phi一個一個試，只要除以phi餘數為1就對了，但是這太慢了，所以用Crypto.Util.number的內建函數
 def problem7(e, p, q):
-  u1,u2,u3 = 1,0,e
-  phi=(p-1)*(q-1)
-  v1,v2,v3 = 0,1,phi
-  while v3!=0:
-    r = u3//v3
-    v1,v2,v3,u1,u2,u3 = (u1-r*v1),(u2-r*v2),(u3-r*v3),v1,v2,v3
-  return u1%phi
+  return inverse(e, (p-1)*(q-1))
 
-# AF是把一個數字變成binary，但是後來發現好像多此一舉了，直接用bin()就好
-def AF(num_dec):
-  af_opposite=[]
-  num_bin=bin(num_dec)
-  for i in range(len(num_bin)-2):
-    if num_bin[len(num_bin)-i-1]=='1':
-      af_opposite.append(1)
-    else:
-      af_opposite.append(0)
-  return af_opposite
 # 給所有資訊要解出原文，所以就根據前面講的，找出d之後，對ciphertext做d次方再mod n
 def problem8(p, e, n, ciphertext):
   q=n/p
   d=problem7(e, p, q)
-  af_opposite=AF(d)
-  plaintext=1
-  for i in range(len(af_opposite)):
-    plaintext=plaintext**2
-    if af_opposite[len(af_opposite)-1-i]==1:
-      plaintext*=ciphertext
-    plaintext%=n
-  return plaintext
+  return pow(ciphertext, d, n)
 
 # 最後告訴妳flag就是最後一題plaintext的hex，所以把他轉回來就是了
 def convert_plaintext_to_flag(plaintext):

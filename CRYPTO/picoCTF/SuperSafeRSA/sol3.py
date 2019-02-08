@@ -1,6 +1,7 @@
 #! /usr/bin/python
 # coding=utf-8
 from pwn import *
+from Crypto.Util.number import *
 
 # 取反元素(為了求d)
 def getInverse(e, phi):
@@ -22,16 +23,11 @@ p=100358606646260244539408957453750914997
 q=131524863867153651350316637537039784693537
 
 phi=(p-1)*(q-1)
-d=getInverse(e, phi)
+d=inverse(e, phi)
 
 # 把ciphertext還原
 d_bin=bin(d)[2::]
-plain=1
-for i in range(len(d_bin)):
-  plain=plain**2
-  if d_bin[i]=='1':
-    plain*=ciphertext
-  plain%=n
+plain=pow(ciphertext, d, n)
 
 # 把原文變成hex再轉ascii變成flag
 print unhex(hex(plain)[2::])
