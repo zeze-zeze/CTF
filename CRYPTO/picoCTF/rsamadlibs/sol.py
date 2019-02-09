@@ -88,7 +88,5 @@ p.sendline('Y')
 p.recvuntil('plaintext:')
 p.sendline('240109877286251840533272915662757983981706320845661471802585807564915966910384301849411666983334013')
 
-print p.recv(1024)
-print p.recv(1024)
-print p.recv(1024)
+print p.recvall()
 p.close()
