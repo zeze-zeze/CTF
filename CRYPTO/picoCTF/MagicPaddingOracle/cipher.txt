@@ -1,0 +1,23 @@
+#! /usr/bin/python
+# coding=utf-8
+from pwn import *
+
+BLOCK_SIZE=16
+
+'''
+{"username":"gue
+st","expires":"3
+000-10-10","is_a
+dmin":"true"}\x3\x3\x3
+'''
+target=['{"username":"gue', 'st","expires":"3', '000-10-10","is_a', 'dmin":"true"}'+chr(3)*3]
+
+answer=''
+
+now_guess='0'*32
+now_try='0'*32
+answer+=now_try
+
+for i in range(BLOCK_SIZE):
+  sdf
+  as
