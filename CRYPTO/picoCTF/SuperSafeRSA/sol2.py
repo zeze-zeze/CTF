@@ -1,11 +1,6 @@
 #! /usr/bin/python
 # coding=utf-8
-
-# 最大公因數
-def gcd(num1, num2):
-  while num2:
-    num1, num2=num2, num1%num2
-  return num1
+import gmpy
 
 # pollard方法，在p-1的最大公因數很小的時候使用，詳情請見bamboofox講義
 def pollard(n):
@@ -13,7 +8,7 @@ def pollard(n):
   b=2
   while True:
     a=pow(a, b, n)
-    d=gcd(n, a-1)
+    d=gmpy.gcd(n, a-1)
     if d>1:
       return d
     b+=1
