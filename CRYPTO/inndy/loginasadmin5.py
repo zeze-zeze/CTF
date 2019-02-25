@@ -11,7 +11,7 @@ s=''
 for a, b in zip(cipher, plain):
   s+=chr(ord(a) ^ ord(b))
 
-target='{"name":"guest","admin":true}'
+target='{"name":"admin", "admin":true}'
 
 new_cookie=''
 for a, b in zip(s, target):
