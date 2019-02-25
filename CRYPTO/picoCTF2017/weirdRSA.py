@@ -13,7 +13,9 @@ dp=81919577261611118808660282299501667422241476531368942480886782445488150867448
 dq=3570695757580148093370242608506191464756425954703930236924583065811730548932270595568088372441809535917032142349986828862994856575730078580414026791444659
 q_inverse=number.inverse(q, p)
 
-# 中國餘數定理(Chinese Remainder Theorem) https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Using_the_Chinese_remainder_algorithm
+# 中國餘數定理(Chinese Remainder Theorem) 
+# https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Using_the_Chinese_remainder_algorithm
+# https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E5%89%A9%E4%BD%99%E5%AE%9A%E7%90%86
 m1=pow(c, dp, p)
 m2=pow(c, dq, q)
 h=q_inverse*(m1-m2) % p
