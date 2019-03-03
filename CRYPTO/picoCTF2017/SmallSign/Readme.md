@@ -7,6 +7,8 @@
 
 * ps.因為能取得的質數的 signature 有限，所以可能要多試幾次讓 random 的質因數是我們有的
 
+[實作方法](https://github.com/HardworkingSnowman/CTF/blob/master/CRYPTO/picoCTF2017/SmallSign/sol.py)
+
 ```
 flag=c4061d2c3315e76970f4c70e26a459cf
 ```
