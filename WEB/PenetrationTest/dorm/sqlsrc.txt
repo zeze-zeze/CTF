@@ -1,0 +1,5 @@
+POST /Login.asp HTTP/1.1
+Host: dormapply2.adm.nctu.edu.tw
+Content-Length: 28
+
+ID=1&passwd=1&CheckCode=TRSJ
