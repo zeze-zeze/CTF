@@ -1,0 +1,8 @@
+Don't use any tool because you don't need it ..
+Can you access the cgi-bin folder and get your flag ?
+
+---------------
+
+Challenge's URL:
+
+http://vulngeek.com/cgi-bin/
