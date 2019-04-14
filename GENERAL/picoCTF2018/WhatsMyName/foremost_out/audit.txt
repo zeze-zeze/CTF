@@ -1,0 +1,21 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Apr 14 14:33:05 2019
+Invocation: foremost myname.pcap -o foremost_out 
+Output directory: /mnt/d/myFile/Engineering/CTF/CTF/GENERAL/picoCTF2018/WhatsMyName/foremost_out
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: myname.pcap
+Start: Sun Apr 14 14:33:05 2019
+Length: 6 MB (6458614 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+Finish: Sun Apr 14 14:33:06 2019
+
+0 FILES EXTRACTED
+	
+------------------------------------------------------------------
+
+Foremost finished at Sun Apr 14 14:33:06 2019
