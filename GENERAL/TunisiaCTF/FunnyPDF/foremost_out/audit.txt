@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Apr 14 09:00:19 2019
+Invocation: foremost FunnyPDF.pdf -o foremost_out 
+Output directory: /mnt/d/myFile/Engineering/CTF/CTF/GENERAL/TunisiaCTF/FunnyPDF/foremost_out
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: FunnyPDF.pdf
+Start: Sun Apr 14 09:00:19 2019
+Length: 12 KB (12450 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.pdf 	      12 KB 	          0 	 
+Finish: Sun Apr 14 09:00:19 2019
+
+1 FILES EXTRACTED
+	
+pdf:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sun Apr 14 09:00:19 2019

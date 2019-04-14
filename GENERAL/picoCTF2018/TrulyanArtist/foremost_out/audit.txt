@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Apr 13 23:22:02 2019
+Invocation: foremost 2018.png -o foremost_out 
+Output directory: /mnt/d/myFile/Engineering/CTF/CTF/GENERAL/picoCTF2018/TrulyanArtist/foremost_out
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: 2018.png
+Start: Sat Apr 13 23:22:02 2019
+Length: 12 KB (13182 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	      12 KB 	          0 	  (1200 x 630)
+Finish: Sat Apr 13 23:22:02 2019
+
+1 FILES EXTRACTED
+	
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sat Apr 13 23:22:02 2019

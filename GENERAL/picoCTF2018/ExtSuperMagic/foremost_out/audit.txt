@@ -1,0 +1,62 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Apr 13 23:32:30 2019
+Invocation: foremost ext-super-magic.img -o foremost_out 
+Output directory: /mnt/d/myFile/Engineering/CTF/CTF/GENERAL/picoCTF2018/ExtSuperMagic/foremost_out
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: ext-super-magic.img
+Start: Sat Apr 13 23:32:30 2019
+Length: 5 MB (5242880 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00001026.jpg 	     458 KB 	     525312 	 
+1:	00001944.jpg 	      60 KB 	     995328 	 
+2:	00002068.jpg 	      65 KB 	    1058816 	 
+3:	00002222.jpg 	       5 KB 	    1137664 	 
+4:	00002234.jpg 	       4 KB 	    1143808 	 
+5:	00002252.jpg 	      48 KB 	    1153024 	 
+6:	00002376.jpg 	      26 KB 	    1216512 	 
+7:	00002502.jpg 	       9 KB 	    1281024 	 
+8:	00002522.jpg 	      33 KB 	    1291264 	 
+9:	00002594.jpg 	      33 KB 	    1328128 	 
+10:	00002678.jpg 	       6 KB 	    1371136 	 
+11:	00002692.jpg 	      14 KB 	    1378304 	 
+12:	00002734.jpg 	      21 KB 	    1399808 	 
+13:	00002778.jpg 	       5 KB 	    1422336 	 
+14:	00002810.jpg 	       9 KB 	    1438720 	 
+15:	00002916.jpg 	      27 KB 	    1492992 	 
+16:	00003038.jpg 	       2 KB 	    1555456 	 
+17:	00003060.jpg 	       6 KB 	    1566720 	 
+18:	00003084.jpg 	       4 KB 	    1579008 	 
+19:	00003276.jpg 	      12 KB 	    1677312 	 
+20:	00003392.jpg 	       1 KB 	    1736704 	 
+21:	00003410.jpg 	       3 KB 	    1745920 	 
+22:	00003678.jpg 	       2 KB 	    1883136 	 
+23:	00003702.jpg 	      10 KB 	    1895424 	 
+24:	00003792.jpg 	       4 KB 	    1941504 	 
+25:	00003880.jpg 	       2 KB 	    1986560 	 
+26:	00004044.jpg 	       3 KB 	    2070528 	 
+27:	00004104.jpg 	       1 KB 	    2101248 	 
+28:	00004230.jpg 	       3 KB 	    2165760 	 
+29:	00004438.jpg 	       4 KB 	    2272256 	 
+30:	00004478.jpg 	       3 KB 	    2292736 	 
+31:	00004536.jpg 	       4 KB 	    2322432 	 
+32:	00004580.jpg 	       3 KB 	    2344960 	 
+33:	00005360.jpg 	       2 KB 	    2744320 	 
+34:	00005730.jpg 	       1 KB 	    2933760 	 
+35:	00008196.jpg 	     211 KB 	    4196352 	 
+36:	00008630.jpg 	      19 KB 	    4418560 	 
+37:	00008670.jpg 	     132 KB 	    4439040 	 
+38:	00008938.jpg 	      35 KB 	    4576256 	 
+39:	00009054.jpg 	      43 KB 	    4635648 	 
+Finish: Sat Apr 13 23:32:31 2019
+
+40 FILES EXTRACTED
+	
+jpg:= 40
+------------------------------------------------------------------
+
+Foremost finished at Sat Apr 13 23:32:31 2019
