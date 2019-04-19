@@ -55,6 +55,10 @@ int main(int argc, char **argv){
 
   fgets(password, sizeof(password), file);
 
+  /*char test[20];
+  file = fopen("test.txt", "r");
+  fgets(test, sizeof(test), file);*/
+
   printf("Hello ");
   puts(name);
 
