@@ -1,0 +1,67 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Mon Apr 22 00:43:10 2019
+Invocation: foremost full-mueller-report.pdf -o foremost_out 
+Output directory: /mnt/d/myFile/Engineering/CTF/CTF/GENERAL/actf/TheMuellerReport/foremost_out
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: full-mueller-report.pdf
+Start: Mon Apr 22 00:43:11 2019
+Length: 138 MB (145509752 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000004.jpg 	     111 KB 	       2537 	 
+1:	00000228.jpg 	      73 KB 	     116894 	 
+2:	00000376.jpg 	     266 KB 	     192871 	 
+3:	00000910.jpg 	     278 KB 	     465992 	 
+4:	00001467.jpg 	     265 KB 	     751549 	 
+5:	00001999.jpg 	     273 KB 	    1023562 	 
+6:	00002547.jpg 	     244 KB 	    1304180 	 
+7:	00003036.jpg 	      73 KB 	    1554755 	 
+8:	00003184.jpg 	     391 KB 	    1630574 	 
+9:	00003969.jpg 	     345 KB 	    2032545 	 
+10:	00004662.jpg 	     114 KB 	    2387086 	 
+11:	00004891.jpg 	     345 KB 	    2504535 	 
+12:	00005584.jpg 	     384 KB 	    2859029 	 
+13:	00006354.jpg 	     409 KB 	    3253533 	 
+14:	00007175.jpg 	     396 KB 	    3673642 	 
+15:	00007968.jpg 	     355 KB 	    4080070 	 
+16:	00008681.jpg 	     377 KB 	    4445002 	 
+17:	00009438.jpg 	     359 KB 	    4832512 	 
+18:	00010159.jpg 	     406 KB 	    5201554 	 
+19:	00010973.jpg 	     427 KB 	    5618676 	 
+20:	00011829.jpg 	     397 KB 	    6056894 	 
+21:	00012625.jpg 	     388 KB 	    6464287 	 
+22:	00013403.jpg 	     308 KB 	    6862412 	 
+23:	00014021.jpg 	     214 KB 	    7178772 	 
+24:	00014451.jpg 	     216 KB 	    7399027 	 
+25:	00014884.jpg 	     154 KB 	    7620962 	 
+26:	00015195.jpg 	     242 KB 	    7780001 	 
+27:	00015681.jpg 	     142 KB 	    8028952 	 
+28:	00015967.jpg 	     209 KB 	    8175605 	 
+29:	00016388.jpg 	     304 KB 	    8390821 	 
+30:	00016997.jpg 	     214 KB 	    8702974 	 
+31:	00017428.jpg 	     202 KB 	    8923595 	 
+32:	00017835.jpg 	     356 KB 	    9132012 	 
+33:	00018551.jpg 	     288 KB 	    9498119 	 
+34:	00019129.jpg 	     295 KB 	    9794448 	 
+35:	00019722.jpg 	     240 KB 	   10097844 	 
+36:	00020205.jpg 	     300 KB 	   10345091 	 
+37:	00020807.jpg 	     123 KB 	   10653345 	 
+38:	00021054.jpg 	     289 KB 	   10779969 	 
+39:	00021634.jpg 	     263 KB 	   11076988 	 
+40:	00022163.jpg 	     268 KB 	   11347576 	 
+41:	00022702.jpg 	     346 KB 	   11623544 	 
+42:	00023396.jpg 	     280 KB 	   11978840 	 
+43:	00023959.jpg 	     377 KB 	   12267095 	 
+44:	00024716.jpg 	     333 KB 	   12654629 	 
+45:	00025384.jpg 	     341 KB 	   12996670 	 
+46:	00026067.jpg 	     236 KB 	   13346523 	 
+47:	00026540.jpg 	     319 KB 	   13588848 	 
+48:	00027180.jpg 	     355 KB 	   13916400 	 
+49:	00027893.jpg 	     341 KB 	   14281268 	 
+50:	00028578.jpg 	     371 KB 	   14631978 	 
+51:	00029322.jpg 	     332 KB 	   15013346 	 
+Interrupt received at Mon Apr 22 00:43:11 2019
