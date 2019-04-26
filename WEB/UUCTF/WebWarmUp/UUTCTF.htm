@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>UUTCTF</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="http://ctf.uut.ac.ir/themes/core/static/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="UUTCTF_files/bootstrap.css">
+	<link rel="stylesheet" href="UUTCTF_files/fontawesome-fonts.css" type="text/css">
+	<link rel="stylesheet" href="UUTCTF_files/fontawesome-all.css" type="text/css">
+	<link rel="stylesheet" href="UUTCTF_files/font.css" type="text/css">
+	<link rel="stylesheet" href="UUTCTF_files/jumbotron.css">
+	<link rel="stylesheet" href="UUTCTF_files/sticky-footer.css">
+	<link rel="stylesheet" href="UUTCTF_files/base.css">
+	
+	
+	<link rel="stylesheet" type="text/css" href="UUTCTF_files/user.css">
+	<script src="UUTCTF_files/promise-polyfill.js"></script>
+	<script src="UUTCTF_files/fetch.js"></script>
+	<script src="UUTCTF_files/CTFd.js"></script>
+	<script src="UUTCTF_files/moment.js"></script>
+	<script src="UUTCTF_files/nunjucks.js"></script>
+	<script src="UUTCTF_files/socket.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a href="http://ctf.uut.ac.ir/" class="navbar-brand">
+				
+				<img class="img-responsive ctf_logo" src="UUTCTF_files/logo.png" alt="UUTCTF" height="25">
+				
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars" aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="base-navbars">
+				<ul class="navbar-nav mr-auto">
+					
+
+					<li class="nav-item">
+						<a class="nav-link" href="http://ctf.uut.ac.ir/notifications">Notifications</a>
+					</li>
+					
+						<li class="nav-item">
+							<a class="nav-link" href="http://ctf.uut.ac.ir/users">Users</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="http://ctf.uut.ac.ir/teams">Teams</a>
+						</li>
+						
+					
+					
+						<li class="nav-item">
+							<a class="nav-link" href="http://ctf.uut.ac.ir/scoreboard">Scoreboard</a>
+						</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="http://ctf.uut.ac.ir/challenges">Challenges</a>
+					</li>
+				</ul>
+
+				<hr class="d-sm-flex d-md-flex d-lg-none">
+
+				<ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+					
+						
+							<li class="nav-item">
+								<a class="nav-link" href="http://ctf.uut.ac.ir/register">Register</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link d-none d-md-block d-lg-block">|</a>
+							</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="http://ctf.uut.ac.ir/login">Login</a>
+						</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main role="main">
+		
+	<div class="container">
+	<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <img class="w-100 mx-auto d-block" style="max-width: 500px;padding: 50px;padding-top: 14vh;" src="UUTCTF_files/logo_002.png">
+        <h3 class="text-center">
+            <p>A CTF competition for students from <a href="http://uut.ac.ir/">Urmia University of Technology</a></p>
+        <p>Associated with:
+        <br>
+        <a href="http://poscon.ir/">P0SCon</a>, <a href="https://offsecresearch.com/">OFFSEC</a>, <a href="http://uucert.com/">Urmia CERT Center</a></p>
+            <!-- P0SCon -->
+            <a href="http://poscon.ir/"><img src="UUTCTF_files/P0SCon.jpg" style="max-width:10%;max-height:10%"></a>
+            <br>
+            <a href="https://twitter.com/p0scon"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>&nbsp;
+            <a href="https://instagram.com/p0scon"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>&nbsp;
+            <a href="https://t.me/p0scon"><i class="fab fa-telegram fa-2x" aria-hidden="true"></i></a>
+            <!-- OFFSEC -->
+            <br>
+            <br>
+            <a href="https://offsecresearch.com/"><img src="UUTCTF_files/OFFSEC.jpg" style="max-width:30%;max-height:30%"></a>
+            <br>
+            <a href="https://twitter.com/offsecmag"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>&nbsp;
+            <a href="https://instagram.com/offsecmag"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>&nbsp;
+            <a href="https://t.me/offsecmag"><i class="fab fa-telegram fa-2x" aria-hidden="true"></i></a>
+            <!-- UUCERT -->
+            <br>
+            <br>
+            <a href="http://uucert.com/"><img src="UUTCTF_files/UUCERT.jpg" style="max-width:10%;max-height:10%"></a>
+            <br>
+            <a href="https://twitter.com/"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>&nbsp;
+            <a href="https://instagram.com/"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>&nbsp;
+            <a href="https://t.me/uucert"><i class="fab fa-telegram fa-2x" aria-hidden="true"></i></a>
+			<!-- Flag -->
+			<p style="color:rgba(255, 0, 0, 0.001);">The Flag is: UUTCTF{P0SCon: Welcome to UUTCTF! Happy hacking ;)}</p>
+        </h3>
+        <br>
+    </div>
+</div>
+	</div>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container text-center">
+			<a href="https://ctfd.io/">
+				<small class="text-muted">UUTCTF | Powered by Urmia University of Technology</small>
+			</a>
+		</div>
+	</footer>
+
+	<script src="UUTCTF_files/jquery.js"></script>
+	<script src="UUTCTF_files/markdown-it.js"></script>
+	<script src="UUTCTF_files/bootstrap.js"></script>
+	<script src="UUTCTF_files/style.js"></script>
+	<script src="UUTCTF_files/utils.js"></script>
+	<script src="UUTCTF_files/ezq.js"></script>
+	<script src="UUTCTF_files/events.js"></script>
+	
+	
+
+	
+
+</body></html>
