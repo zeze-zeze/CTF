@@ -1,0 +1,2 @@
+catch syscall ptrace
+
