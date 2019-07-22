@@ -29,6 +29,6 @@ int main() {
 		printf(" somewhere else. ");
 	}
 
-	printf("Get out!\n");
+	puts("Get out!\n");
 	return 0;
 }
