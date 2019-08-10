@@ -1,2 +1,2 @@
-break main
+break *0x400f71
 
