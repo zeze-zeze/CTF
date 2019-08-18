@@ -1,3 +1,2 @@
-break main
-break *0x80485e4
+break *0x80485ff
 
