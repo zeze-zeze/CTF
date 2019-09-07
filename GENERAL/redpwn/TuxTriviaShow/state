@@ -1,0 +1,310 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><HTML>
+<HEAD>
+<TITLE> List of State Capitals </TITLE>
+<meta name="description" content="A complete list of US state capitals.">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+<link rel="canonical" href="https://state.1keydata.com/state-capitals.php" />
+<link rel=stylesheet type="text/css" href="state.css">
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="ie8.css" />
+<![endif]-->
+<link rel="apple-touch-icon" sizes="76x76" href="icon-76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icon-120.png">
+<link rel="apple-touch-icon" href="icon-256.png">
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eaf7f7",
+      "text": "#5c7291"
+    },
+    "button": {
+      "background": "#56cbdb",
+      "text": "#ffffff"
+    }
+  },
+  "type": "opt-in",
+  "content": {
+    "dismiss": "Got it!",
+    "href": "https://www.1keydata.com/privacy.php"
+  }
+})});
+</script>
+
+<script>
+onInitialise: function (status) {
+  var type = this.options.type;
+  var didConsent = this.hasConsented();
+  if (type == 'opt-in' && didConsent) {
+    // enable cookies
+  }
+  if (type == 'opt-out' && !didConsent) {
+    // disable cookies
+    window['ga-disable-UA-476266-5'] = true;
+  }
+},
+ 
+onStatusChange: function(status, chosenBefore) {
+  var type = this.options.type;
+  var didConsent = this.hasConsented();
+  if (type == 'opt-in' && didConsent) {
+    // enable cookies
+  }
+  if (type == 'opt-out' && !didConsent) {
+    // disable cookies
+    window['ga-disable-UA-476266-5'] = true;
+  }
+},
+ 
+onRevokeChoice: function() {
+  var type = this.options.type;
+  if (type == 'opt-in') {
+    // disable cookies
+    window['ga-disable-UA-476266-5'] = true;
+  }
+  if (type == 'opt-out') {
+    // enable cookies
+  }
+},
+</script>
+</head>
+<body><center><table border=0 class="container" cellpadding=0 cellspacing=10 bgcolor="#000000"><tr><td>
+<h1>List of State Capitals</h1>
+</td></tr></table>
+<br>
+<center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- States Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4254904157393454"
+     data-ad-slot="2011308423"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+<br>
+<table border=0 cellpadding=0 bgcolor=FFFFFF>
+<tr valign=top><td>
+<p>This page lists the state capitals for the 50 US states.</font><br><br>
+<center>
+<table border=1 width=80% class=content1>
+<tr bgcolor="0033FF"><td width=200><font color="FFFFFF"><b>US State</b></font></td>
+<td width=100><font color="FFFFFF"><b>State Capital</b></font></td>
+<td width=200><font color="FFFFFF"><b>US State</b></font></td>
+<td width=100><font color="FFFFFF"><b>State Capital</b></font></td>
+</tr>
+<tr><td>
+<a href="alabama.php">Alabama</a></td>
+<td>Montgomery</td>
+<td><a href="montana.php">Montana</a></td>
+<td>Helena</td>
+</tr>
+
+<tr><td>
+<a href="alaska.php">Alaska</a></td>
+<td>Juneau</td>
+<td><a href="nebraska.php">Nebraska</a></td>
+<td>Lincoln</td>
+</tr>
+
+<tr><td>
+<a href="arizona.php">Arizona</a></td>
+<td>Phoenix</td>
+<td><a href="nevada.php">Nevada</a></td>
+<td>Carson City</td>
+</tr>
+
+<tr><td>
+<a href="arkansas.php">Arkansas</a></td>
+<td>Little Rock</td>
+<td><a href="new-hampshire.php">New Hampshire</a></td>
+<td>Concord</td>
+</tr>
+
+<tr><td>
+<a href="california.php">California</a></td>
+<td>Sacramento</td>
+<td><a href="new-jersey.php">New Jersey</a></td>
+<td>Trenton</td>
+</tr>
+
+<tr><td>
+<a href="colorado.php">Colorado</a></td>
+<td>Denver</td>
+<td><a href="new-mexico.php">New Mexico</a></td>
+<td>Santa Fe</td>
+</tr>
+
+<tr><td>
+<a href="connecticut.php">Connecticut</a></td>
+<td>Hartford</td>
+<td><a href="new-york.php">New York</a></td>
+<td>Albany</td>
+</tr>
+
+<tr><td>
+<a href="delaware.php">Delaware</a></td>
+<td>Dover</td>
+<td><a href="north-carolina.php">North Carolina</a></td>
+<td>Raleigh</td>
+</tr>
+
+<tr><td>
+<a href="florida.php">Florida</a></td>
+<td>Tallahassee</td>
+<td><a href="north-dakota.php">North Dakota</a></td>
+<td>Bismarck</td>
+</tr>
+
+<tr><td>
+<a href="georgia.php">Georgia</a></td>
+<td>Atlanta</td>
+<td><a href="ohio.php">Ohio</a></td>
+<td>Columbus</td>
+</tr>
+
+<tr><td>
+<a href="hawaii.php">Hawaii</a></td>
+<td>Honolulu</td>
+<td><a href="oklahoma.php">Oklahoma</a></td>
+<td>Oklahoma City</td>
+</tr>
+
+<tr><td>
+<a href="idaho.php">Idaho</a></td>
+<td>Boise</td>
+<td><a href="oregon.php">Oregon</a></td>
+<td>Salem</td>
+</tr>
+
+<tr><td>
+<a href="illinois.php">Illinois</a></td>
+<td>Springfield</td>
+<td><a href="pennsylvania.php">Pennsylvania</a></td>
+<td>Harrisburg</td>
+</tr>
+
+<tr><td>
+<a href="indiana.php">Indiana</a></td>
+<td>Indianapolis</td>
+<td><a href="rhode-island.php">Rhode Island</a></td>
+<td>Providence</td>
+</tr>
+
+<tr><td>
+<a href="iowa.php">Iowa</a></td>
+<td>Des Moines</td>
+<td><a href="south-carolina.php">South Carolina</a></td>
+<td>Columbia</td>
+</tr>
+
+<tr><td>
+<a href="kansas.php">Kansas</a></td>
+<td>Topeka</td>
+<td><a href="south-dakota.php">South Dakota</a></td>
+<td>Pierre</td>
+</tr>
+
+<tr><td>
+<a href="kentucky.php">Kentucky</a></td>
+<td>Frankfort</td>
+<td><a href="tennessee.php">Tennessee</a></td>
+<td>Nashville</td>
+</tr>
+
+<tr><td>
+<a href="louisiana.php">Louisiana</a></td>
+<td>Baton Rouge</td>
+<td><a href="texas.php">Texas</a></td>
+<td>Austin</td>
+</tr>
+
+<tr><td>
+<a href="maine.php">Maine</a></td>
+<td>Augusta</td>
+<td><a href="utah.php">Utah</a></td>
+<td>Salt Lake City</td>
+</tr>
+
+<tr><td>
+<a href="maryland.php">Maryland</a></td>
+<td>Annapolis</td>
+<td><a href="vermont.php">Vermont</a></td>
+<td>Montpelier</td>
+</tr>
+
+<tr><td>
+<a href="massachusetts.php">Massachusetts</a></td>
+<td>Boston</td>
+<td><a href="virginia.php">Virginia</a></td>
+<td>Richmond</td>
+</tr>
+
+<tr><td>
+<a href="michigan.php">Michigan</a></td>
+<td>Lansing</td>
+<td><a href="washington.php">Washington</a></td>
+<td>Olympia</td>
+</tr>
+
+<tr><td>
+<a href="minnesota.php">Minnesota</a></td>
+<td>St. Paul</td>
+<td><a href="west-virginia.php">West Virginia</a></td>
+<td>Charleston</td>
+</tr>
+
+<tr><td>
+<a href="mississippi.php">Mississippi</a></td>
+<td>Jackson</td>
+<td><a href="wisconsin.php">Wisconsin</a></td>
+<td>Madison</td>
+</tr>
+
+<tr><td>
+<a href="missouri.php">Missouri</a></td>
+<td>Jefferson City</td>
+<td><a href="wyoming.php">Wyoming</a></td>
+<td>Cheyenne</td>
+</tr>
+
+</table>
+<br><center>
+<!-- State Bottom Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4254904157393454"
+     data-ad-slot="4964774822"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+<br><br><center>
+<div id="return_nav">Return to <a href="/">List of 50 States</a></div>
+</center>
+<br>
+</td></tr></table>
+<hr />
+<p><center>Copyright &copy; 2019 &nbsp; <a href="https://www.1keydata.com/">1keydata.com</a> &nbsp; All Rights Reserved &nbsp; &nbsp; <a href="https://www.1keydata.com/privacy.php">Privacy Policy</a></center></p>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-476266-5', '1keydata.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
