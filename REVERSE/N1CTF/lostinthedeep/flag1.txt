@@ -1,0 +1,1 @@
+get flag1 from server
