@@ -17,6 +17,7 @@ decode = decode.decode('hex').decode('hex')
 
 
 possible_keys = open('weak_keys').read().strip().split('\n')
+possible_keys = open('weak').read().strip().split('\n')
 for i in range(len(possible_keys)):
     possible_keys[i] = ''.join(possible_keys[i].split(' '))
 print possible_keys
@@ -32,4 +33,5 @@ for key1 in possible_keys:
         
         if 'flag' in plain or 'flag'.encode('hex') in plain:
             print plain
+            open('plain', 'w').write(plain)
 
