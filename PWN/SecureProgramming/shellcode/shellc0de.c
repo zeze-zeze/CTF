@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
-
+#include <string.h>
 
 void init(){
     setvbuf(stdin,0,2,0);
@@ -27,7 +27,6 @@ int main(){
             _exit(-1);
         }
     }
-
     void (*hello)() = shellcode;
 
     hello();
