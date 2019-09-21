@@ -13,6 +13,7 @@ class Machine:
         self.count = 0
         self.context = list(map(ord, init))
         self.op = {0:self.add,  1:self.cmp,  2:self.context,  3:self.empty,  6:self.pop,  7:self.push,  8:self.sub,  9:self.terminal}
+        self.opname = {0:'add', 1:'cmp', 3:'empty', 6:'pop', 7:'push', 8:'sub', 9:'terminal'}
 
     def empty(self, _):
         return len(self.context) == 0
@@ -20,6 +21,8 @@ class Machine:
     def e_start(self, code):
         for i in zip(*(iter(code),) * 2):
             if i != None:
+                print(self.opname[i[0]])
+                print(self.context)
                 self.op[i[0]](i[1])
 
     def push(self, num):
@@ -27,13 +30,13 @@ class Machine:
 
     def pop(self, _):
         if len(self.context) < 1:
-            raise SyntaxError('You should sharpen your coding skill')
+            raise SyntaxError('pop')
         result, self.context = self.context[(-1)], self.context[:-1]
         return result
 
     def terminal(self, _):
         if len(self.context) < 1:
-            raise SyntaxError('You should sharpen your coding skill')
+            raise SyntaxError('terminal')
         if self.context[(-1)] == 0:
             print('You fail, try again')
             exit(0)
@@ -43,19 +46,19 @@ class Machine:
 
     def add(self, _):
         if len(self.context) < 2:
-            raise SyntaxError('You should sharpen your coding skill')
+            raise SyntaxError('add')
         result, self.context = self.context[(-1)] + self.context[(-2)], self.context[:-2]
         self.context.append(c_int8(result).value)
 
     def sub(self, _):
         if len(self.context) < 2:
-            raise SyntaxError('You should sharpen your coding skill')
+            raise SyntaxError('sub')
         result, self.context = self.context[(-1)] - self.context[(-2)], self.context[:-2]
         self.context.append(c_int8(result).value)
 
     def cmp(self, num):
         if len(self.context) < 1:
-            raise SyntaxError('You should sharpen your coding skill')
+            raise SyntaxError('cmp')
         self.context[-1] = 1 if self.context[(-1)] == num else 0
 
 
