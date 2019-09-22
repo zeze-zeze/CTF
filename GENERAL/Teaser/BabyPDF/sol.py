@@ -1,6 +1,7 @@
 #coding=utf-8
 
 pdf = open('babypdf.pdf').read()
+res = open('res', 'a')
 for i in range(8):
     for j in range(8):
         by = ''
@@ -12,5 +13,5 @@ for i in range(8):
             if len(by) == 8:
                 flag += chr(int(by, 2))
                 by = ''
-    #if '{' in flag:
-    print flag
+        #if '{' in flag:
+        res.write(flag)
