@@ -12,17 +12,18 @@ def send(payload):
     p.close()
     return res
 
-flag = 'FLAG{W0w_BiiiiiiiiG_SiZe3e3!}'
-test = send('  ' + flag)
+#flag = 'FLAG{W0w_BiiiiiiiiG_SiZe3e3!}'
+flag = '}'
+count = 0
 
 while 1:
     for c1 in printable:
-        for c2 in printable:
-            res = send(c1 + flag)
-            if test != res:
-                flag = c1 + flag
-                test = send(' ' + flag)
-                print flag
-                time.sleep(2)
-                exit(0)
+        res = send('FLAG{' + c1 + flag)
+        print res.count('correct')
+        if count != res.count('correct'):
+            count = res.count('correct')
+            flag = c1 + flag
+            test = send(' ' + flag)
+            print flag
+            time.sleep(2)
 
