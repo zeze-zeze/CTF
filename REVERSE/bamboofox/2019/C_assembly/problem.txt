@@ -1,0 +1,23 @@
+000000000000064a <main>:
+ 64a:   55                      push   rbp
+ 64b:   48 89 e5                mov    rbp,rsp
+ 64e:   48 83 ec 10             sub    rsp,0x10
+ 652:   c7 45 f8 90 01 00 00    mov    DWORD PTR [rbp-0x8],$FLAG
+ 659:   c7 45 fc 00 00 00 00    mov    DWORD PTR [rbp-0x4],0x0
+ 660:   eb 0a                   jmp    66c <main+0x22>
+ 662:   8b 45 fc                mov    eax,DWORD PTR [rbp-0x4]
+ 665:   01 45 f8                add    DWORD PTR [rbp-0x8],eax
+ 668:   83 45 fc 01             add    DWORD PTR [rbp-0x4],0x1
+ 66c:   83 7d fc 0a             cmp    DWORD PTR [rbp-0x4],0xa
+ 670:   7e f0                   jle    662 <main+0x18>
+ 672:   81 7d f8 c7 01 00 00    cmp    DWORD PTR [rbp-0x8],0x1c7
+ 679:   75 11                   jne    68c <main+0x42>
+ 67b:   48 8d 3d a2 00 00 00    lea    rdi,[rip+0xa2]        # 724 <_IO_stdin_used+0x4>
+ 682:   b8 00 00 00 00          mov    eax,0x0
+ 687:   e8 94 fe ff ff          call   $SUCCESS_YOU_GET_THE_FLAG
+ 68c:   b8 00 00 00 00          mov    eax,0x0
+ 691:   c9                      leave
+ 692:   c3                      ret
+ 693:   66 2e 0f 1f 84 00 00    nop    WORD PTR cs:[rax+rax*1+0x0]
+ 69a:   00 00 00
+ 69d:   0f 1f 00                nop    DWORD PTR [rax]

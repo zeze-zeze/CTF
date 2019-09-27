@@ -14,4 +14,5 @@ int main(){
   else{
     b=0;
   }
+  printf("%d", a^b);
 }
