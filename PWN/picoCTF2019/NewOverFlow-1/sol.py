@@ -1,7 +1,7 @@
 #coding=utf-8
 from pwn import *
 
-debug = 0
+debug = 1
 if debug:
     p = process('./vuln')
 else:
