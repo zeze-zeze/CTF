@@ -1,2 +1,4 @@
-break *0x400d3d
+break login
+break logout
+break *0x400a1d
 
