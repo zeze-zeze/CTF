@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center" android:id="@id/text_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Need a hint?" android:maxLines="5" android:minLines="5" />
+    <EditText android:layout_gravity="center" android:id="@id/text_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:minLines="2" android:inputType="text" />
+    <Button android:layout_gravity="center" android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hello, I am a Button" android:onClick="buttonClick" />
+    <TextView android:layout_gravity="center" android:id="@id/text_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="I'm a flag!" android:maxLines="5" android:minLines="5" />
+</LinearLayout>
