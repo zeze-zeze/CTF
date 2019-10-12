@@ -3,10 +3,19 @@ from pwn import *
 
 #context.binary = './muda.exe'
 count = 0
+<<<<<<< HEAD
 while 0:
   #p = process('./muda.exe')
   p = remote('127.0.0.1', 6000)
   p.sendline(str(count))
+=======
+while 1:
+  #p = process('./muda.exe')
+  p = remote('140.113.68.171', 6000)
+  #print p.recvuntil('First, give me the seed: ')
+  p.sendline(str(count))
+  #p.recvuntil('OK then whats the flag ?')
+>>>>>>> d3d4b4e7817081764be0dd08d389713682bf9c64
   p.sendline('a' * 32)
   p.sendline('\n')
   res = p.recvall(1)
