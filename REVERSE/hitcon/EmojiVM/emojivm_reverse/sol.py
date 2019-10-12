@@ -1,0 +1,8 @@
+#coding=utf-8
+
+entry = 0x555555556c20
+start = 0x555555556c44 
+main = 0x7ffff7464b95
+usage = 0x555555556fd6
+sub_2D2A = 0x555555557004
+sub_4DB8 = 0x555555557010
