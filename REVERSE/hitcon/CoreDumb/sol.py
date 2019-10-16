@@ -1,6 +1,7 @@
 #coding=utf-8
 from Crypto.Hash import SHA256
 
+'''
 f = open('./core').read()
 flag_len = 10
 while 1:
@@ -16,3 +17,10 @@ while 1:
   if flag_len >= 80:
     break
   print flag_len
+'''
+
+core = open('core').read()
+v7_start = core.find('\x1f\x4b\x3c\x6b')
+v7 = core[v7_start : v7_start + 267].encode('hex')
+v7 = ''.join(['\\x' + hex(((int(v7[i:i+2], 16) + i))%256)[2:] for i in range(0, len(v7), 2)])
+print v7
