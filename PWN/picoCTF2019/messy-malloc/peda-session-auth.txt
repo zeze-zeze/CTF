@@ -1,4 +1,2 @@
-break login
-break logout
-break *0x400a1d
+break menu
 
