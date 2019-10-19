@@ -9,6 +9,8 @@ address = 'e1bf7aa7e80687c9e80dfe20d79934c547d1c3fc34a503f06eb48198b121b55a'
 data = 'username={}&amount={}&proof={}&hash={}'.format('zeze', 1000001, proof, address)
 print data
 
+data = open('out.data').read()
+
 qr =qrcode.QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=10, border=4,)
 qr.add_data(data)
 qr.make(fit=True)
