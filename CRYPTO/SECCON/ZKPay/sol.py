@@ -6,7 +6,8 @@ proof = 'MLeHZz3qrQktuT+hWrMdzoyE/Vn8/QkeB4n00T1ZafYKMCAwqwkCRXVfC0Tujs+l5uELgKs
 
 address = 'e1bf7aa7e80687c9e80dfe20d79934c547d1c3fc34a503f06eb48198b121b55a'
 
-data = 'username={}&amount={}&proof={}&hash={}'.format('admin', 10000, proof, address)
+data = 'username={}&amount={}&proof={}&hash={}'.format('zeze', 1000001, proof, address)
+print data
 
 qr =qrcode.QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=10, border=4,)
 qr.add_data(data)
