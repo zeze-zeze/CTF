@@ -7,9 +7,10 @@ proof = 'MLeHZz3qrQktuT+hWrMdzoyE/Vn8/QkeB4n00T1ZafYKMCAwqwkCRXVfC0Tujs+l5uELgKs
 admin_address = 'e1bf7aa7e80687c9e80dfe20d79934c547d1c3fc34a503f06eb48198b121b55a'
 
 data = 'username={}&amount={}&proof={}&hash={}'.format('zeze', 1000001, proof, admin_address)
-print data
+#print data
 
 data = open('out.data').read()
+#print data
 
 qr =qrcode.QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=10, border=4,)
 qr.add_data(data)
@@ -17,8 +18,10 @@ qr.make(fit=True)
 img = qr.make_image(fill_color="black", back_color="white") 
 img.save('admin.png')
 
-'''
-qr = qrtools.QR()
-qr.decode('out.png')
-print(qr.data)
-'''
+list = [1, 2, 10, 50, 11, 100]
+for l in list:
+    qr = qrtools.QR()
+    qr.decode('{}.png'.format(l))
+    print l
+    print(qr.data + '\n')
+
