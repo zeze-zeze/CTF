@@ -18,10 +18,15 @@ qr.make(fit=True)
 img = qr.make_image(fill_color="black", back_color="white") 
 img.save('admin.png')
 
+qr = qrtools.QR()
+qr.decode('admin.png')
+print qr.data
+
+'''
 list = [1, 2, 10, 50, 11, 100]
 for l in list:
     qr = qrtools.QR()
     qr.decode('{}.png'.format(l))
     print l
     print(qr.data + '\n')
-
+'''
