@@ -1,0 +1,92 @@
+Gadgets information
+============================================================
+0x0000000000000b0b : adc byte ptr [rax], bh ; call rdx
+0x00000000000007cf : adc eax, 0x48002018 ; test eax, eax ; je 0x7e3 ; call rax
+0x0000000000000bc2 : add bh, bh ; sar byte ptr [rax], cl ; leave ; ret
+0x0000000000000997 : add bl, dh ; ret
+0x0000000000000993 : add byte ptr [rax], 0 ; add byte ptr [rax], al ; ret
+0x0000000000000995 : add byte ptr [rax], al ; add bl, dh ; ret
+0x0000000000000c3b : add byte ptr [rax], al ; add byte ptr [rax], al ; add bl, dh ; ret
+0x0000000000000b0d : add byte ptr [rax], al ; add byte ptr [rax], al ; call rdx
+0x0000000000000bc6 : add byte ptr [rax], al ; add byte ptr [rax], al ; leave ; ret
+0x00000000000008fc : add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000000994 : add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x0000000000000ded : add byte ptr [rax], al ; add byte ptr [rsp + rdi*8 - 1], dh ; call qword ptr [rbx]
+0x0000000000000bc7 : add byte ptr [rax], al ; add cl, cl ; ret
+0x0000000000000b0f : add byte ptr [rax], al ; call rdx
+0x0000000000000bc8 : add byte ptr [rax], al ; leave ; ret
+0x00000000000008fe : add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000000dea : add byte ptr [rax], al ; pushfq ; add byte ptr [rax], al ; add byte ptr [rsp + rdi*8 - 1], dh ; call qword ptr [rbx]
+0x0000000000000996 : add byte ptr [rax], al ; ret
+0x0000000000000a5a : add byte ptr [rbp + rax - 0x18], dh ; mov esi, 0xc9fffffd ; ret
+0x000000000000098d : add byte ptr [rcx], al ; pop rbp ; ret
+0x0000000000000def : add byte ptr [rsp + rdi*8 - 1], dh ; call qword ptr [rbx]
+0x0000000000000bc9 : add cl, cl ; ret
+0x0000000000000a5c : add eax, 0xfffdbee8 ; dec ecx ; ret
+0x00000000000007db : add esp, 8 ; ret
+0x00000000000007da : add rsp, 8 ; ret
+0x00000000000007d1 : and byte ptr [rax], al ; test rax, rax ; je 0x7e1 ; call rax
+0x00000000000008ec : and byte ptr [rax], al ; test rax, rax ; je 0x908 ; pop rbp ; jmp rax
+0x000000000000093d : and byte ptr [rax], al ; test rax, rax ; je 0x958 ; pop rbp ; jmp rax
+0x0000000000000c19 : call qword ptr [r12 + rbx*8]
+0x0000000000000df3 : call qword ptr [rbx]
+0x0000000000000c1a : call qword ptr [rsp + rbx*8]
+0x00000000000007d8 : call rax
+0x0000000000000b11 : call rdx
+0x0000000000000d13 : call rsp
+0x0000000000000a61 : dec ecx ; ret
+0x0000000000000c1c : fmul qword ptr [rax - 0x7d] ; ret
+0x00000000000007d6 : je 0x7dc ; call rax
+0x00000000000008f1 : je 0x903 ; pop rbp ; jmp rax
+0x0000000000000942 : je 0x953 ; pop rbp ; jmp rax
+0x00000000000008f4 : jmp rax
+0x0000000000000a62 : leave ; ret
+0x0000000000000988 : mov byte ptr [rip + 0x2016b9], 1 ; pop rbp ; ret
+0x0000000000000b0c : mov eax, 0 ; call rdx
+0x0000000000000bc5 : mov eax, 0 ; leave ; ret
+0x000000000000098a : mov ecx, 0x1002016 ; pop rbp ; ret
+0x0000000000000c17 : mov edi, ebp ; call qword ptr [r12 + rbx*8]
+0x0000000000000c16 : mov edi, r13d ; call qword ptr [r12 + rbx*8]
+0x0000000000000bbb : mov edx, dword ptr [rax + 8] ; mov eax, 0 ; call rdx
+0x0000000000000b0a : mov edx, dword ptr [rax] ; mov eax, 0 ; call rdx
+0x0000000000000a5e : mov esi, 0xc9fffffd ; ret
+0x0000000000000bba : mov rdx, qword ptr [rax + 8] ; mov eax, 0 ; call rdx
+0x0000000000000b09 : mov rdx, qword ptr [rax] ; mov eax, 0 ; call rdx
+0x0000000000000a08 : nop ; pop rbp ; ret
+0x00000000000008f8 : nop dword ptr [rax + rax] ; pop rbp ; ret
+0x0000000000000c38 : nop dword ptr [rax + rax] ; ret
+0x0000000000000991 : nop dword ptr [rax] ; ret
+0x0000000000000943 : or al, 0x5d ; jmp rax
+0x0000000000000bbd : or byte ptr [rax], bh ; call rdx
+0x0000000000000c18 : out dx, eax ; call qword ptr [r12 + rbx*8]
+0x0000000000000c2c : pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000000c2e : pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000000c30 : pop r14 ; pop r15 ; ret
+0x0000000000000c32 : pop r15 ; ret
+0x00000000000008f3 : pop rbp ; jmp rax
+0x0000000000000c2b : pop rbp ; pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000000c2f : pop rbp ; pop r14 ; pop r15 ; ret
+0x0000000000000900 : pop rbp ; ret
+0x0000000000000c33 : pop rdi ; ret
+0x0000000000000c31 : pop rsi ; pop r15 ; ret
+0x0000000000000c2d : pop rsp ; pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000000a04 : push -0x6f000002 ; pop rbp ; ret
+0x0000000000000ceb : push qword ptr [rcx + rax] ; add byte ptr [rax], al ; ret
+0x0000000000000bbc : push rax ; or byte ptr [rax], bh ; call rdx
+0x0000000000000dec : pushfq ; add byte ptr [rax], al ; add byte ptr [rsp + rdi*8 - 1], dh ; call qword ptr [rbx]
+0x00000000000007de : ret
+0x00000000000007d5 : sal byte ptr [rdx + rax - 1], 0xd0 ; add rsp, 8 ; ret
+0x0000000000000bc4 : sar byte ptr [rax], cl ; leave ; ret
+0x0000000000000c45 : sub esp, 8 ; add rsp, 8 ; ret
+0x0000000000000c44 : sub rsp, 8 ; add rsp, 8 ; ret
+0x00000000000008fa : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000000c3a : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x00000000000007d4 : test eax, eax ; je 0x7de ; call rax
+0x00000000000008ef : test eax, eax ; je 0x905 ; pop rbp ; jmp rax
+0x0000000000000940 : test eax, eax ; je 0x955 ; pop rbp ; jmp rax
+0x00000000000007d3 : test rax, rax ; je 0x7df ; call rax
+0x00000000000008ee : test rax, rax ; je 0x906 ; pop rbp ; jmp rax
+0x000000000000093f : test rax, rax ; je 0x956 ; pop rbp ; jmp rax
+0x0000000000000cec : xor al, 1 ; add byte ptr [rax], al ; ret
+
+Unique gadgets found: 88

@@ -1,0 +1,66 @@
+Gadgets information
+============================================================
+0x0804809b : adc al, 0xc3 ; pop esp ; xor eax, eax ; inc eax ; int 0x80
+0x0804808e : add al, 0xcd ; xor byte ptr [ecx], 0xdb ; mov dl, 0x3c ; mov al, 3 ; int 0x80
+0x08048099 : add esp, 0x14 ; ret
+0x08048086 : daa ; mov ecx, esp ; mov dl, 0x14 ; mov bl, 1 ; mov al, 4 ; int 0x80
+0x080480a0 : inc eax ; int 0x80
+0x0804808f : int 0x80
+0x0804809a : les edx, ptr [ebx + eax*8] ; pop esp ; xor eax, eax ; inc eax ; int 0x80
+0x08048095 : mov al, 3 ; int 0x80
+0x0804808d : mov al, 4 ; int 0x80
+0x0804808b : mov bl, 1 ; mov al, 4 ; int 0x80
+0x08048089 : mov dl, 0x14 ; mov bl, 1 ; mov al, 4 ; int 0x80
+0x08048093 : mov dl, 0x3c ; mov al, 3 ; int 0x80
+0x08048087 : mov ecx, esp ; mov dl, 0x14 ; mov bl, 1 ; mov al, 4 ; int 0x80
+0x0804809d : pop esp ; xor eax, eax ; inc eax ; int 0x80
+0x0804809c : ret
+0x08048090 : xor byte ptr [ecx], 0xdb ; mov dl, 0x3c ; mov al, 3 ; int 0x80
+0x0804809e : xor eax, eax ; inc eax ; int 0x80
+0x08048091 : xor ebx, ebx ; mov dl, 0x3c ; mov al, 3 ; int 0x80
+
+Unique gadgets found: 18
+Gadgets information
+============================================================
+0x0804809b : adc al, 0xc3 ; pop esp ; xor eax, eax ; inc eax ; int 0x80
+0x0804808e : add al, 0xcd ; xor byte ptr [ecx], 0xdb ; mov dl, 0x3c ; mov al, 3 ; int 0x80
+0x08048099 : add esp, 0x14 ; ret
+0x08048086 : daa ; mov ecx, esp ; mov dl, 0x14 ; mov bl, 1 ; mov al, 4 ; int 0x80
+0x080480a0 : inc eax ; int 0x80
+0x0804808f : int 0x80
+0x0804809a : les edx, ptr [ebx + eax*8] ; pop esp ; xor eax, eax ; inc eax ; int 0x80
+0x08048095 : mov al, 3 ; int 0x80
+0x0804808d : mov al, 4 ; int 0x80
+0x0804808b : mov bl, 1 ; mov al, 4 ; int 0x80
+0x08048089 : mov dl, 0x14 ; mov bl, 1 ; mov al, 4 ; int 0x80
+0x08048093 : mov dl, 0x3c ; mov al, 3 ; int 0x80
+0x08048087 : mov ecx, esp ; mov dl, 0x14 ; mov bl, 1 ; mov al, 4 ; int 0x80
+0x0804809d : pop esp ; xor eax, eax ; inc eax ; int 0x80
+0x0804809c : ret
+0x08048090 : xor byte ptr [ecx], 0xdb ; mov dl, 0x3c ; mov al, 3 ; int 0x80
+0x0804809e : xor eax, eax ; inc eax ; int 0x80
+0x08048091 : xor ebx, ebx ; mov dl, 0x3c ; mov al, 3 ; int 0x80
+
+Unique gadgets found: 18
+Gadgets information
+============================================================
+0x0804809b : adc al, 0xc3 ; pop esp ; xor eax, eax ; inc eax ; int 0x80
+0x0804808e : add al, 0xcd ; xor byte ptr [ecx], 0xdb ; mov dl, 0x3c ; mov al, 3 ; int 0x80
+0x08048099 : add esp, 0x14 ; ret
+0x08048086 : daa ; mov ecx, esp ; mov dl, 0x14 ; mov bl, 1 ; mov al, 4 ; int 0x80
+0x080480a0 : inc eax ; int 0x80
+0x0804808f : int 0x80
+0x0804809a : les edx, ptr [ebx + eax*8] ; pop esp ; xor eax, eax ; inc eax ; int 0x80
+0x08048095 : mov al, 3 ; int 0x80
+0x0804808d : mov al, 4 ; int 0x80
+0x0804808b : mov bl, 1 ; mov al, 4 ; int 0x80
+0x08048089 : mov dl, 0x14 ; mov bl, 1 ; mov al, 4 ; int 0x80
+0x08048093 : mov dl, 0x3c ; mov al, 3 ; int 0x80
+0x08048087 : mov ecx, esp ; mov dl, 0x14 ; mov bl, 1 ; mov al, 4 ; int 0x80
+0x0804809d : pop esp ; xor eax, eax ; inc eax ; int 0x80
+0x0804809c : ret
+0x08048090 : xor byte ptr [ecx], 0xdb ; mov dl, 0x3c ; mov al, 3 ; int 0x80
+0x0804809e : xor eax, eax ; inc eax ; int 0x80
+0x08048091 : xor ebx, ebx ; mov dl, 0x3c ; mov al, 3 ; int 0x80
+
+Unique gadgets found: 18

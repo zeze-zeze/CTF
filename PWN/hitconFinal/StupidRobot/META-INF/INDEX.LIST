@@ -1,0 +1,14 @@
+JarIndex-Version: 1.0
+
+netty-buffer-4.1.42.Final.jar
+META-INF
+META-INF/maven
+META-INF/maven/io.netty
+META-INF/maven/io.netty/netty-buffer
+META-INF/native-image
+META-INF/native-image/io.netty
+META-INF/native-image/io.netty/buffer
+io
+io/netty
+io/netty/buffer
+

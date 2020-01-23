@@ -1,0 +1,176 @@
+Gadgets information
+============================================================
+0x0000000000400812 : adc byte ptr [rax], ah ; jmp rax
+0x0000000000400b4f : add bl, dh ; ret
+0x00000000004009ed : add byte ptr [rax - 0x77], cl ; ret 0x8be
+0x0000000000400b4d : add byte ptr [rax], al ; add bl, dh ; ret
+0x0000000000400b4b : add byte ptr [rax], al ; add byte ptr [rax], al ; add bl, dh ; ret
+0x000000000040081c : add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000400b4c : add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x00000000004006d3 : add byte ptr [rax], al ; add rsp, 8 ; ret
+0x0000000000400799 : add byte ptr [rax], al ; jmp 0x4006e9
+0x000000000040081e : add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000400b4e : add byte ptr [rax], al ; ret
+0x0000000000400888 : add byte ptr [rcx], al ; ret
+0x0000000000400884 : add eax, 0x20086e ; add ebx, esi ; ret
+0x000000000040091c : add eax, 0xfffddee8 ; dec ecx ; ret
+0x0000000000400889 : add ebx, esi ; ret
+0x0000000000400ad1 : add esp, 0x28 ; pop rbx ; pop rbp ; ret
+0x00000000004006d6 : add esp, 8 ; ret
+0x0000000000400ad0 : add rsp, 0x28 ; pop rbx ; pop rbp ; ret
+0x00000000004006d5 : add rsp, 8 ; ret
+0x0000000000400887 : and byte ptr [rax], al ; add ebx, esi ; ret
+0x0000000000400a89 : call 0x4006f6
+0x0000000000400b29 : call qword ptr [r12 + rbx*8]
+0x0000000000400b2a : call qword ptr [rsp + rbx*8]
+0x00000000004008ae : call rax
+0x0000000000400c23 : call rsp
+0x0000000000400a1c : dec dword ptr [rax - 0x77] ; ret 0x6348
+0x0000000000400921 : dec ecx ; ret
+0x00000000004006d1 : fild dword ptr [rax] ; add byte ptr [rax], al ; add rsp, 8 ; ret
+0x0000000000400b2c : fmul qword ptr [rax - 0x7d] ; ret
+0x00000000004008a9 : int1 ; push rbp ; mov rbp, rsp ; call rax
+0x0000000000400286 : jb 0x4002f5 ; ret 0xd04e
+0x000000000040080d : je 0x400828 ; pop rbp ; mov edi, 0x6010e0 ; jmp rax
+0x000000000040085b : je 0x400870 ; pop rbp ; mov edi, 0x6010e0 ; jmp rax
+0x00000000004008a8 : je 0x4008a1 ; push rbp ; mov rbp, rsp ; call rax
+0x000000000040079b : jmp 0x4006e7
+0x0000000000400815 : jmp rax
+0x0000000000400922 : leave ; ret
+0x0000000000400a7f : loopne 0x400abc ; ret 0x1b75
+0x0000000000400a7e : loopne 0x400abd ; ret 0x1b75
+0x0000000000400883 : mov byte ptr [rip + 0x20086e], 1 ; ret
+0x00000000004008ac : mov ebp, esp ; call rax
+0x0000000000400810 : mov edi, 0x6010e0 ; jmp rax
+0x0000000000400b27 : mov edi, edi ; call qword ptr [r12 + rbx*8]
+0x0000000000400b26 : mov edi, r15d ; call qword ptr [r12 + rbx*8]
+0x00000000004008ab : mov rbp, rsp ; call rax
+0x000000000040093c : nop ; pop rbp ; ret
+0x0000000000400818 : nop dword ptr [rax + rax] ; pop rbp ; ret
+0x0000000000400b48 : nop dword ptr [rax + rax] ; ret
+0x0000000000400865 : nop dword ptr [rax] ; pop rbp ; ret
+0x0000000000400886 : or byte ptr [rax], ah ; add byte ptr [rcx], al ; ret
+0x0000000000400a86 : or eax, dword ptr [rax] ; call 0x4006f9
+0x0000000000400885 : outsb dx, byte ptr [rsi] ; or byte ptr [rax], ah ; add byte ptr [rcx], al ; ret
+0x0000000000400b3c : pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400b3e : pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400b40 : pop r14 ; pop r15 ; ret
+0x0000000000400b42 : pop r15 ; ret
+0x0000000000400882 : pop rbp ; mov byte ptr [rip + 0x20086e], 1 ; ret
+0x000000000040080f : pop rbp ; mov edi, 0x6010e0 ; jmp rax
+0x0000000000400b3b : pop rbp ; pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400b3f : pop rbp ; pop r14 ; pop r15 ; ret
+0x0000000000400820 : pop rbp ; ret
+0x0000000000400ad4 : pop rbx ; pop rbp ; ret
+0x0000000000400b43 : pop rdi ; ret
+0x0000000000400b41 : pop rsi ; pop r15 ; ret
+0x0000000000400b3d : pop rsp ; pop r13 ; pop r14 ; pop r15 ; ret
+0x00000000004008aa : push rbp ; mov rbp, rsp ; call rax
+0x00000000004009ea : rcl byte ptr [rax], 0x60 ; add byte ptr [rax - 0x77], cl ; ret 0x8be
+0x00000000004006d9 : ret
+0x0000000000400a25 : ret 0x10c0
+0x0000000000400a81 : ret 0x1b75
+0x0000000000400a1f : ret 0x6348
+0x00000000004009f0 : ret 0x8be
+0x0000000000400288 : ret 0xd04e
+0x00000000004007a2 : retf 0x2008
+0x0000000000400a8f : retf 0x400b
+0x00000000004008a7 : sal byte ptr [rcx + rsi*8 + 0x55], 0x48 ; mov ebp, esp ; call rax
+0x0000000000400ad3 : sub byte ptr [rbx + 0x5d], bl ; ret
+0x0000000000400b55 : sub esp, 8 ; add rsp, 8 ; ret
+0x0000000000400b54 : sub rsp, 8 ; add rsp, 8 ; ret
+0x000000000040081a : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000400b4a : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x0000000000400a78 : test dword ptr [rax - 0x74ff9ff0], esp ; loopne 0x400ac3 ; ret 0x1b75
+0x00000000004008a6 : test eax, eax ; je 0x4008a3 ; push rbp ; mov rbp, rsp ; call rax
+0x00000000004008a5 : test rax, rax ; je 0x4008a4 ; push rbp ; mov rbp, rsp ; call rax
+
+Unique gadgets found: 84
+Gadgets information
+============================================================
+0x0000000000400812 : adc byte ptr [rax], ah ; jmp rax
+0x0000000000400b4f : add bl, dh ; ret
+0x00000000004009ed : add byte ptr [rax - 0x77], cl ; ret 0x8be
+0x0000000000400b4d : add byte ptr [rax], al ; add bl, dh ; ret
+0x0000000000400b4b : add byte ptr [rax], al ; add byte ptr [rax], al ; add bl, dh ; ret
+0x000000000040081c : add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000400b4c : add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x00000000004006d3 : add byte ptr [rax], al ; add rsp, 8 ; ret
+0x0000000000400799 : add byte ptr [rax], al ; jmp 0x4006e9
+0x000000000040081e : add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000400b4e : add byte ptr [rax], al ; ret
+0x0000000000400888 : add byte ptr [rcx], al ; ret
+0x0000000000400884 : add eax, 0x20086e ; add ebx, esi ; ret
+0x000000000040091c : add eax, 0xfffddee8 ; dec ecx ; ret
+0x0000000000400889 : add ebx, esi ; ret
+0x0000000000400ad1 : add esp, 0x28 ; pop rbx ; pop rbp ; ret
+0x00000000004006d6 : add esp, 8 ; ret
+0x0000000000400ad0 : add rsp, 0x28 ; pop rbx ; pop rbp ; ret
+0x00000000004006d5 : add rsp, 8 ; ret
+0x0000000000400887 : and byte ptr [rax], al ; add ebx, esi ; ret
+0x0000000000400a89 : call 0x4006f6
+0x0000000000400b29 : call qword ptr [r12 + rbx*8]
+0x0000000000400b2a : call qword ptr [rsp + rbx*8]
+0x00000000004008ae : call rax
+0x0000000000400c23 : call rsp
+0x0000000000400a1c : dec dword ptr [rax - 0x77] ; ret 0x6348
+0x0000000000400921 : dec ecx ; ret
+0x00000000004006d1 : fild dword ptr [rax] ; add byte ptr [rax], al ; add rsp, 8 ; ret
+0x0000000000400b2c : fmul qword ptr [rax - 0x7d] ; ret
+0x00000000004008a9 : int1 ; push rbp ; mov rbp, rsp ; call rax
+0x0000000000400286 : jb 0x4002f5 ; ret 0xd04e
+0x000000000040080d : je 0x400828 ; pop rbp ; mov edi, 0x6010e0 ; jmp rax
+0x000000000040085b : je 0x400870 ; pop rbp ; mov edi, 0x6010e0 ; jmp rax
+0x00000000004008a8 : je 0x4008a1 ; push rbp ; mov rbp, rsp ; call rax
+0x000000000040079b : jmp 0x4006e7
+0x0000000000400815 : jmp rax
+0x0000000000400922 : leave ; ret
+0x0000000000400a7f : loopne 0x400abc ; ret 0x1b75
+0x0000000000400a7e : loopne 0x400abd ; ret 0x1b75
+0x0000000000400883 : mov byte ptr [rip + 0x20086e], 1 ; ret
+0x00000000004008ac : mov ebp, esp ; call rax
+0x0000000000400810 : mov edi, 0x6010e0 ; jmp rax
+0x0000000000400b27 : mov edi, edi ; call qword ptr [r12 + rbx*8]
+0x0000000000400b26 : mov edi, r15d ; call qword ptr [r12 + rbx*8]
+0x00000000004008ab : mov rbp, rsp ; call rax
+0x000000000040093c : nop ; pop rbp ; ret
+0x0000000000400818 : nop dword ptr [rax + rax] ; pop rbp ; ret
+0x0000000000400b48 : nop dword ptr [rax + rax] ; ret
+0x0000000000400865 : nop dword ptr [rax] ; pop rbp ; ret
+0x0000000000400886 : or byte ptr [rax], ah ; add byte ptr [rcx], al ; ret
+0x0000000000400a86 : or eax, dword ptr [rax] ; call 0x4006f9
+0x0000000000400885 : outsb dx, byte ptr [rsi] ; or byte ptr [rax], ah ; add byte ptr [rcx], al ; ret
+0x0000000000400b3c : pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400b3e : pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400b40 : pop r14 ; pop r15 ; ret
+0x0000000000400b42 : pop r15 ; ret
+0x0000000000400882 : pop rbp ; mov byte ptr [rip + 0x20086e], 1 ; ret
+0x000000000040080f : pop rbp ; mov edi, 0x6010e0 ; jmp rax
+0x0000000000400b3b : pop rbp ; pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400b3f : pop rbp ; pop r14 ; pop r15 ; ret
+0x0000000000400820 : pop rbp ; ret
+0x0000000000400ad4 : pop rbx ; pop rbp ; ret
+0x0000000000400b43 : pop rdi ; ret
+0x0000000000400b41 : pop rsi ; pop r15 ; ret
+0x0000000000400b3d : pop rsp ; pop r13 ; pop r14 ; pop r15 ; ret
+0x00000000004008aa : push rbp ; mov rbp, rsp ; call rax
+0x00000000004009ea : rcl byte ptr [rax], 0x60 ; add byte ptr [rax - 0x77], cl ; ret 0x8be
+0x00000000004006d9 : ret
+0x0000000000400a25 : ret 0x10c0
+0x0000000000400a81 : ret 0x1b75
+0x0000000000400a1f : ret 0x6348
+0x00000000004009f0 : ret 0x8be
+0x0000000000400288 : ret 0xd04e
+0x00000000004007a2 : retf 0x2008
+0x0000000000400a8f : retf 0x400b
+0x00000000004008a7 : sal byte ptr [rcx + rsi*8 + 0x55], 0x48 ; mov ebp, esp ; call rax
+0x0000000000400ad3 : sub byte ptr [rbx + 0x5d], bl ; ret
+0x0000000000400b55 : sub esp, 8 ; add rsp, 8 ; ret
+0x0000000000400b54 : sub rsp, 8 ; add rsp, 8 ; ret
+0x000000000040081a : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; pop rbp ; ret
+0x0000000000400b4a : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x0000000000400a78 : test dword ptr [rax - 0x74ff9ff0], esp ; loopne 0x400ac3 ; ret 0x1b75
+0x00000000004008a6 : test eax, eax ; je 0x4008a3 ; push rbp ; mov rbp, rsp ; call rax
+0x00000000004008a5 : test rax, rax ; je 0x4008a4 ; push rbp ; mov rbp, rsp ; call rax
+
+Unique gadgets found: 84
