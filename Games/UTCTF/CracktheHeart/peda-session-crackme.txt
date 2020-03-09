@@ -1,0 +1,11 @@
+catch syscall ptrace
+  commands
+    set ($eax) = 0
+    continue
+  end
+break *0x402165
+break *0x402168
+break *0x40218d
+break *0x40221b
+break *0x4021c9
+
