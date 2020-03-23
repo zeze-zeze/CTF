@@ -20,7 +20,7 @@ Following the [PHP opcodes](https://www.php.net/manual/pt_BR/internals2.opcodes.
 
 3. Result
 
-The php code get the input by `$flag_input = str_split($_POST['flag'])`, then it checks whether our input length is equal to 26 and input ascii total is equal to 2423. 
+The php code get the input by `$flag_input = str_split($_POST['flag'])`, then it checks whether our input length is equal to 26 and the total of ascii of each char in the input is equal to 2423. 
 
 After that, it set some restrictions to each char in our input like `$flag_input[5] == $flag_input[3]` or `$flag_input[8] + 7 == $flag_input[9]`.
 
