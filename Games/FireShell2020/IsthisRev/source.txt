@@ -1,0 +1,302 @@
+compiled vars:  !0 = $flag_input, !1 = $what_is_thiss, !2 = $what_is_thisss, !3 = $char
+line     #* E I O op                           fetch          ext  return  operands
+-------------------------------------------------------------------------------------
+   1     0  E >   ECHO                                                     '<!DOCTYPE+html>
+<html+lang="en">
+<head>
+++++<meta+charset="UTF-8">
+++++<meta+name="viewport"+content="width=device-width,+initial-scale=1.0">
+++++<title>Fireshell+CTF</title>
+</head>
+<body>
+++++<h1>Validate+your+flag</h1></br>
+
+++++<form+action=""+method="POST">
+++++++++<input+type="text"+id="flag"+name="flag"+placeholder="Input+Flag"+size="30">
+++++++++<button+type="submit"+value="send">Validate</button>
+++++</form>
+
+++++'
+  20     1        INIT_FCALL                                               'str_split'
+         2        FETCH_R                      global              ~4      '_POST'
+         3        FETCH_DIM_R                                      ~5      ~4, 'flag'
+         4        SEND_VAL                                                 ~5
+         5        DO_ICALL                                         $6
+         6        ASSIGN                                                   !0, $6
+  21     7        ASSIGN                                                   !1, <array>
+  23     8        ASSIGN                                                   !2, 0
+  31     9      > FE_RESET_R                                       $10     !0, ->16
+        10    > > FE_FETCH_R                                               $10, !3, ->16
+  32    11    >   INIT_FCALL                                               'ord'
+        12        SEND_VAR                                                 !3
+        13        DO_ICALL                                         $11
+        14        ASSIGN_OP                                     1          !2, $11
+  31    15      > JMP                                                      ->10
+        16    >   FE_FREE                                                  $10
+  34    17        IS_EQUAL                                         ~13     !2, 2434
+        18      > JMPZ                                                     ~13, ->276
+  35    19    >   COUNT                                            ~14     !0
+        20        IS_EQUAL                                         ~15     ~14, 26
+        21      > JMPZ                                                     ~15, ->276
+  36    22    >   INIT_FCALL                                               'chr'
+        23        INIT_FCALL                                               'ord'
+        24        FETCH_DIM_R                                      ~16     !1, 0
+        25        SEND_VAL                                                 ~16
+        26        DO_ICALL                                         $17
+        27        ADD                                              ~18     $17, 5
+        28        SEND_VAL                                                 ~18
+        29        DO_ICALL                                         $19
+        30        IS_EQUAL                                         ~20     $19, 'F'
+        31      > JMPZ                                                     ~20, ->276
+  37    32    >   INIT_FCALL                                               'chr'
+        33        INIT_FCALL                                               'ord'
+        34        FETCH_DIM_R                                      ~21     !1, 1
+        35        SEND_VAL                                                 ~21
+        36        DO_ICALL                                         $22
+        37        SUB                                              ~23     $22, 31
+        38        SEND_VAL                                                 ~23
+        39        DO_ICALL                                         $24
+        40        IS_EQUAL                                         ~25     $24, '#'
+        41      > JMPZ                                                     ~25, ->276
+  38    42    >   INIT_FCALL                                               'chr'
+        43        INIT_FCALL                                               'ord'
+        44        FETCH_DIM_R                                      ~26     !1, 2
+        45        SEND_VAL                                                 ~26
+        46        DO_ICALL                                         $27
+        47        ADD                                              ~28     $27, 56
+        48        SEND_VAL                                                 ~28
+        49        DO_ICALL                                         $29
+        50        IS_EQUAL                                         ~30     $29, '{'
+        51      > JMPZ                                                     ~30, ->276
+  39    52    >   INIT_FCALL                                               'chr'
+        53        INIT_FCALL                                               'ord'
+        54        FETCH_DIM_R                                      ~31     !1, 25
+        55        SEND_VAL                                                 ~31
+        56        DO_ICALL                                         $32
+        57        ADD                                              ~33     $32, 35
+        58        SEND_VAL                                                 ~33
+        59        DO_ICALL                                         $34
+        60        IS_EQUAL                                         ~35     $34, '}'
+        61      > JMPZ                                                     ~35, ->276
+  40    62    >   FETCH_DIM_R                                      ~36     !0, 6
+        63        FETCH_DIM_R                                      ~37     !0, 11
+        64        IS_EQUAL                                         ~38     ~36, ~37
+        65      > JMPZ_EX                                          ~38     ~38, ->70
+        66    >   FETCH_DIM_R                                      ~39     !0, 17
+        67        FETCH_DIM_R                                      ~40     !0, 21
+        68        IS_EQUAL                                         ~41     ~39, ~40
+        69        BOOL                                             ~38     ~41
+        70    > > JMPZ                                                     ~38, ->276
+  41    71    >   FETCH_DIM_R                                      ~42     !0, 14
+        72        IS_EQUAL                                         ~43     ~42, 'r'
+        73      > JMPZ                                                     ~43, ->276
+  42    74    >   FETCH_DIM_R                                      ~44     !0, 5
+        75        FETCH_DIM_R                                      ~45     !0, 3
+        76        IS_EQUAL                                         ~46     ~44, ~45
+        77      > JMPZ                                                     ~46, ->276
+  43    78    >   FETCH_DIM_R                                      ~47     !0, 10
+        79        FETCH_DIM_R                                      ~48     !0, 13
+        80        IS_EQUAL                                         ~49     ~47, ~48
+        81      > JMPZ_EX                                          ~49     ~49, ->86
+        82    >   FETCH_DIM_R                                      ~50     !0, 13
+        83        FETCH_DIM_R                                      ~51     !0, 19
+        84        IS_EQUAL                                         ~52     ~50, ~51
+        85        BOOL                                             ~49     ~52
+        86    > > JMPZ                                                     ~49, ->276
+  44    87    >   INIT_FCALL                                               'ord'
+        88        FETCH_DIM_R                                      ~53     !0, 4
+        89        SEND_VAL                                                 ~53
+        90        DO_ICALL                                         $54
+        91        INIT_FCALL                                               'sqrt'
+        92        INIT_FCALL                                               'ord'
+        93        FETCH_DIM_R                                      ~55     !1, 16
+        94        SEND_VAL                                                 ~55
+        95        DO_ICALL                                         $56
+        96        SEND_VAR                                                 $56
+        97        DO_ICALL                                         $57
+        98        SUB                                              ~58     $54, $57
+        99        INIT_FCALL                                               'ord'
+       100        FETCH_DIM_R                                      ~59     !0, 21
+       101        SEND_VAL                                                 ~59
+       102        DO_ICALL                                         $60
+       103        IS_EQUAL                                         ~61     $60, ~58
+       104      > JMPZ                                                     ~61, ->276
+  45   105    >   INIT_FCALL                                               'ord'
+       106        FETCH_DIM_R                                      ~62     !0, 24
+       107        SEND_VAL                                                 ~62
+       108        DO_ICALL                                         $63
+       109        INIT_FCALL                                               'ord'
+       110        FETCH_DIM_R                                      ~64     !0, 23
+       111        SEND_VAL                                                 ~64
+       112        DO_ICALL                                         $65
+       113        ADD                                              ~66     $63, $65
+       114        INIT_FCALL                                               'ord'
+       115        FETCH_DIM_R                                      ~67     !0, 22
+       116        SEND_VAL                                                 ~67
+       117        DO_ICALL                                         $68
+       118        ADD                                              ~69     ~66, $68
+       119        IS_EQUAL                                         ~70     ~69, 283
+       120      > JMPZ                                                     ~70, ->276
+  46   121    >   INIT_FCALL                                               'ord'
+       122        FETCH_DIM_R                                      ~71     !0, 7
+       123        SEND_VAL                                                 ~71
+       124        DO_ICALL                                         $72
+       125        INIT_FCALL                                               'ord'
+       126        FETCH_DIM_R                                      ~73     !0, 15
+       127        SEND_VAL                                                 ~73
+       128        DO_ICALL                                         $74
+       129        SUB                                              ~75     $74, 55
+       130        IS_EQUAL                                         ~76     $72, ~75
+       131      > JMPZ                                                     ~76, ->276
+  47   132    >   INIT_FCALL                                               'ord'
+       133        FETCH_DIM_R                                      ~77     !0, 8
+       134        SEND_VAL                                                 ~77
+       135        DO_ICALL                                         $78
+       136        INIT_FCALL                                               'ord'
+       137        FETCH_DIM_R                                      ~79     !0, 0
+       138        SEND_VAL                                                 ~79
+       139        DO_ICALL                                         $80
+       140        ADD                                              ~81     $80, 38
+       141        IS_EQUAL                                         ~82     $78, ~81
+       142      > JMPZ                                                     ~82, ->276
+  48   143    >   INIT_FCALL                                               'ord'
+       144        FETCH_DIM_R                                      ~83     !0, 9
+       145        SEND_VAL                                                 ~83
+       146        DO_ICALL                                         $84
+       147        INIT_FCALL                                               'ord'
+       148        FETCH_DIM_R                                      ~85     !0, 8
+       149        SEND_VAL                                                 ~85
+       150        DO_ICALL                                         $86
+       151        ADD                                              ~87     $86, 7
+       152        IS_EQUAL                                         ~88     $84, ~87
+       153      > JMPZ                                                     ~88, ->276
+  49   154    >   INIT_FCALL                                               'ord'
+       155        FETCH_DIM_R                                      ~89     !0, 12
+       156        SEND_VAL                                                 ~89
+       157        DO_ICALL                                         $90
+       158        INIT_FCALL                                               'ord'
+       159        FETCH_DIM_R                                      ~91     !1, 8
+       160        SEND_VAL                                                 ~91
+       161        DO_ICALL                                         $92
+       162        SUB                                              ~93     $90, $92
+       163        INIT_FCALL                                               'ord'
+       164        FETCH_DIM_R                                      ~94     !0, 3
+       165        SEND_VAL                                                 ~94
+       166        DO_ICALL                                         $95
+       167        SUB                                              ~96     $95, 66
+       168        IS_EQUAL                                         ~97     ~93, ~96
+       169      > JMPZ                                                     ~97, ->276
+  50   170    >   INIT_FCALL                                               'ord'
+       171        FETCH_DIM_R                                      ~98     !0, 10
+       172        SEND_VAL                                                 ~98
+       173        DO_ICALL                                         $99
+       174        ADD                                              ~100    $99, 38
+       175        INIT_FCALL                                               'ord'
+       176        FETCH_DIM_R                                      ~101    !1, 21
+       177        SEND_VAL                                                 ~101
+       178        DO_ICALL                                         $102
+       179        IS_EQUAL                                         ~103    $102, ~100
+       180      > JMPZ                                                     ~103, ->276
+  51   181    >   INIT_FCALL                                               'ord'
+       182        FETCH_DIM_R                                      ~104    !0, 3
+       183        SEND_VAL                                                 ~104
+       184        DO_ICALL                                         $105
+       185        INIT_FCALL                                               'ord'
+       186        FETCH_DIM_R                                      ~106    !1, 0
+       187        SEND_VAL                                                 ~106
+       188        DO_ICALL                                         $107
+       189        ADD                                              ~108    $107, 47
+       190        IS_EQUAL                                         ~109    $105, ~108
+       191      > JMPZ                                                     ~109, ->276
+  52   192    >   INIT_FCALL                                               'ord'
+       193        FETCH_DIM_R                                      ~110    !1, 13
+       194        SEND_VAL                                                 ~110
+       195        DO_ICALL                                         $111
+       196        ADD                                              ~112    $111, 26
+       197        INIT_FCALL                                               'ord'
+       198        FETCH_DIM_R                                      ~113    !0, 4
+       199        SEND_VAL                                                 ~113
+       200        DO_ICALL                                         $114
+       201        IS_EQUAL                                         ~115    $114, ~112
+       202      > JMPZ                                                     ~115, ->276
+  53   203    >   INIT_FCALL                                               'ord'
+       204        FETCH_DIM_R                                      ~116    !0, 15
+       205        SEND_VAL                                                 ~116
+       206        DO_ICALL                                         $117
+       207        INIT_FCALL                                               'ord'
+       208        FETCH_DIM_R                                      ~118    !1, 3
+       209        SEND_VAL                                                 ~118
+       210        DO_ICALL                                         $119
+       211        MUL                                              ~120    $119, 2
+       212        SUB                                              ~121    ~120, 29
+       213        IS_EQUAL                                         ~122    $117, ~121
+       214      > JMPZ                                                     ~122, ->276
+  54   215    >   INIT_FCALL                                               'ord'
+       216        FETCH_DIM_R                                      ~123    !0, 14
+       217        SEND_VAL                                                 ~123
+       218        DO_ICALL                                         $124
+       219        INIT_FCALL                                               'ord'
+       220        FETCH_DIM_R                                      ~125    !0, 15
+       221        SEND_VAL                                                 ~125
+       222        DO_ICALL                                         $126
+       223        ADD                                              ~127    $124, $126
+       224        INIT_FCALL                                               'ord'
+       225        FETCH_DIM_R                                      ~128    !0, 16
+       226        SEND_VAL                                                 ~128
+       227        DO_ICALL                                         $129
+       228        ADD                                              ~130    ~127, $129
+       229        IS_EQUAL                                         ~131    ~130, 336
+       230      > JMPZ                                                     ~131, ->276
+  55   231    >   INIT_FCALL                                               'ord'
+       232        FETCH_DIM_R                                      ~132    !0, 18
+       233        SEND_VAL                                                 ~132
+       234        DO_ICALL                                         $133
+       235        INIT_FCALL                                               'ord'
+       236        FETCH_DIM_R                                      ~134    !0, 20
+       237        SEND_VAL                                                 ~134
+       238        DO_ICALL                                         $135
+       239        SUB                                              ~136    $133, $135
+       240        IS_EQUAL                                         ~137    ~136, -12
+       241      > JMPZ                                                     ~137, ->276
+  56   242    >   INIT_FCALL                                               'ord'
+       243        FETCH_DIM_R                                      ~138    !0, 22
+       244        SEND_VAL                                                 ~138
+       245        DO_ICALL                                         $139
+       246        INIT_FCALL                                               'ord'
+       247        FETCH_DIM_R                                      ~140    !0, 20
+       248        SEND_VAL                                                 ~140
+       249        DO_ICALL                                         $141
+       250        IS_EQUAL                                         ~142    $139, $141
+       251      > JMPZ                                                     ~142, ->276
+  57   252    >   INIT_FCALL                                               'ord'
+       253        FETCH_DIM_R                                      ~143    !0, 22
+       254        SEND_VAL                                                 ~143
+       255        DO_ICALL                                         $144
+       256        INIT_FCALL                                               'ord'
+       257        FETCH_DIM_R                                      ~145    !0, 24
+       258        SEND_VAL                                                 ~145
+       259        DO_ICALL                                         $146
+       260        SUB                                              ~147    $144, $146
+       261        IS_EQUAL                                         ~148    ~147, -4
+       262      > JMPZ                                                     ~148, ->276
+  58   263    >   INIT_FCALL                                               'ord'
+       264        FETCH_DIM_R                                      ~149    !1, 25
+       265        SEND_VAL                                                 ~149
+       266        DO_ICALL                                         $150
+       267        INIT_FCALL                                               'ord'
+       268        FETCH_DIM_R                                      ~151    !0, 24
+       269        SEND_VAL                                                 ~151
+       270        DO_ICALL                                         $152
+       271        SUB                                              ~153    $150, $152
+       272        IS_EQUAL                                         ~154    ~153, -28
+       273      > JMPZ                                                     ~154, ->276
+  59   274    >   ECHO                                                     'YEAH!+You+got+it+buddy+:-)'
+  60   275      > EXIT
+  87   276    >   ECHO                                                     '
+</body>
+</html>
+
+
+
+'
+  93   277      > RETURN                                                   1
