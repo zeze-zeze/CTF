@@ -26,4 +26,4 @@ After that, it set some restrictions to each char in our input like `$flag_input
 
 However, there seems to be missing some code, because I found that `$what_is_thiss` is not given to us, but it does appear in some of the restrictions. Luckily, At the beginning of the restrictions, it checks that `$what_is_thiss[0] + 5 == 'F'`, `$what_is_thiss[1] - 31 == '#'`, `$what_is_thiss[2] + 56 == '{'`, `$_what_is_thiss[25] + 35 == '}'`, so we can easily guess that `$what_is_thiss` is a string from A to Z.
 
-To get the flag, I use z3 to do the tricks and finally get `F#{php4ls0g0rksGf0rGr3v}`. It seems that there is another solution with z3, but we still can know the flag `F#{php_4ls0_w0rks_f0r_r3v}`.
+To get the flag, I use z3 to do the tricks and finally get `F#{php4ls0g0rksGf0rGr3v}`. It seems that there is another solution with z3, but we still can guess the flag `F#{php_4ls0_w0rks_f0r_r3v}`.
