@@ -9,14 +9,17 @@ https://isthisrev.fireshellsecurity.team/
 
 ## solution
 1. Get source code
+
 The description gives us a url, so we just click on it, and we will find ths source code in /source.txt.
 
 The source code is url encoded, so we should decoded back.
 
 2. Reverse
+
 Following the [PHP opcodes](https://www.php.net/manual/pt_BR/internals2.opcodes.list.php) and the [online php compiler ](https://3v4l.org/JLtf3/vld#output), we can reverse the source code step by step.
 
 3. Result
+
 The php code get the input by `$flag_input = str_split($_POST)`, then it checks whether our input length is equal to 26 and input ascii total is equal to 2423. 
 
 After that, it set some restrictions to each char in our input like `$flag_input[5] == $flag_input[3]` or `$flag_input[8] + 7 == $flag_input[9].
