@@ -4,7 +4,7 @@
   "description": "panetrate test for e3",
   "dependencies": {
     "express": "^4.16.4",
-    "mime": "~1.2.7",
+    "mime": "~1.4.1",
     "socket.io": "~0.9.6"
   }
 }
