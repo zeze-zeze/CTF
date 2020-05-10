@@ -1,0 +1,9 @@
+break *0x4006db
+break *0x4007b1
+break *0x400748
+disable $bpnum
+break *0x400842
+disable $bpnum
+break *0x400834
+disable $bpnum
+
