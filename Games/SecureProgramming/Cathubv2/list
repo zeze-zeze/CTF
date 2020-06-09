@@ -1,0 +1,30 @@
+-----------------
+DIRB v2.22
+By The Dark Raver
+-----------------
+
+START_TIME: Thu Oct 31 15:21:11 2019
+URL_BASE: https://edu-ctf.csie.org:10159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: https://edu-ctf.csie.org:10159/ ----
+==> DIRECTORY: https://edu-ctf.csie.org:10159/css/
++ https://edu-ctf.csie.org:10159/index.php (CODE:200|SIZE:9165)
+==> DIRECTORY: https://edu-ctf.csie.org:10159/js/
++ https://edu-ctf.csie.org:10159/server-status (CODE:403|SIZE:284)
+
+---- Entering directory: https://edu-ctf.csie.org:10159/css/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: https://edu-ctf.csie.org:10159/js/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+-----------------
+END_TIME: Thu Oct 31 15:21:39 2019
+DOWNLOADED: 4612 - FOUND: 2
