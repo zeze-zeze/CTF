@@ -1,0 +1,11 @@
+_|. _ _  _  _  _ _|_    v0.3.9                                                                                                                                 (_||| _) (/_(_|| (_| )                                                                                                                                                                                                                                                                                                          Extensions: CHANGELOG.md | HTTP method: get | Threads: 10 | Wordlist size: 6122 | Recursion level: 1                                                            
+Error Log: /home/zeze/tools/dirsearch/logs/errors-20-05-30_12-00-17.log                                                                                         
+Target: http://10.100.229.20/
+
+[12:00:21] Starting:
+[12:00:50] 301 -  235B  - /admin  ->  http://10.100.229.20/admin/
+[12:01:22] 301 -  233B  - /css  ->  http://10.100.229.20/css/                                                                                                   [12:01:57] 200 -  150B  - /robots.txt  
+[12:02:44] Starting: admin/
+[12:04:11] Starting: cgi-bin/ 
+[12:06:14] Starting: css/  
+Task Completed
