@@ -1,0 +1,19 @@
+63500
+99.0
+SS
+0
+631
+1
+7
+2
+317
+==HARD== I'm so Happy
+**Score
+**Rate
+**Rank
+**FullCombo
+**Critical
+**Early
+**Late
+**Miss
+**MaxCombo
