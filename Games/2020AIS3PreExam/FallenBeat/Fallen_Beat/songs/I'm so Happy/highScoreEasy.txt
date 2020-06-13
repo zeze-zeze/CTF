@@ -1,0 +1,19 @@
+31800
+100.0
+SS
+1
+318
+0
+0
+0
+318
+==EASY== I'm so Happy
+**Score
+**Rate
+**Rank
+**FullCombo
+**Critical
+**Early
+**Late
+**Miss
+**MaxCombo

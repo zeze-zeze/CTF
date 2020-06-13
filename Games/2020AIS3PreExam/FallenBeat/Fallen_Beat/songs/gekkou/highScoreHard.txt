@@ -1,0 +1,19 @@
+88900
+97.5
+SS
+0
+878
+14
+8
+11
+253
+==HARD== MoonLight Dance
+**Score
+**Rate
+**Rank
+**FullCombo
+**Critical
+**Early
+**Late
+**Miss
+**MaxCombo

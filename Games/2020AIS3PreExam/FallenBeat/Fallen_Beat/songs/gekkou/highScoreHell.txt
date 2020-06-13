@@ -1,0 +1,19 @@
+111200
+100.0
+SS
+1
+1112
+0
+0
+0
+1112
+==HELL== MoonLight Dance
+**Score
+**Rate
+**Rank
+**FullCombo
+**Critical
+**Early
+**Late
+**Miss
+**MaxCombo
