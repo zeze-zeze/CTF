@@ -1,0 +1,145 @@
+   0:   48                      dec    eax
+   1:   b8 45 20 59 4f          mov    eax, 0x4f592045
+   6:   55                      push   ebp
+   7:   7e 3f                   jle    0x48
+   9:   7d 50                   jge    0x5b
+   b:   48                      dec    eax
+   c:   b8 57 48 45 52          mov    eax, 0x52454857
+  11:   45                      inc    ebp
+  12:   20 41 52                and    BYTE PTR [ecx+0x52], al
+  15:   50                      push   eax
+  16:   48                      dec    eax
+  17:   b8 4e 4f 54 46          mov    eax, 0x46544f4e
+  1c:   4c                      dec    esp
+  1d:   41                      inc    ecx
+  1e:   47                      inc    edi
+  1f:   7b 50                   jnp    0x71
+  21:   48                      dec    eax
+  22:   89 e6                   mov    esi, esp
+  24:   48                      dec    eax
+  25:   31 d2                   xor    edx, edx
+  27:   b0 8c                   mov    al, 0x8c
+  29:   30 c8                   xor    al, cl
+  2b:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  2e:   48                      dec    eax
+  2f:   ff c2                   inc    edx
+  31:   b0 84                   mov    al, 0x84
+  33:   30 c8                   xor    al, cl
+  35:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  38:   48                      dec    eax
+  39:   ff c2                   inc    edx
+  3b:   b0 9e                   mov    al, 0x9e
+  3d:   30 c8                   xor    al, cl
+  3f:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  42:   48                      dec    eax
+  43:   ff c2                   inc    edx
+  45:   b0 de                   mov    al, 0xde
+  47:   30 c8                   xor    al, cl
+  49:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  4c:   48                      dec    eax
+  4d:   ff c2                   inc    edx
+  4f:   b0 96                   mov    al, 0x96
+  51:   30 c8                   xor    al, cl
+  53:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  56:   48                      dec    eax
+  57:   ff c2                   inc    edx
+  59:   b0 95                   mov    al, 0x95
+  5b:   30 c8                   xor    al, cl
+  5d:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  60:   48                      dec    eax
+  61:   ff c2                   inc    edx
+  63:   b0 d5                   mov    al, 0xd5
+  65:   30 c8                   xor    al, cl
+  67:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  6a:   48                      dec    eax
+  6b:   ff c2                   inc    edx
+  6d:   b0 db                   mov    al, 0xdb
+  6f:   30 c8                   xor    al, cl
+  71:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  74:   48                      dec    eax
+  75:   ff c2                   inc    edx
+  77:   b0 b2                   mov    al, 0xb2
+  79:   30 c8                   xor    al, cl
+  7b:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  7e:   48                      dec    eax
+  7f:   ff c2                   inc    edx
+  81:   b0 db                   mov    al, 0xdb
+  83:   30 c8                   xor    al, cl
+  85:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  88:   48                      dec    eax
+  89:   ff c2                   inc    edx
+  8b:   b0 d9                   mov    al, 0xd9
+  8d:   30 c8                   xor    al, cl
+  8f:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  92:   48                      dec    eax
+  93:   ff c2                   inc    edx
+  95:   b0 cd                   mov    al, 0xcd
+  97:   30 c8                   xor    al, cl
+  99:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  9c:   48                      dec    eax
+  9d:   ff c2                   inc    edx
+  9f:   b0 9f                   mov    al, 0x9f
+  a1:   30 c8                   xor    al, cl
+  a3:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  a6:   48                      dec    eax
+  a7:   ff c2                   inc    edx
+  a9:   b0 88                   mov    al, 0x88
+  ab:   30 c8                   xor    al, cl
+  ad:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  b0:   48                      dec    eax
+  b1:   ff c2                   inc    edx
+  b3:   b0 9b                   mov    al, 0x9b
+  b5:   30 c8                   xor    al, cl
+  b7:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  ba:   48                      dec    eax
+  bb:   ff c2                   inc    edx
+  bd:   b0 88                   mov    al, 0x88
+  bf:   30 c8                   xor    al, cl
+  c1:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  c4:   48                      dec    eax
+  c5:   ff c2                   inc    edx
+  c7:   b0 9f                   mov    al, 0x9f
+  c9:   30 c8                   xor    al, cl
+  cb:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  ce:   48                      dec    eax
+  cf:   ff c2                   inc    edx
+  d1:   b0 9e                   mov    al, 0x9e
+  d3:   30 c8                   xor    al, cl
+  d5:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  d8:   48                      dec    eax
+  d9:   ff c2                   inc    edx
+  db:   b0 88                   mov    al, 0x88
+  dd:   30 c8                   xor    al, cl
+  df:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  e2:   48                      dec    eax
+  e3:   ff c2                   inc    edx
+  e5:   b0 cd                   mov    al, 0xcd
+  e7:   30 c8                   xor    al, cl
+  e9:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  ec:   48                      dec    eax
+  ed:   ff c2                   inc    edx
+  ef:   b0 94                   mov    al, 0x94
+  f1:   30 c8                   xor    al, cl
+  f3:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+  f6:   48                      dec    eax
+  f7:   ff c2                   inc    edx
+  f9:   b0 82                   mov    al, 0x82
+  fb:   30 c8                   xor    al, cl
+  fd:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+ 100:   48                      dec    eax
+ 101:   ff c2                   inc    edx
+ 103:   b0 93                   mov    al, 0x93
+ 105:   30 c8                   xor    al, cl
+ 107:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+ 10a:   48                      dec    eax
+ 10b:   ff c2                   inc    edx
+ 10d:   b0 90                   mov    al, 0x90
+ 10f:   30 c8                   xor    al, cl
+ 111:   88 04 16                mov    BYTE PTR [esi+edx*1], al
+ 114:   48                      dec    eax
+ 115:   ff c2                   inc    edx
+ 117:   6a 3c                   push   0x3c
+ 119:   58                      pop    eax
+ 11a:   48                      dec    eax
+ 11b:   31 ff                   xor    edi, edi
+ 11d:   0f 05                   syscall

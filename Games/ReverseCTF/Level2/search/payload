@@ -1,0 +1,1 @@
+objdump -M intel -d search | awk '{print $12}' | grep , | cut -d ',' -f 2 | cut -d 'x' -f 2 | tr '\n' ' '

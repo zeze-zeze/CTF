@@ -1,0 +1,1 @@
+strings find | grep ^MyFirstCTF\{[A-Za-z0-9_]*\}$
