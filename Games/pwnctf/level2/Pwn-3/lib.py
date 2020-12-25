@@ -1,0 +1,10 @@
+from LibcSearcher import *
+obj = LibcSearcher("puts", 0x7ff9e4a106a0)
+obj.add_condition("printf", 0x7ff9e49f6810)
+obj.add_condition("gets", 0x7ff9e4a0fd90)
+obj.add_condition("read", 0x7ff9e4a98310)
+obj.add_condition("fflush", 0x7ff9e4a0e7b0)
+obj.add_condition("strtoll", 0x7ff9e49dc3d0)
+hex(obj.dump('system'))
+hex(obj.dump('puts'))
+hex(obj.dump('str_bin_sh'))

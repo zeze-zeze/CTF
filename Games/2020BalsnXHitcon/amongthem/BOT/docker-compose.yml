@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  amongus:
+    build: ./
+    volumes:
+      - /etc/balstion/flag_01:/etc/balstion/flag:ro
+      - ./share:/home/AmongUS:ro
+    ports:
+      - "10101:10101"
+    expose:
+      - "10101"
+    restart: always
+

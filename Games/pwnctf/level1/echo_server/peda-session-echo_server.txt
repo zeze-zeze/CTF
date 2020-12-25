@@ -1,0 +1,6 @@
+break *0x400739
+break *0x400728
+break getString
+break *0x400820
+break *0x400848
+

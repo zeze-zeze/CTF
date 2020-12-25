@@ -1,0 +1,1714 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="shortcut icon" href="favicon.1593336984117.ico"/>
+<!-- <link type="text/css" href="css/reset.css" rel="stylesheet" /> -->
+<link type="text/css" href="css/widget.1593336984117.css" rel="stylesheet" />
+
+<!-- <link type="text/css" href="themes/green/css/widget.1593336984117.css" rel="stylesheet" /> -->
+<link type="text/css" href="themes/green/css/style.1593336984117.css" rel="stylesheet" />
+
+<!--[if lte IE 8]>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<link href="themes/green/css/ie.1593336984117.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lte IE 7]>
+<link href="themes/green/css/ie.1593336984117.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lte IE 6]>
+<link href="themes/green/css/ie.1593336984117.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<title>Opening...</title>
+<style>
+	.icon{
+		vertical-align: top;
+		margin-top: 2px;
+	}
+	#login-characters-tips{
+		position: absolute;
+		left: 406px;
+		top: 23px;
+		color: #4d4d4d;
+	}
+</style>
+</head>
+
+<body id="login-body">
+
+<noscript>
+    <meta http-equiv="refresh" content="0; url=error.1593336984117.html"/>
+</noscript>
+
+<iframe src="./cache.1593336984117.html" frameborder="0" scrolling="auto" style="display:none" ></iframe>
+<div class="top" id="login-main">
+	<div class="top-header">
+    	<div class="top-header-wrap">
+        	<h1 id="product-tag"></h1>
+            <div id="top-control" class="top-control">
+                <input id="lan-select" tabindex="0" class="lan-select-container"/>
+            </div>
+        </div>
+    </div>
+    
+    <div class="top-main">
+    	<div class="top-main-wrap">
+            <div class="top-content login-cnt">
+            	<div class="top-content-wrap" id="top-content">
+                    <form id="form-first-login" method="post" action="/cgi-bin/luci"   class="hidden">
+                        <div id="first-login-note-cnt">
+                            <span class="text" id="first-login-note"></span>
+                        </div>
+   
+                        <div class="login-field">
+                            <label id="first-login-password-label">
+                                <span class="icon"></span>
+                                <span class="text"></span>
+                            </label>
+                            <input id="first-login-password" name="password" type="password" />
+                            <div id="login-characters-tips">
+                                <div class="tips-content-container">
+                                    <span class="tips-content-delta left"></span>
+                                    <div class="position-top-left"></div>
+                                    <div class="position-top-center"></div>
+                                    <div class="position-top-right"></div>
+                                    <div class="position-center-left">
+                                        <div class="position-center-right">
+                                            <div class="tips-content-wrap">
+                                                <div class="tips-content-container-wrap">
+                                                    <div class="tips-content">
+                                                        <span id="login-tips-content"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-bottom-left"></div>
+                                    <div class="position-bottom-center"></div>
+                                    <div class="position-bottom-right"></div>
+                                </div>
+                            </div>
+                            <div id="first-login-confirm-password-cnt" class="mt5 gap">
+                                 <label id="first-login-password-label">
+                                    <span class="icon"></span>
+                                    <span class="text"></span>
+                                </label>
+                                <input id="first-login-confirm-password" name="confirm" type="password" class="hidden" /><!-- <a class="link inline-block" href="javascript:void(0);" id="btn-forget-password"></a>  -->
+                                <input class="pwd_status"  value="" />
+                        </div>
+                        <button id="first-login-btn" type="button"></button>
+                        </div>
+                    </form>
+
+                    <form id="form-login" method="post" action="/cgi-bin/luci"  class="hidden">
+                        <div id="login-note-cnt">
+                            <span class="text" id="login-note"></span>
+                        </div>
+                        
+                        <div class="login-field">
+                            <label id="login-password-label">
+                                <span class="icon"></span>
+                                <span class="text"></span>
+                            </label>
+                            <input id="login-password" name="password" type="password" /><a class="link inline-block" href="javascript:void(0);" id="btn-forget-password"></a> 
+                           
+                        <button id="login-btn" type="button"></button>
+                            
+                        </div>
+                    </form>
+                    
+                    <form id="form-login-bind" method="post" action="/cgi-bin/luci" class="hidden">
+                        <div id="login-bind-note-cnt">
+                            <span class="text" id="login-bind-note"></span>
+                        </div>
+                    
+                        <div class="login-field">
+                            <label id="login-bind-password-label">
+                                <span class="icon"></span>
+                                <span class="text"></span>
+                            </label>
+                            <input id="login-bind-password" name="password" type="password" />
+                           
+                            <button id="login-bind-btn" type="button"></button>
+                            
+                        </div>
+                    </form>
+
+                    <div id="bound-error" class="hidden">
+                        <div class="note"></div>
+                        <div class="switch-btn"></div>
+                    </div>
+                    
+                    <iframe frameborder="0" id="cloud-login" name="cloud-login" scrolling="no"></iframe>
+                </div>
+            </div>
+            <div class="top-footer-mask"></div>
+            <div class="top-footer">
+                <div class="top-footer-wrap">
+                    <span class="help-faq">
+                        <a id="btn-faq" class="btn-faq" target="_blank" href="http://www.tp-link.com/Support/"></a>
+                        <a id="btn-app" class="btn-app" href="javascript:void(0);"></a>
+                    </span>
+                </div>
+            </div>
+            <div class="qr-code-container quick-setup hidden">
+                <div class="qr-code-container-wrapper">
+                    <div class="qr-code">
+                        <span id="close-icon" class="close-icon"></span>
+                        <div class="characters-illustrate">
+                            <span id="characters-illustrate-title" class="characters-illustrate-title"></span>
+                            <span id="characters-illustrate-note" class="characters-illustrate-note"></span>
+                        </div>
+                        <span class="qr-code-picture"></span>
+                        <div class="app-download-place">
+                            <a class="apple-store" target="_blank" href="https://itunes.apple.com/us/app/tp-link-tether/id599496594?ls=1&mt=8"></a>
+                            <a class="google-play" target="_blank" href="https://play.google.com/store/apps/details?id=com.tplink.tether"></a>
+                        </div>
+                    </div>
+                    <div class="qr-code-container-delta"></div>
+        </div>
+            </div>
+        </div>
+        
+		<div class="top-main-img"></div>
+    </div>
+</div>
+
+<!-- forget password 内容 -->
+<div id="forget-password-msg-container" class="form-panel hidden">
+    <h4 class="title forget-password-title" id="forget-password-title"></h4>
+    <div id="forget-password-situation-0" class="forget-password-situation">
+        <div>
+            <p class="note">
+                <!--<span class="title note-title"></span>-->
+                <span class="" id="forget-password-situation-0-info"></span>
+            </p>
+        </div>
+    </div>
+
+    <div id="forget-password-situation-1" class="forget-password-situation">
+        <div class="email-vertification-content">
+            <p class="note first-line" id="forget-password-situation-1-info-1"></p>
+            <input id="txt-verification-email" />
+            <button id="btn-receive-code"></button>
+            <input id="txt-verification-code" />
+            <button id="btn-forget-password-confirm"></button>
+            <div id="send-failed-info-container"><span id="send-failed-info" class="error-tips"></span></div>
+            <p class="note forget-password-situation-1-note">
+                <span class="title note-title"></span>
+                <span class="text" id="forget-password-situation-1-note"></span>
+            </p>
+        </div>
+        <div class="password-change-content hidden">
+            <p class="note first-line" id="forget-password-situation-1-info-2"></p>
+            <form id="form-forget-password" method="post" action="/cgi-bin/luci">
+                <input id="forget-login-password" name="password" type="password" />
+                <input id="forget-login-confirm-password" name="confirm" type="password" />
+                <button id="forget-password-btn" type="button"></button>
+            </form>
+        </div>
+    </div>
+
+    <div id="forget-password-prompt" class="form-prompt successed">
+        <div class="bg"></div>
+        <div class="content">
+            <span class="icon"></span>
+            <span id="forget-password-success-prompt" class="text text-successed"></span>
+            <!-- <span class="text text-failed"></span> -->
+        </div>
+    </div>
+</div>
+
+<!-- user confilct 内容 -->
+<div id="user-conflict-msg-container" class="conflict-situation">
+    <div>
+        <h4 class="title">
+            <span class="icon"></span>
+            <span class="text" id="user-conflict-situation"></span>
+        </h4>
+        <div class="content">
+            <span id="user-conflict-situation-info"></span>
+        </div>
+    </div>
+</div>
+
+<!-- ip conflict 内容 -->
+<div id="ip-conflict-msg-container">
+
+    <div id="ip-conflict-situation-0" class="conflict-situation">
+        <h4 class="title">
+            <span class="icon"></span>
+            <span class="text" id="ip-conflict-situation-0-title"></span>
+        </h4>
+        <div class="content">
+            <span id="ip-conflict-situation-0-info"></span>
+            <a class="link" id="ip-conflict-situation-0-new" href="javascript:void(0);"></a>
+            <span id="ip-conflict-situation-0-end"></span>
+        </div>
+
+        <button type="button" id="ip-conflict-situation-0-btn-continue"></button>
+    </div>
+
+    <div id="ip-conflict-situation-1" class="conflict-situation">
+        <h4 class="title">
+            <span class="icon"></span>
+            <span class="text" id="ip-conflict-situation-1-title"></span>
+        </h4>
+        <div class="content">
+            <span id="ip-conflict-situation-1-info"></span>
+            <a class="link" id="ip-conflict-situation-1-new" href="javascript:void(0);"></a>
+            <span id="ip-conflict-situation-1-or"></span>
+            <a class="link" id="ip-conflict-situation-1-dst" href="javascript:void(0);"></a>
+            <span id="ip-conflict-situation-1-end"></span>
+        </div>
+    </div>
+
+</div>
+
+<!-- 无开cookie的操作提示 -->
+<div id="no-cookie-msg-container" class="hidden warning">
+    <h4 class="title">
+        <span class="icon"></span>
+        <span class="text" id="no-cookie-text"></span>
+    </h4>
+</div>
+
+<!-- 最长尝试次数超时 -->
+<div id="max-attempts-msg-container" class="hidden warning">
+    <h4 class="title">
+        <span class="icon"></span>
+        <span class="text" id="max-attempts-text"></span>
+    </h4>    
+</div>
+
+<!-- 已经设置过密码 -->
+<div id="have-set-msg-container" class="hidden warning">
+    <h4 class="title">
+        <span class="icon"></span>
+        <span class="text" id="have-set-text"></span>
+    </h4>    
+</div>
+
+<!-- 剩余尝试次数 -->
+<div id="left-attempts-msg-container" class="hidden warning">
+    <h4 class="title">
+        <span class="icon"></span>
+        <span class="text" id="left-attempts-text"></span>
+    </h4>    
+</div>
+
+<!--云功能专用错误提示弹框-->
+<div id="cloud-error-msg" class="hidden warning">
+    <h4 class="title">
+        <span class="icon"></span>
+        <span class="text" id="cloud-error-msg-text"></span>
+    </h4>
+</div>
+
+
+<script type="text/javascript" src="js/libs/jquery.min.1593336984117.js"></script>
+<script type="text/javascript" src="js/libs/jquery.nicescroll.min.1593336984117.js"></script>
+<script type="text/javascript" src="js/su/locale.js?t=1593336984117"></script>
+<script type="text/javascript">
+//<![CDATA[
+    try{
+        $.su.locale.URL_LAN_CHECK =  $.su.url("/locale?form=lang");//"./data/lan.json";
+        $.su.locale.get();
+    }catch(error){
+        location.href = "./error.1593336984117.html";
+    };
+//]]>
+</script>
+<!--<script type="text/javascript" src="http://192.168.1.101:1070/target/target-script-min.js#anonymous"></script>-->
+<!--<script type="text/javascript" src="js/su/su.full.min.js"></script>-->
+
+
+<script type="text/javascript" src="js/su/su.1593336984117.js"></script>
+<script type="text/javascript" src="js/libs/encrypt.1593336984117.js"></script>
+<script type="text/javascript" src="js/libs/cryptoJS.min.1593336984117.js"></script>
+<script type="text/javascript" src="js/libs/tpEncrypt.1593336984117.js"></script>
+
+<script type="text/javascript" src="js/su/data/data.min.1593336984117.js"></script>
+<script type="text/javascript" src="js/su/widget/widgets.min.1593336984117.js"></script>
+
+<script type="text/javascript" src="js/su/widget/forms.min.1593336984117.js"></script>
+
+<!-- 升级重载后刷新 -->
+<script type="text/javascript">
+    if(typeof(window.applicationCache) != "undefined")
+    {
+        var appCache=window.applicationCache;
+        appCache.addEventListener('updateready', function(){
+            location.reload();
+        }, false);
+    }
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(e){
+    var URL_IP_CONFLICT = $.su.url("/domain_login?form=dlogin");
+    var URL_USER_CONFLICT = $.su.url("/login?form=limit");
+    var URL_FORGET_PASSWORD = $.su.url("/login?form=password");
+    var URL_VERIFY_CODE = $.su.url("/login?form=vercode");
+
+    var URL_FIRST_TIME = $.su.url("/login?form=check_factory_default"); //"./data/login.first_log.json";       
+    var URL_LOGIN = $.su.url("/login?form=login");
+    var URL_INIT_LOGIN = $.su.url("/login?form=initial_login");
+
+    var URL_CHECK_INTERNET = $.su.url("/login?form=check_internet");
+    var URL_CLOUD_LOGIN = $.su.url("/login?form=cloud_login");
+    var URL_CLOUD_BIND_STATUS = $.su.url("/login?form=cloud_bind_status");
+
+    window.sysMode = '';
+    $.su.userInfo = {};
+
+    // auth part
+    var URL_AUTH = $.su.url("/login?form=auth");
+    var authProxy = new $.su.Proxy({
+        url: URL_AUTH,
+        async: false,
+        encrypt: false
+    });
+
+    $.encrypt.encryptManager.cleanStorage();
+    $.su.encryptor = $.encrypt.encryptManager.genEncryptor();
+
+    var beforeLogin = function(username, password){
+        $.su.encryptor.genAESKey();
+        if(arguments.length === 2){
+            $.su.encryptor.setHash(arguments[0], arguments[1]);
+        }else{
+            $.su.encryptor.setHash(arguments[0]);
+        }
+        $.encrypt.encryptManager.recordEncryptor();
+    };
+
+    var URL_KEYS = $.su.url("/login?form=keys");
+    var keysProxy = new $.su.Proxy({
+        url: URL_KEYS,
+        encrypt: false
+    });
+
+    keysProxy.read({}, function(data){
+        $("input#first-login-password").password("setValue", data.password);
+        $("input#login-password").password("setValue", data.password);
+        $("input#login-bind-password").password("setValue", data.password);
+        // $("input#cloud-first-login-password").password("setValue", data.password);
+        //$("input#forget-login-password").password("setValue", data.password);
+        //$("input#forget-login-confirm-password").password("setValue", data.password);
+    });
+
+    var name_validate = false;
+    var pwd_validate = false;
+
+    var cloudLogined = false;
+
+    var passwordCheck = function(new_pwd, cfm_val, pwd_status){
+        
+        if(cfm_val == new_pwd){
+            pwd_status.status("setSuccess");
+            return true;
+        }else{
+            pwd_status.status("setFailed");
+            return false;
+        };
+    };
+    $("#login-tips-content").html($.su.CHAR.LOGIN.PASSWORD_TIPS);
+	$("#login-characters-tips").hide();
+
+    var support_url = "http://www.tp-link.com/Support/";
+    $("#btn-faq").attr("href",support_url);
+    //ip冲突部分内容
+    var ipConflictProxy = new $.su.Proxy({
+        url: URL_IP_CONFLICT,
+        autoLoad: false,
+        encrypt: false
+    });
+
+    var ipConflictMsg = $("div#ip-conflict-msg-container").msg({
+        closeBtn: false,
+        type: "window",
+        cls: "l"
+    });
+
+    $("button#ip-conflict-situation-0-btn-continue").button({
+        text: $.su.CHAR.LOGIN.CONTINUE,
+        handler: function(){
+            ipConflictMsg.msg("close");
+            loginMain.fadeIn(200);
+        },
+        cls: "submit btn-continue-conflict"
+    });
+
+    $("span#ip-conflict-situation-0-title").html($.su.CHAR.LOGIN.IMPORTANT_NOTICE);
+    $("span#ip-conflict-situation-0-info").html($.su.CHAR.LOGIN.IMPORTANT_UPDATE_INFO);
+    $("span#ip-conflict-situation-0-end").html($.su.CHAR.LOGIN.END);
+
+    $("span#ip-conflict-situation-1-title").html($.su.CHAR.LOGIN.IMPORTANT_NOTICE);
+    $("span#ip-conflict-situation-1-info").html($.su.CHAR.LOGIN.IMPORTANT_UPDATE_INFO);
+    $("span#ip-conflict-situation-1-or").html($.su.CHAR.LOGIN.OR);
+    $("span#ip-conflict-situation-1-end").html($.su.CHAR.LOGIN.END2);
+
+    $("#cloud-login").hide();
+
+    $("a#ip-conflict-situation-1-new").on("click", function(e){
+        ipConflictMsg.msg("close");
+        loginMain.fadeIn(200);
+    });
+
+    //忘记密码部分
+    var forgetPasswordProxy = new $.su.Proxy({
+        url: URL_FORGET_PASSWORD,
+        autoLoad: false,
+        encrypt: false
+    });
+
+    var verifyCodeProxy = new $.su.Proxy({
+        url: URL_VERIFY_CODE,
+        autoLoad: false,
+        preventErrorDefault: true,
+        encrypt: false
+    });
+    
+    //忘记密码部分
+	var vercodeSubmit = "";
+    $("a#btn-forget-password").html($.su.CHAR.LOGIN.FORGET_PASSWORD).on("click", function(e){
+        forgetPasswordProxy.read({}, function(data, status, xhr){
+            if (data){
+                if (data.enable_rec){
+                    //跳转到有emal的页面
+                    $("div#forget-password-situation-0").css("display", "none");
+                    $("div#forget-password-situation-1").fadeIn(150);
+                    $("div.email-vertification-content").css("display", "block");
+                    $("div.password-change-content").css("display", "none");
+                    $("input#txt-verification-code").textbox("setValue", "");
+                    $("button#btn-forget-password-confirm").button("disable");
+                    $("input#txt-verification-email").textbox("setValue", data.email);
+                    $("input#forget-login-password").password("setValue", "");
+                    $("input#forget-login-confirm-password").password("setValue", "");
+                    $("h4#forget-password-title").html($.su.CHAR.LOGIN.FORGET_PASSWORD);
+                }else{
+                    $("div#forget-password-situation-0").fadeIn(150);
+                    $("div#forget-password-situation-1").css("display", "none");
+                };
+
+                clearInterval(receiveCodeTime);
+                receiveCodeTimeCount = 60;
+                btnReceiveCode.button("enable").button("setText", $.su.CHAR.LOGIN.RECEIVE_CODE);
+                forgetPasswordMsg.msg("show");
+            };
+        });
+    });
+
+    var forgetPasswordMsg = $("div#forget-password-msg-container").msg({
+        cls: "forget-password-msg-container",
+        type: "window"
+    });
+    
+    $("h4#forget-password-title").html($.su.CHAR.LOGIN.FORGET_PASSWORD);
+    $("span#forget-password-situation-0-info").html($.su.CHAR.LOGIN.FORGET_PASSWORD_INFO_0.replace("%SECONDS%", 5));
+    $("span#forget-password-success-prompt").html($.su.CHAR.OPERATION.SUCCESSED);
+
+    var verificationEmail = $("input#txt-verification-email").textbox({
+        fieldLabel: $.su.CHAR.LOGIN.YOUR_EMAIL,
+        labelCls: "",
+        cls: "inline-block txt-verification-email",
+        readOnly: true
+    });
+
+    var forgetPasswordInfo1 = $("p#forget-password-situation-1-info-1").html($.su.CHAR.LOGIN.FORGET_PASSWORD_NOTE_1);
+    var forgetPasswordInfo2 = $("p#forget-password-situation-1-info-2").html($.su.CHAR.LOGIN.FORGET_PASSWORD_NOTE_3);
+    var forgetPasswordSendFailedInfo = $("span#send-failed-info").css("display", "none");
+    var verificationCode = $("input#txt-verification-code").textbox({
+        fieldLabel: $.su.CHAR.LOGIN.VERIFICATION_CODE,
+        labelCls: "",
+        cls: "inline-block txt-verification-code"
+    }).on("keyup focus blur", function(){
+        if (codeLock && $(this).val()){
+            btnFogetPasswordConfirm.button("enable");
+        }else{
+            btnFogetPasswordConfirm.button("disable");
+        };
+        return true;
+    });
+
+    var receiveCodeTime = 0,
+        receiveCodeTimeCount = 60,
+        codeLock = false;
+
+    var btnReceiveCode = $("button#btn-receive-code").button({
+        text: $.su.CHAR.LOGIN.RECEIVE_CODE,
+        cls: "inline-block btn-receive-code",
+        handler: function(){
+            $("span#send-failed-info").css("display", "none");
+
+            verifyCodeProxy.read({}, function(){
+                codeLock = true;
+                btnReceiveCode.button("disable").button("setText", receiveCodeTimeCount + $.su.CHAR.LOGIN.SEC);
+
+                clearInterval(receiveCodeTime);
+                receiveCodeTime = setInterval(function(){
+                    if (receiveCodeTimeCount > 0){
+                        receiveCodeTimeCount--;
+
+                        btnReceiveCode.button("setText", receiveCodeTimeCount + $.su.CHAR.LOGIN.SEC);
+                    }else{
+                        clearInterval(receiveCodeTime);
+                        receiveCodeTimeCount = 60;
+
+                        btnReceiveCode.button("enable").button("setText", $.su.CHAR.LOGIN.RECEIVE_CODE);
+                    };
+                    //console.log("run");
+                }, 1*1000);
+            }, function(errorcode, others, data){
+                $("span#send-failed-info").html($.su.CHAR.ERROR[errorcode]).css("display", "block");
+            });
+        }
+    });
+
+    var btnFogetPasswordConfirm = $("button#btn-forget-password-confirm").button({
+        text: $.su.CHAR.LOGIN.NEXT,
+        fieldLabel: "",
+        labelCls: "",
+        cls: "submit btn-confirm",
+        handler: function(){
+            $("span#send-failed-info").css("display", "none");
+            var code = $.trim(verificationCode.textbox("getValue"));
+            verifyCodeProxy.write({
+                "operation": "write",
+                "vercode": code
+            }, function(data){
+				vercodeSubmit = data.vercode;
+                // var prompt = $("div#forget-password-prompt").fadeIn(150, function(){
+                //     setTimeout(function(){
+                //         prompt.css("display", "none");
+                //         forgetPasswordMsg.msg("close");
+                //     }, 700);
+                // });
+                $("div.email-vertification-content").css("display", "none");
+                $("div.password-change-content").css("display", "block");
+                $("h4#forget-password-title").html($.su.CHAR.LOGIN.RESET_PASSWORD);
+            }, function(errorcode, others, data){
+                verificationCode.textbox("setError");
+                $("span#send-failed-info").html($.su.CHAR.ERROR[errorcode]).css("display", "block");
+            }, function(){
+                verificationCode.textbox("setError");
+                $("span#send-failed-info").html($.su.CHAR.ERROR[errorcode]).css("display", "block");
+            });
+        }
+    }).button("disable");
+    
+    $("span.note-title").text($.su.CHAR.OPERATION.NOTE);
+    $("span#forget-password-situation-1-note").text($.su.CHAR.LOGIN.FORGET_PASSWORD_NOTE_2);
+
+    $("input#forget-login-password").password({
+        showLevel: true,
+        // hint: $.su.CHAR.LOGIN.PASSWORD,
+        fieldLabel: $.su.CHAR.LOGIN.PASSWORD,
+        maxLength: 32,
+        minLength: 1,
+        allowBlank: false,
+        inputCls: "forget-login-password",
+        vtype: "name",
+        allowVisible: false,
+        cls: "login-text"
+    }).on("ev_change ev_validatechange", function(){
+        $("input.pwd_status").status("setNormal");
+        var new_pwd = $("input#forget-login-password").password("getValue");
+        var cfm_val = $("input#forget-login-confirm-password").password("getValue");
+        if(new_pwd == '' || cfm_val == '') {
+            $("input#forget-login-confirm-password").password('setNormal');
+            return;
+        }
+        if (!passwordCheck(new_pwd, cfm_val, $("form input.pwd_status"))){
+            $("input#forget-login-confirm-password").password("setError", $.su.CHAR.ERROR["00000080"]);
+        }else{
+            $("input#forget-login-confirm-password").password('setNormal');
+        };
+    });
+
+    $("input#forget-login-confirm-password").password({
+        showLevel: false,
+        // hint: $.su.CHAR.LOGIN.CONFIRM_PASSWORD,
+        fieldLabel: $.su.CHAR.LOGIN.CONFIRM_PASSWORD,
+        maxLength: 32,
+        minLength: 1,
+        allowBlank: false,
+        inputCls: "forget-login-password",
+        vtype: "name",
+        allowVisible: false,
+        cls: "login-text"
+    }).on("ev_change ev_validatechange", function(){
+        $("input.pwd_status").status("setNormal");
+        var new_pwd = $("input#forget-login-password").password("getValue");
+        var cfm_val = $("input#forget-login-confirm-password").password("getValue");
+        if(new_pwd == '' || cfm_val == '') {
+            $("input#forget-login-confirm-password").password('setNormal');
+            return;
+        }
+        if (!passwordCheck(new_pwd, cfm_val, $("form input.pwd_status"))){
+            $("input#forget-login-confirm-password").password("setError", $.su.CHAR.ERROR["00000080"]);
+        }else{
+            $("input#forget-login-confirm-password").password('setNormal');
+        };
+    });
+
+    var forgetPasswordBtn = $("button#forget-password-btn").button({
+        text: $.su.CHAR.LOGIN.SAVE,
+        handler: function(e){
+            if(forgetPasswordForm.form("validate")){
+                var new_pwd = $("input#first-login-password").password("getValue");
+                var cfm_val = $("input#first-login-confirm-password").password("getValue");
+                if (new_pwd === cfm_val){
+                    $("button#forget-password-btn").button("disable");
+                    if(checkCookie()){
+                        forgetPasswordForm.form("submit", {"vercode": vercodeSubmit}, function(data, status, xhr){
+                            $("button#forget-password-btn").button("enable");
+							var prompt = $("div#forget-password-prompt").fadeIn(150, function(){
+								setTimeout(function(){
+									prompt.css("display", "none");
+									forgetPasswordMsg.msg("close");
+								}, 700);
+							});
+                        }, function(errorcode, others, data){});
+					}
+				}
+                else{
+                    $("input#forget-login-confirm-password").password("setError", $.su.CHAR.ERROR["00000080"]);
+                    forgetPasswordBtn.trigger("ev_recover");
+                }
+            }
+        },
+        btnCls:"forget-password-btn",
+        cls: "submit first-login-btn inline-block"
+    });
+
+    var forgetPasswordFormProxy = new $.su.Proxy({
+        url: URL_FORGET_PASSWORD,
+        encrypt: false
+    });
+
+    var forgetPasswordForm = $("form#form-forget-password").form({
+        proxy: forgetPasswordFormProxy,
+        showPrompt: false,
+        fields: [
+            {name: "password"},
+            {name: "confirm"}
+            
+        ],
+        submitBtn:"button#forget-password-btn"
+    });
+    
+    //用户登录冲突部分
+    var userConflictMsg = $("div#user-conflict-msg-container").msg({
+        closeBtn: false,
+        cls: "l",
+        type: "prompt",
+		okText: $.su.CHAR.LOGIN.CONTINUE,
+        okHandler: function(){
+			//some
+			if(cloudLogined){
+                doCloudLogin("login", true);
+            }
+            else{
+                $("input#login-password").password("doEncrypt");
+                loginProxy.write({"operation":"login", "password":$("input#login-password").val(), "confirm":true}, function(data, status, xhr){
+                    var token = data.stok || (function(){
+                        var stok = "12345",
+                            href = top.location.href;
+                        var stokPos = href.indexOf("stok=");
+                        if (stokPos >= 0){
+                            stok = href.substring(stokPos+5);
+                        };
+                        return stok;
+                    })();
+
+                    if (localStorage){
+                        localStorage.setItem("token", token);
+                        location.href = "./index.1593336984117.html";
+                    };
+                }, function(errorcode, others, data){
+                    setTimeout(function(){
+                        switch (errorcode){
+                            case "user conflict":
+                                $("span#user-conflict-situation").html($.su.CHAR.LOGIN.USER_CONFLICT);  
+                                $("span#user-conflict-situation-info").html($.su.CHAR.LOGIN.USER_CONFLICT_INFO_3)
+                                userConflictMsg.msg("show");
+                                break;
+                            case "login failed":
+                                var num1 = data.failureCount;
+                                var num2 = data.attemptsAllowed;
+                                var num3 = num2 + num1;
+                                if(num1 >= num2)
+                                {
+                                    var str = $.su.CHAR.LOGIN.LOGIN_FAILED_COUNT.replace("%num1", num1);
+                                    str = str.replace("%num2", num2);
+                                    $("span#left-attempts-text").html(str);
+                                    leftAttemptsMsg.msg("show");
+                                } else if (num2 == 0){
+                                    var str = $.su.CHAR.ERROR["00000089"].replace("%num", num3);
+                                    $("span#max-attempts-text").html(str);
+                                    maxAttemptsMsg.msg("show");
+                                } else {
+                                    loginForm.form("prompt", false, $.su.CHAR.LOGIN.LOGIN_FAILED);
+                                }
+                                
+                                break;
+                            case "exceeded max attempts":
+                                var num1 = data.failureCount;
+                                var num2 = data.attemptsAllowed;
+                                var num3 = num2 + num1;
+                                var str = $.su.CHAR.ERROR["00000089"].replace("%num", num3);
+                                $("span#max-attempts-text").html(str);
+                                maxAttemptsMsg.msg("show");
+                                break;
+                            default:
+                        };
+                    },500);
+                });
+            }
+        },
+		cancelHandler:function(){
+			userConflictMsg.msg("close");
+        }
+    });
+
+    //主页面内容部分
+    var loginMain = $("div#login-main");
+
+    var lanSelectCombo = $("input#lan-select").combobox({
+        cls: "top-lan-select",
+        tabindex: -1,
+        items: [
+        ],
+        fieldLabel: null
+    }).on("ev_click", function(e, vOld, vNew){
+        if (vOld[0] == vNew[0]){
+            return;
+        };
+        $.su.locale.set(vNew[0], function(){
+            lanSelectCombo.combobox("setValue", [$.su.locale.locale]);
+        }, function(){
+            lanSelectCombo.combobox("setValue", [$.su.locale.locale]);
+        });
+    }).combobox("setValue", [$.su.locale.locale]);
+
+    document.title = $.su.locale.model;
+    //$("title").text($.su.locale.model);
+    $("h1#product-tag").html($.su.locale.model);
+    $("a#btn-faq").html($.su.CHAR.INDEX.HELP_SUPPORT);
+
+    //console.log($.su.locale.force)
+    if ($.su.locale.force != false){
+        lanSelectCombo.combobox("hide");
+    }else{	
+		var localeProxy = new $.su.Proxy({
+			url: $.su.url('/locale?form=multilang'),
+            encrypt: false
+		});
+		localeProxy.read({}, function(data){
+			var locale=[];
+			for(var i=0;i<data.length;i++){
+				locale[i]={};
+				locale[i].value=data[i].value;
+				locale[i].name=$.su.CHAR.LANGUAGE[data[i].name];
+			};
+			lanSelectCombo.combobox("loadData",locale).combobox("setValue", [$.su.locale.locale]);
+		});
+	}
+
+    /**********STR*二维码*STR**********/
+    $("a#btn-app").html($.su.CHAR.INDEX.HELP_APP);
+    $("span#characters-illustrate-title").html($.su.CHAR.INDEX.CHARACTERS_ILLUSTRETE_TITLE);
+	$("span#characters-illustrate-note").html($.su.CHAR.INDEX.CHARACTERS_ILLUSTRETE_NOTE0+"<br />"+$.su.CHAR.INDEX.CHARACTERS_ILLUSTRETE_NOTE1);
+    $("a#btn-app").click(function(){
+        if($("div.qr-code-container").css("display") == "block"){
+            $("div.qr-code-container").slideUp("2000");
+        }
+        else{
+            $("div.qr-code-container").slideDown("2000");
+        }
+    });
+    $("span#close-icon").click(function(){
+        $("div.qr-code-container").slideUp("2000");
+    });
+    /**********END*二维码*END*********/
+
+
+    //console.log($.su.locale.force)
+    if ($.su.locale.force != false){
+        lanSelectCombo.combobox("hide");
+    };
+
+    $("input#login-username").textbox({
+        hint: $.su.CHAR.LOGIN.USERNAME,
+        fieldLabel: null,
+        allowBlank: false,
+        vtype: "ascii_visible",
+        maxLength: 15,
+        minLength: 1,
+        tabindex:0,
+        cls: "inline-block login-text"
+    }).on("ev_change",function(){
+       
+    }).on("blur",function(){
+
+    });
+
+    $(".pwd_status").status({
+        cls:"inline"
+        // fieldLabel: $.su.CHAR.FOLDER.CONFIRM,
+        // vtype:"string_visible"
+    });
+
+
+    
+
+    var loginProxy = new $.su.Proxy({
+        url: URL_LOGIN,
+        isLogin: true
+    });
+
+    var loginForm = $("form#form-login").form({
+        proxy: loginProxy,
+        showPrompt: false,
+        fields: [
+            {name: "password"}
+        ],
+        autoLoad: false,
+        submitBtn:"button#login-btn"
+
+    }).on("ev_beforeLoadData",function(e,data){
+        $("form#form-first-login").form("loadData",data);
+    }).on("ev_loadData",function(e,data){
+        sysMode = data.mode;
+        if(sysMode=="ap"){
+            $(".login-switch-btn").hide();
+        }else{
+            $(".login-switch-btn").show();
+        }
+    });
+
+    $("#forget-pwd").html($.su.CHAR.LOGIN.FORGET_PASSWORD);
+
+    // switch local login and cloud login part
+    var loginSwitchBtn = $("<div class=\"login-switch-btn\"><span>" + $.su.CHAR.LOGIN.LOGIN_WITH_TPLINK_ID + "</span></div><div class=\"login-switch-note hidden\">"+$.su.CHAR.LOGIN.LOGIN_SWITCH_NOTE+"</div>");
+    loginForm.append(loginSwitchBtn);
+
+    var checkInternetProxy = new $.su.Proxy({
+        url: URL_CHECK_INTERNET,
+        encrypt: false
+    });
+
+    var loginSwitchNoteTimeout;
+    $(".login-switch-btn span").click(function(){
+        checkInternetProxy.read({}, function(data){
+            onReceive({data:{eType:"ev_goto",url:"login"},source:null,origin:"_self"});
+            $("form#form-login").hide();
+        }, function(){
+            clearTimeout(loginSwitchNoteTimeout);
+            $(".login-switch-note").fadeIn(200);
+            loginSwitchNoteTimeout = setTimeout(function(){
+                $(".login-switch-note").fadeOut(200);
+            }, 3000);
+        });
+    });
+
+	$("input#login-password").password({
+        showLevel: false,
+        hint: $.su.CHAR.LOGIN.PASSWORD,
+		fieldLabel: null,
+		maxLength: 32,
+		minLength: 1,
+		allowBlank: false,
+		allowVisible: true,
+		cls: "inline-block login-text"
+    }).on("ev_change ev_validatechange", function(e,value,key,keyCode){
+		if (key == "Enter" || keyCode == 13){
+			if(!$("button#login-btn").prop('disabled')){
+				$("button#login-btn").button("disable");
+				$("input#login-password").password("doEncrypt");
+				if (checkCookie()){
+					doLogin();
+				};
+				setTimeout(function(){
+					$("button#login-btn").button("enable");
+				},500);
+			}
+        }
+	});
+                    
+                
+
+    //登陆
+    var loginNote = $.su.CHAR.LOGIN.WELCOME.replace("%model%", $.su.locale.model);
+    $("span#login-note").html(loginNote);
+
+    var loginBtn = $("button#login-btn").button({
+        text: $.su.CHAR.LOGIN.LOGIN,
+        handler: function(e){
+            if(loginForm.form("validate")){
+				$("button#login-btn").button("disable");
+				if (checkCookie()){
+					doLogin();
+				};
+			}
+        },
+        btnCls:"login-full",
+        cls: "submit first-login-btn inline-block"
+	});
+    //控制按钮是否被禁用
+    var loginBtns = $("button[id*=login-btn]");
+    loginBtns.on("ev_recover",function(){
+         loginBtns.button("enable");
+	});
+
+    var doLogin = function(){
+        authProxy.read({}, function(data){
+            $.su.encryptor.setRSAKey(data.key[0], data.key[1]);
+            $.su.encryptor.setSeq(data.seq);
+        });
+        var username = "admin",
+            password = $("#login-password").password("getValue");
+        beforeLogin(username, password);
+
+        loginForm.form("submit", {
+            "operation": "login"
+        }, function(data, status, xhr){
+            var token = data.stok || (function(){
+                var stok = "12345",
+                    href = top.location.href;
+                var stokPos = href.indexOf("stok=");
+                if (stokPos >= 0){
+                    stok = href.substring(stokPos+5);
+                };
+                return stok;
+            })();
+
+            if (localStorage){
+                localStorage.setItem("token", token);
+                localStorage.setItem("userInfo", "");
+                location.href = "./index.1593336984117.html";
+            };
+            
+        }, function(errorcode, others, data){
+            switch (errorcode){
+                case "user conflict":
+                    $("span#user-conflict-situation").html($.su.CHAR.LOGIN.USER_CONFLICT);
+                    /*if(data.logined_remote){
+                        var c = $.su.CHAR.LOGIN.USER_CONFLICT_INFO_2.replace("%USER%", data.logined_user).replace("%IP%", data.logined_ip);
+                    }else{
+                    var c = $.su.CHAR.LOGIN.USER_CONFLICT_INFO.replace("%USER%", data.logined_user).replace("%HOST%", data.logined_host).replace("%IP%", data.logined_ip).replace("%MAC%", data.logined_mac);
+                    }*/
+                    $("span#user-conflict-situation-info").html($.su.CHAR.LOGIN.USER_CONFLICT_INFO_3);
+                    userConflictMsg.msg("show");
+                    break;
+                case "login failed":
+                    var num1 = data.failureCount;
+                    var num2 = data.attemptsAllowed;
+                    var num3 = num2 + num1;
+                    if(num1 >= num2){
+                        var str = $.su.CHAR.LOGIN.LOGIN_FAILED_COUNT.replace("%num1", num1);
+                        str = str.replace("%num2", num2);
+                        $("span#left-attempts-text").html(str);
+                        leftAttemptsMsg.msg("show");
+                    }else{
+                        loginForm.form("prompt", false, $.su.CHAR.LOGIN.LOGIN_FAILED);
+                        $("button#login-btn").button("enable");
+                    }
+                    break;
+                case "exceeded max attempts":
+                    var num1 = data.failureCount;
+                    var num2 = data.attemptsAllowed;
+                    var num3 = num2 + num1;
+                    var str = $.su.CHAR.ERROR["00000089"].replace("%num", num3);
+                    $("span#max-attempts-text").html(str);
+                    maxAttemptsMsg.msg("show");
+                    break;
+                default:
+                    break;
+            };
+        });
+    };
+
+    //绑定云账号
+    var loginBindProxy = new $.su.Proxy({
+        url: URL_CLOUD_LOGIN,
+        isLogin: true
+    });
+    var loginBindForm = $("form#form-login-bind").form({
+        proxy: loginBindProxy,
+        showPrompt: false,
+        fields: [
+            {name: "password"}
+        ],
+        autoLoad: false,
+        submitBtn:"button#login-bind-btn"
+    });
+
+    $("span#login-bind-note").html($.su.CHAR.LOGIN.BIND_NOTE);
+
+    $("input#login-bind-password").password({
+        showLevel: false,
+        hint: $.su.CHAR.LOGIN.PASSWORD,
+        fieldLabel: null,
+        maxLength: 15,
+        minLength: 1,
+        allowBlank: false,
+        allowVisible: true,
+        cls: "inline-block login-text"
+    }).on("ev_change ev_validatechange", function(e,value,key,keyCode){
+       if (key == "Enter" || keyCode == 13){
+            if(!$("button#login-bind-btn").prop('disabled')){
+                $("button#login-bind-btn").button("disable");
+                $("input#login-bind-password").password("doEncrypt");
+                if (checkCookie()){
+                    doCloudLogin("bind");
+                };
+            }
+        } 
+    });
+
+    var loginBindBtn = $("button#login-bind-btn").button({
+        text: $.su.CHAR.LOGIN.BIND,
+        handler: function(e){
+            if(loginBindForm.form("validate")){
+                $("button#login-bind-btn").button("disable");
+                if (checkCookie()){
+                    doCloudLogin("bind");
+                };
+            }
+        },
+        btnCls:"login-full",
+        cls: "submit first-login-btn inline-block"
+    });
+
+    $("#bound-error .note").text($.su.CHAR.LOGIN.BOUND_ERROR_NOTE);
+    $("#bound-error .switch-btn").text($.su.CHAR.LOGIN.LOGIN_WITH_ROUTER_PASSWORD);
+    $("#bound-error .switch-btn").click(function(){
+        $("#bound-error").hide();
+        $("#form-login").show();
+    });
+
+    var doCloudLogin = function(operation, confirm){
+        var data = {
+            "operation": operation,
+            "token": $.su.userInfo.token
+        };
+        if(operation == "bind"){
+            $("input#login-bind-password").password("doEncrypt");
+            data.password = $("input#login-bind-password").val();
+        }
+        if(confirm){
+            data.confirm = confirm;
+        }
+
+        authProxy.read({}, function(data){
+            $.su.encryptor.setRSAKey(data.key[0], data.key[1]);
+            $.su.encryptor.setSeq(data.seq);
+        });
+        
+        beforeLogin($.su.userInfo.token);
+
+        loginBindProxy.write(data, function(data, status, xhr){
+            var token = data.stok || (function(){
+                var stok = "12345",
+                    href = top.location.href;
+                var stokPos = href.indexOf("stok=");
+                if (stokPos >= 0){
+                    stok = href.substring(stokPos+5);
+                };
+                return stok;
+            })();
+
+            $.su.userInfo.role = data.role;
+            $.su.userInfo.cloudLogined = true;
+            if (localStorage){
+                localStorage.setItem("token", token);
+                localStorage.setItem("userInfo", JSON.stringify($.su.userInfo));
+                location.href = "./index.1593336984117.html";
+            };
+            
+        }, function(errorcode, others, data){
+            // if(errorcode == "-20506"){
+            //  $("#form-login-bind").hide();
+            //  $("#bound-error").show();
+            // }
+
+            var err = String(data.errorcode).replace(/^-/, 'E');
+            if(err && $.su.cloudErrorCode.indexOf(err) != -1){
+                $("span#cloud-error-msg-text").html($.su.CHAR.ERROR[err]);
+                $("div#cloud-error-msg").msg("show");
+                return;
+            }else if(errorcode){
+                switch (errorcode){
+                    case "user conflict":
+                        $("span#user-conflict-situation").html($.su.CHAR.LOGIN.USER_CONFLICT);
+                        $("span#user-conflict-situation-info").html($.su.CHAR.LOGIN.USER_CONFLICT_INFO_3);
+                        userConflictMsg.msg("show");
+                        break;
+                    case "login failed":
+                        var num1 = data.failureCount;
+                        var num2 = data.attemptsAllowed;
+                        var num3 = num2 + num1;
+                        if(num1 >= num2){
+                            var str = $.su.CHAR.LOGIN.LOGIN_FAILED_COUNT.replace("%num1", num1);
+                            str = str.replace("%num2", num2);
+                            $("span#left-attempts-text").html(str);
+                            leftAttemptsMsg.msg("show");
+                        }else{
+                            loginBindForm.form("prompt", false, $.su.CHAR.LOGIN.LOGIN_FAILED);
+                            $("button#login-btn").button("enable");
+                        }
+                        break;
+                    case "exceeded max attempts":
+                        var num1 = data.failureCount;
+                        var num2 = data.attemptsAllowed;
+                        var num3 = num2 + num1;
+                        var str = $.su.CHAR.ERROR["00000089"].replace("%num", num3);
+                        $("span#max-attempts-text").html(str);
+                        maxAttemptsMsg.msg("show");
+                        break;
+                    default:
+                        break;
+                };
+            }
+        });
+    };
+
+    //初次登陆
+    $("span#first-login-note").html($.su.CHAR.LOGIN.FIRST_TIME.replace("%model%", $.su.locale.model));
+    var firstLoginBtn = $("button#first-login-btn").button({
+        text: $.su.CHAR.INIT.BEGIN,
+        handler: function(e){
+            //$("button#first-login-btn").button("disable");
+            //disabledFirstButton = $("button#first-login-btn");
+			if(firstLoginForm.form("validate")){
+                var new_pwd = $("input#first-login-password").password("getValue");
+                var cfm_val = $("input#first-login-confirm-password").password("getValue");
+                if (new_pwd === cfm_val){
+				    $("button#first-login-btn").button("disable");
+                    if (checkCookie()){
+                        doFirstLogin();
+                    };
+                }else{
+                    firstLoginConfirmPassword.password("setError", $.su.CHAR.ERROR["00000080"]);
+                    loginBtns.trigger("ev_recover");
+                };
+				setTimeout(function(){
+				$("button#first-login-btn").button("enable");
+				},500);
+			}
+        },
+        btnCls:"login-full",
+        cls: "submit first-login-btn inline-block xxl"
+    });
+
+    var firstLoginPassword = $("input#first-login-password").password({
+        showLevel: true,
+        hint: $.su.CHAR.LOGIN.PASSWORD,
+        fieldLabel: null,
+        maxLength: 32,
+        minLength: 1,
+        vtype:"ascii_visible",
+        allowBlank: false,
+        allowVisible: true,
+        cls: "inline-block login-text"
+    }).on("ev_change ev_validatechange", function(){
+        if(!firmwareDefault)
+        {
+            return true;
+        }
+        $("input.pwd_status").status("setNormal");
+        var new_pwd = $("input#first-login-password").password("getValue");
+        var cfm_val = $("input#first-login-confirm-password").password("getValue");
+        if(new_pwd == '' || cfm_val == '') {
+            firstLoginConfirmPassword.password('setNormal');
+            return;
+        }
+        if (!passwordCheck(new_pwd, cfm_val, $("form input.pwd_status"))){
+            firstLoginConfirmPassword.password("setError");
+        }else{
+            firstLoginConfirmPassword.password('setNormal');
+        };
+    });
+
+    var firstLoginConfirmPassword = $("input#first-login-confirm-password").password({
+        showLevel: false,
+        hint: $.su.CHAR.INIT.CONFIRM_PASSWORD,
+        fieldLabel: null,
+        maxLength: 32,
+        minLength: 1,
+        vtype:"ascii_visible",
+        allowBlank: false,
+        allowVisible: true,
+        cls: "inline-block login-text"
+    }).on("ev_change", function(e,value,key,keyCode){
+        if(!firmwareDefault){
+            return true;
+        }
+        $("input.pwd_status").status("setNormal");
+
+        var new_pwd = $("input#first-login-password").password("getValue");
+        var cfm_val = $("input#first-login-confirm-password").password("getValue");
+
+        if(new_pwd == '' || cfm_val == '')  return;
+
+        if (key == "Enter" || keyCode == 13){
+            if (new_pwd === cfm_val){
+                if(firstLoginForm.form("validate")){
+                if(!$("button#first-login-btn").prop('disabled')){
+                    $("button#first-login-btn").button("disable");
+                    disabledFirstButton = $("button#first-login-btn");
+            if (checkCookie()){
+                        doFirstLogin();
+            };
+                }
+                }
+            }else{
+                firstLoginConfirmPassword.password("setError", $.su.CHAR.ERROR["00000080"]);
+                loginBtns.trigger("ev_recover");
+            };
+        } 
+    }).on("ev_validatechange",function(){
+        var new_pwd = $("input#first-login-password").password("getValue");
+        var cfm_val = $("input#first-login-confirm-password").password("getValue");
+        if(new_pwd == '' || cfm_val == '')  return;
+
+        if (!passwordCheck(new_pwd, cfm_val, $("form input.pwd_status"))){
+            $("input#first-login-confirm-password").password("setError");
+            $("input#first-login-confirm-password").val("false");
+        }else{
+            $("input#first-login-confirm-password").val("true");
+        }
+
+    });
+
+
+    var firstLoginProxy = new $.su.Proxy({
+        url: URL_INIT_LOGIN,
+        isLogin: true
+    });
+
+    var firstLoginForm = $("form#form-first-login").form({
+        proxy: firstLoginProxy,
+        showPrompt: false,
+        fields: [
+            {name: "password"},
+            {name: "confirm"}
+        ],
+        autoLoad: false,
+        submitBtn:"button#first-login-btn"
+    });
+
+
+
+    var doFirstLogin = function(){
+        authProxy.read({}, function(data){
+            $.su.encryptor.setRSAKey(data.key[0], data.key[1]);
+            $.su.encryptor.setSeq(data.seq);
+        });
+        var username = "admin",
+            password = "admin";
+        beforeLogin(username, password);
+
+        firstLoginForm.form("submit", {
+            "operation": "login"
+        }, function(data, status, xhr){
+            var username = "admin",
+                password = $("#first-login-password").password("getValue");
+            $.su.encryptor.setHash(username, password);
+            $.encrypt.encryptManager.recordEncryptor();
+            
+            var token = data.stok || (function(){
+                var stok = "12345",
+                    href = top.location.href;
+                var stokPos = href.indexOf("stok=");
+                if (stokPos >= 0){
+                    stok = href.substring(stokPos+5);
+                };
+                return stok;
+            })();
+
+            if (localStorage){
+                localStorage.setItem("token", token);
+                localStorage.setItem("userInfo", "");
+                location.href = "./index.1593336984117.html";
+            };
+            
+        }, function(errorcode, others, data){
+            switch (errorcode){
+                case "user conflict":
+                    $("span#user-conflict-situation").html($.su.CHAR.LOGIN.USER_CONFLICT);
+                    /*if(data.logined_remote){
+                        var c = $.su.CHAR.LOGIN.USER_CONFLICT_INFO_2.replace("%USER%", data.logined_user).replace("%IP%", data.logined_ip);
+                    }else{
+                        var c = $.su.CHAR.LOGIN.USER_CONFLICT_INFO.replace("%USER%", data.logined_user).replace("%HOST%", data.logined_host).replace("%IP%", data.logined_ip).replace("%MAC%", data.logined_mac);
+            }  */
+                    $("span#user-conflict-situation-info").html($.su.CHAR.LOGIN.USER_CONFLICT_INFO_3);
+                    userConflictMsg.msg("show");
+                    break;
+                case "login failed":
+                    var num1 = data.failureCount;
+                    var num2 = data.attemptsAllowed;
+                    var num3 = num2 + num1;
+                    if(num1 >= num2){
+                        var str = $.su.CHAR.LOGIN.LOGIN_FAILED_COUNT.replace("%num1", num1);
+                        str = str.replace("%num2", num2);
+                        $("span#left-attempts-text").html(str);
+                        leftAttemptsMsg.msg("show");
+                    }else{
+                        firstLoginForm.form("prompt", false, $.su.CHAR.LOGIN.LOGIN_FAILED);
+                    }
+                    break;
+                case "exceeded max attempts":
+                    var num1 = data.failureCount;
+                    var num2 = data.attemptsAllowed;
+                    var num3 = num2 + num1;
+                    var str = $.su.CHAR.ERROR["00000089"].replace("%num", num3);
+                    $("span#max-attempts-text").html(str);
+                    maxAttemptsMsg.msg("show");
+                    break;
+                case "have set":
+                    var str = $.su.CHAR.ERROR["10000195"];
+                    $("span#have-set-text").html(str);
+                    haveSetMsg.msg("show");
+                    break;
+                default:  
+            };
+        });
+    };
+
+    var firmwareProxy = new $.su.Proxy({
+        async: false,
+        url: URL_FIRST_TIME,
+        encrypt: false
+    });
+    var firmwareDefault = false;
+
+    firmwareProxy.read({}, function(data){
+        if (data){
+            if (data.is_default == true){
+				$(".qr-code-container").removeClass("hidden");
+                firstLoginForm.form("show");
+                loginForm.form("hide");
+				$(".level .password-text").on("focus",function(){
+					$("#login-characters-tips").show();
+				}).on("blur",function(){
+					$("#login-characters-tips").hide();
+				});
+                firmwareDefault = true;
+            }else{
+                firstLoginForm.form("hide");
+                loginForm.form("show");
+                firmwareDefault = false;
+            }
+        }else{
+            firstLoginForm.form("show");
+            loginForm.form("hide");
+            firmwareDefault = true;
+        };
+    }, function(){
+        firstLoginForm.form("show");
+        loginForm.form("hide");
+        firmwareDefault = true;
+    }, function(){
+        firstLoginForm.form("show");
+        loginForm.form("hide");
+        firmwareDefault = true;
+    });
+
+   
+
+    //登录流程
+    ipConflictProxy.read({}, function(data){
+        if (data && data.conflict === true){
+            var sit0 = $("div#ip-conflict-situation-0");
+            var sit1 = $("div#ip-conflict-situation-1");
+            switch (data.mode){
+                case 0:
+                    sit0.css("display", "block");
+                    sit1.css("display", "none");
+
+                    $("a#ip-conflict-situation-0-new").html(data.new_addr);
+                    break;
+                case 1:
+                    sit0.css("display", "none");
+                    sit1.css("display", "block");
+
+                    $("a#ip-conflict-situation-1-dst").html(data.dst_addr).attr("href", "http://" + data.dst_addr + data.dst_webpath);
+                    $("a#ip-conflict-situation-1-new").html(data.new_addr);
+                    break;
+            };
+            loginMain.css("display", "none");
+            ipConflictMsg.msg("show");
+        }else{
+            ipConflictMsg.msg("close");
+            loginMain.fadeIn(200);
+        };
+
+
+        if (data && data.redirect){
+            location.href = data.redirect;
+        };
+
+    }, function(e){
+        ipConflictMsg.msg("close");
+        loginMain.fadeIn(200);
+    }, function(e){
+        ipConflictMsg.msg("close");
+        loginMain.fadeIn(200);
+    });
+
+    /*cookie check*/
+    $("span#no-cookie-text").html($.su.CHAR.LOGIN.NO_COOKIE);
+    var noCookieMsg = $("div#no-cookie-msg-container").msg({
+        type: "alert",
+        cls: "m",
+        closeBtn: false,
+        okHandler: function(){
+            loginBtns.trigger("ev_recover");
+        }
+    });
+
+    /*max attempt*/
+    //$("span#max-attempts-text").html($.su.CHAR.ERROR["00000089"]);
+    var maxAttemptsMsg = $("div#max-attempts-msg-container").msg({
+        type: "alert",
+        cls: "m",
+        closeBtn: false,
+        okHandler: function(){
+            loginBtns.trigger("ev_recover");
+        }
+    })
+
+    /*left attempt*/
+    // $("span#left-attempts-text").html($.su.CHAR.ERROR.LOGIN_FAILED_COUNT);
+    var leftAttemptsMsg = $("div#left-attempts-msg-container").msg({
+        type: "alert",
+        cls: "m",
+        closeBtn: false,
+        okHandler: function(){
+            loginBtns.trigger("ev_recover");
+        }
+    })
+    //重复设置初始密码提示
+    var haveSetMsg = $("div#have-set-msg-container").msg({
+        type: "alert",
+        cls: "m",
+        closeBtn: false,
+        okHandler: function(){
+            location.href = "/";
+        }
+    })
+    //云功能专用错误提示弹框
+    $("div#cloud-error-msg").msg({
+        type: "alert",
+        closeBtn: false,
+        cls: "l",
+        okHandler: function(e){
+            $("div#cloud-error-msg").msg('close');
+            loginBtns.trigger("ev_recover");
+        }
+    });
+
+
+    var checkCookie = function(){
+        try{
+            localStorage.setItem("private", 100);
+            if (!navigator.cookieEnabled){
+                noCookieMsg.msg("show");
+                return false;
+            };
+        }catch(e){
+            noCookieMsg.msg("show");
+            return false;
+        };
+        noCookieMsg.msg("close");
+        return true;
+
+    };
+
+    checkCookie();
+
+    /***************cloud event ********************/
+    var cloudBindStatusProxy = new $.su.Proxy({
+        url: URL_CLOUD_BIND_STATUS,
+        encrypt: false
+    });
+/*
+    cloudBindStatusProxy.read({}, function(data){
+        if(data.isbind){
+            checkInternetProxy.read({}, function(data){
+                onReceive({data:{eType:"ev_goto",url:"login"},source:null,origin:"_self"});
+                $("form#form-login").hide();
+            });
+        }
+    });
+*/
+    $.su.userInfo = {};
+    //param e include e.data & e.source & e.origin
+    function onReceive(eObject){
+        var e = eObject.originalEvent || eObject;
+        // console.log("login.html receive from "+ e.origin, e.data, e)
+        if(e.origin !== $.su.url.cloudOrigin && e.origin !== "_self" && e.origin != undefined){
+            return;
+        }
+        var data = e.data;
+        if(typeof(e.data) == "string"){
+            data = $.parseJSON(data);
+        }
+        if(data){
+            switch(data.eType){
+                case "ev_login": {
+                    if(data.validate){
+                        cloudLogined = true;
+                        $.su.userInfo.username = data.email;
+                        $.su.userInfo.token = data.token;
+                        
+                        // check bind
+                        cloudBindStatusProxy.read({
+                            operation: "read"
+                        }, function(data){
+                            if(data.isbind){
+                                doCloudLogin("login");
+                            }else{
+                                $("#cloud-login").hide();
+                                $("#form-login-bind").show();
+                            }
+                        }, function(errorcode, others, data){
+                            var errorcode = data.errorcode;
+                            err = String(errorcode).replace(/^-/, 'E');
+                            $("span#cloud-error-msg-text").html($.su.CHAR.ERROR[err]);
+                            $("div#cloud-error-msg").msg("show");
+                            return;
+                        });
+                    }
+                    break;
+                }
+                //module change
+                case "ev_goto": {
+                    if(data.url){
+                        //set iframe's src, then set wating event(10s timeout)
+                        $.su.func.getCloudOrigin(data.url);
+                    }
+                    if("login_switch" == data.index){
+                        $("#cloud-login").hide();
+                        $("#form-login").show();
+                        $.su.layout.doLayout();        //only for login.html
+                    }
+                    else if("findBackPassword" == data.url || "findBackPassword" == data.index){
+                        $.su.loading.show("iframeResize");
+                    }
+                    break;
+                }
+                case "load": {
+                    var params = {};
+                    params.locale = $.su.locale.locale;
+                    params.force = $.su.locale.force;
+                    params.model = $.su.locale.model;
+                    params.eType = "ev_init";
+                    var str = JSON.stringify(params);
+                    window.frames["cloud-login"] && window.frames["cloud-login"].postMessage(str, $.su.url.cloudOrigin);
+                    $.su.func.clearWaitingEvent(); //iframe load success
+                    // $.su.func.postToken();
+                    $.su.func.getDeviceInfo(false);//false === don't have stok
+                    $("#cloud-login").show();
+                }
+                case "ev_reset": {
+                    $.su.func.iframeResize($("#cloud-login"),data.height);
+                    break;
+                }
+                //cloud request has no response
+                case "ev_error": {
+                    $("#cloud-login").attr("src","./pages/userrpm/offlineError.1593336984117.html");
+                    $("#cloud-login").css({"height": 460});//offlineError.html's default height
+                    break;
+                }
+                case "ev_windowResize": {
+                    var hasFrame = false;
+                    try{
+                        window.frames["cloud-login"] && window.frames["cloud-login"].name;
+                    }catch(error){
+                        hasFrame = true;
+                    }
+                    if(hasFrame){
+                        var params = {};
+                        params.eType = "ev_windowResize";
+                        params.windowHeight = $(window).height() - 90;//window's height - headHeight
+                        params.windowWidth = $(window).width();//window's width
+                        params.iframeTop = $("#cloud-login").offset().top //iframe top
+                        var str = JSON.stringify(params);
+                        window.frames["cloud-login"].postMessage(str, $.su.url.cloudOrigin);
+                    }
+                }
+            }
+        }
+    }
+    $(window).on("ev_watingTimeout", function(){//iframe load failed
+        $.su.func.clearWaitingEvent();
+        $("#cloud-login").attr("src","./pages/userrpm/offlineError.1593336984117.html");
+        $("#cloud-login").css({"height": 460});//offlineError.html's default height
+        $("#cloud-login").show();
+        $.su.loading.hide("iframeResize");
+    });
+    $(window).on("message", onReceive);
+
+/***************cloud event end********************/
+
+    $("div.top-main").niceScroll({
+        cursorcolor:"#9BDCEB",  
+        cursoropacitymax:1,  
+        touchbehavior:false,  
+        cursorwidth:"7px",  
+        cursorborder:"1px",  
+        cursorborderradius:"17px",
+        enablescrollonselection:false
+    });
+/**********SRT*布局调整*SRT*********/
+    $.su.layout.doLayout = function(){
+        var hh = $("div.top-header").height();
+        //var fh = $("div.top-footer").height() || 67;
+        var fh = 0;
+		var wh = $(window).height();
+        $("body").css({
+            "height": wh
+        });
+
+        var c = $("div.top-content");
+        var pT = parseInt(c.css("paddingTop"), 10);
+        var pB = parseInt(c.css("paddingBottom"), 10);
+
+        var ch = $("#cloud-login").height();
+        ch = $("#cloud-login").css("display") == "none" ? 0 : ch;
+        var h = Math.max(180, ch);
+        var h = Math.max(h, wh - hh - pT - fh);
+        $("div.top-main").css({
+            "height": wh - hh
+        });
+        $("div.top-main-wrap").css({
+            "min-height": pT + fh + h
+        });
+        $("div.top-content").css({
+            "height": h
+        });
+    };
+/**********END*布局调整*END*********/
+
+    /**页面初始化**/
+    $.su.layout.doLayout();
+    $(window).on("resize load", function(){
+        $.su.layout.doLayout();
+        onReceive({data:{eType:"ev_windowResize"},source:null,origin:"_self"});
+    });
+    
+});
+//]]>
+</script>
+</body>
+</html>

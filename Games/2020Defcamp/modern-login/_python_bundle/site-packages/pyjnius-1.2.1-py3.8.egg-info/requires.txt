@@ -1,0 +1,12 @@
+six>=1.7.0
+
+[ci]
+coveralls
+pytest-rerunfailures
+setuptools>=34.4.0
+
+[dev]
+nose
+wheel
+pytest-cov
+pycodestyle

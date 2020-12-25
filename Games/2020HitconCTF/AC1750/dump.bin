@@ -1,0 +1,7 @@
+HTTP/1.1 200 OK
+Connection: close
+Content-Type: application/json
+Cache-Control: no-cache
+Expires: 0
+
+{"success":true,"data":{"dst_addr":"192.168.0.1","redirect":"","dst_webpath":"/","conflict":false,"mode":0,"domain":"tplinkwifi.net","new_addr":"192.168.0.1"}}

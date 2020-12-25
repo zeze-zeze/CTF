@@ -1,0 +1,75 @@
+function auto_run(){
+       	document.getElementById("play-button").click();
+}
+
+
+function attack(){
+window.dispatchEvent(
+	        new KeyboardEvent("keyup", {keyCode: 38})
+	);
+      	window.dispatchEvent(
+        	new KeyboardEvent("keyup", {keyCode: 38})
+	);
+        window.dispatchEvent(
+	        new KeyboardEvent("keyup", {keyCode: 40})
+	);
+       window.dispatchEvent(
+        	new KeyboardEvent("keyup", {keyCode: 40})
+	);
+        window.dispatchEvent(
+	        new KeyboardEvent("keyup", {keyCode: 37})
+	);
+       window.dispatchEvent(
+        	new KeyboardEvent("keyup", {keyCode: 39})
+	);
+       window.dispatchEvent(
+	        new KeyboardEvent("keyup", {keyCode: 37})
+	);
+       window.dispatchEvent(
+        	new KeyboardEvent("keyup", {keyCode: 39})
+	);
+       window.dispatchEvent(
+	        new KeyboardEvent("keyup", {keyCode: 66})
+	);
+       window.dispatchEvent(
+        	new KeyboardEvent("keyup", {keyCode: 65})
+	);
+
+window.dispatchEvent(
+	        new KeyboardEvent("keydown", {keyCode: 38})
+	);
+      	window.dispatchEvent(
+        	new KeyboardEvent("keydown", {keyCode: 38})
+	);
+        window.dispatchEvent(
+	        new KeyboardEvent("keydown", {keyCode: 40})
+	);
+       window.dispatchEvent(
+        	new KeyboardEvent("keydown", {keyCode: 40})
+	);
+        window.dispatchEvent(
+	        new KeyboardEvent("keydown", {keyCode: 37})
+	);
+       window.dispatchEvent(
+        	new KeyboardEvent("keydown", {keyCode: 39})
+	);
+       window.dispatchEvent(
+	        new KeyboardEvent("keydown", {keyCode: 37})
+	);
+       window.dispatchEvent(
+        	new KeyboardEvent("keydown", {keyCode: 39})
+	);
+       window.dispatchEvent(
+	        new KeyboardEvent("keydown", {keyCode: 66})
+	);
+       window.dispatchEvent(
+        	new KeyboardEvent("keydown", {keyCode: 65})
+	);
+}
+window.setInterval(
+function(){
+	if(document.getElementById("leaderboard").className == "hidden"){
+		auto_run();
+		attack();}
+}, 500
+)

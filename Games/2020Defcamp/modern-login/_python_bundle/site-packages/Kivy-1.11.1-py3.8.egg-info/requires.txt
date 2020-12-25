@@ -1,0 +1,6 @@
+Kivy-Garden>=0.1.4
+docutils
+pygments
+
+[tuio]
+oscpy
