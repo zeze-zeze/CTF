@@ -1,0 +1,38 @@
+
+  _|. _ _  _  _  _ _|_    v0.4.0
+ (_||| _) (/_(_|| (_| )
+
+Extensions: CHANGELOG.md | HTTP method: GET | Threads: 20 | Wordlist size: 7140
+
+Error Log: /root/tools/dirsearch/logs/errors-20-11-22_13-56-05.log
+
+Target: http://10.10.10.28/
+
+Output File: /root/tools/dirsearch/reports/10.10.10.28/_20-11-22_13-56-05.txt
+
+[13:56:05] Starting:
+[13:56:13] 403 -  276B  - //.htaccess.bak1
+[13:56:13] 403 -  276B  - //.htaccess.orig
+[13:56:13] 403 -  276B  - //.htaccess.sample
+[13:56:13] 403 -  276B  - //.htaccess.save
+[13:56:13] 403 -  276B  - //.htaccessBAK
+[13:56:13] 403 -  276B  - //.htaccessOLD
+[13:56:13] 403 -  276B  - //.htaccessOLD2
+[13:56:13] 403 -  276B  - //.htm
+[13:56:13] 403 -  276B  - //.html
+[13:56:13] 403 -  276B  - //.httr-oauth
+[13:56:15] 403 -  276B  - //.php
+[13:56:48] 301 -  308B  - //css  ->  http://10.10.10.28/css/
+[13:56:53] 301 -  310B  - //fonts  ->  http://10.10.10.28/fonts/
+[13:56:56] 403 -  276B  - //images/
+[13:56:56] 301 -  311B  - //images  ->  http://10.10.10.28/images/
+[13:56:57] 200 -   11KB - //index.php
+[13:56:57] 200 -   11KB - //index.php/login/
+[13:56:58] 301 -  307B  - //js  ->  http://10.10.10.28/js/
+[13:57:13] 403 -  276B  - //server-status/
+[13:57:13] 403 -  276B  - //server-status
+[13:57:19] 301 -  311B  - //themes  ->  http://10.10.10.28/themes/
+[13:57:20] 301 -  312B  - //uploads  ->  http://10.10.10.28/uploads/
+[13:57:20] 403 -  276B  - //uploads/
+
+Task Completed

@@ -1,0 +1,30 @@
+  _|. _ _  _  _  _ _|_    v0.4.0
+ (_||| _) (/_(_|| (_| )
+
+Extensions: CHANGELOG.md | HTTP method: GET | Threads: 20 | Wordlist size: 7140
+
+Error Log: /root/tools/dirsearch/logs/errors-20-11-22_16-58-11.log
+
+Target: http://10.10.10.46/
+
+Output File: /root/tools/dirsearch/reports/10.10.10.46/_20-11-22_16-58-12.txt
+
+[16:58:12] Starting:
+[16:58:20] 403 -  276B  - //.htaccess.bak1
+[16:58:20] 403 -  276B  - //.htaccess.sample
+[16:58:20] 403 -  276B  - //.htaccess.orig
+[16:58:20] 403 -  276B  - //.htaccess.save
+[16:58:20] 403 -  276B  - //.htaccessBAK
+[16:58:20] 403 -  276B  - //.htaccessOLD
+[16:58:20] 403 -  276B  - //.htaccessOLD2
+[16:58:20] 403 -  276B  - //.htm
+[16:58:20] 403 -  276B  - //.html
+[16:58:20] 403 -  276B  - //.httr-oauth
+[16:58:23] 403 -  276B  - //.php
+[16:59:05] 200 -    2KB - //index.php
+[16:59:05] 200 -    2KB - //index.php/login/
+[16:59:08] 200 -    1KB - //license.txt
+[16:59:22] 403 -  276B  - //server-status
+[16:59:22] 403 -  276B  - //server-status/
+
+Task Completed

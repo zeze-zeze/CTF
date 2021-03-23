@@ -1,0 +1,58 @@
+push rax
+push rbx
+push rcx
+push rdx
+push rdi
+push rsi
+push r8
+push r9
+push r12
+
+xor rbx, rbx
+or rbx, 1
+shl rbx, 13
+add r12, rbx
+shr rbx, 1
+add r12, rbx
+shr rbx, 6
+sub r12, rbx
+shr rbx, 1
+sub r12, rbx
+shr rbx, 1
+sub r12, rbx
+mov rax, r12
+
+mov bl, BYTE PTR [rax + 1]
+cmp rbx, 0x30
+
+pop r12
+pop r9
+pop r8
+pop rsi
+pop rdi
+pop rdx
+pop rcx
+pop rbx
+pop rax
+ret
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall
+syscall

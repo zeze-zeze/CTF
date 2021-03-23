@@ -1,0 +1,48 @@
+C:\inetpub\wwwroot\wordpress\wp-content\plugins\aEtotVzNWL>systeminfo
+systeminfo
+
+Host Name:                 SHIELD
+OS Name:                   Microsoft Windows Server 2016 Standard
+OS Version:                10.0.14393 N/A Build 14393
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Member Server
+OS Build Type:             Multiprocessor Free
+Registered Owner:          Windows User
+Registered Organization:
+Product ID:                00376-30000-00299-AA303
+Original Install Date:     2/4/2020, 12:58:01 PM
+System Boot Time:          12/3/2020, 9:35:34 AM
+System Manufacturer:       VMware, Inc.
+System Model:              VMware7,1
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: AMD64 Family 23 Model 1 Stepping 2 AuthenticAMD ~2000 Mhz
+BIOS Version:              VMware, Inc. VMW71.00V.13989454.B64.1906190538, 6/19/2019
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume2
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC-08:00) Pacific Time (US & Canada)
+Total Physical Memory:     2,047 MB
+Available Physical Memory: 1,119 MB
+Virtual Memory: Max Size:  2,559 MB
+Virtual Memory: Available: 1,542 MB
+Virtual Memory: In Use:    1,017 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    MEGACORP.LOCAL
+Logon Server:              N/A
+Hotfix(s):                 4 Hotfix(s) Installed.
+                           [01]: KB3199986
+                           [02]: KB4520724
+                           [03]: KB4524244
+                           [04]: KB4537764
+Network Card(s):           1 NIC(s) Installed.
+                           [01]: vmxnet3 Ethernet Adapter
+                                 Connection Name: Ethernet0 2
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 10.10.10.29
+                                 [02]: fe80::cdf5:6338:71e5:3f43
+                                 [03]: dead:beef::cdf5:6338:71e5:3f43
+Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.

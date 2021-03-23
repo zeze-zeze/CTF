@@ -1,0 +1,21 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-12-03 03:44 UTC
+Nmap scan report for 10.10.10.30
+Host is up (0.12s latency).
+Not shown: 86 filtered ports
+PORT     STATE  SERVICE
+25/tcp   closed smtp
+53/tcp   open   domain
+80/tcp   closed http
+88/tcp   open   kerberos-sec
+110/tcp  closed pop3
+113/tcp  closed ident
+135/tcp  open   msrpc
+139/tcp  open   netbios-ssn
+389/tcp  open   ldap
+445/tcp  open   microsoft-ds
+554/tcp  closed rtsp
+993/tcp  closed imaps
+3306/tcp closed mysql
+5900/tcp closed vnc
+
+Nmap done: 1 IP address (1 host up) scanned in 4.86 seconds

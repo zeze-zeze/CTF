@@ -1,0 +1,1 @@
+nmap -sV -p 11099 --script rmi-dumpregistry 54.238.163.34
