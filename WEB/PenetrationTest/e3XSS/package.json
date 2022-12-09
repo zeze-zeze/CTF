@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "panetrate test for e3",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "mime": "~1.4.1",
     "socket.io": "~0.9.6"
   }
